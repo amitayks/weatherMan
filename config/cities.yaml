@@ -23,7 +23,7 @@ global:
 cities:
   # Example: Tokyo
   tokyo:
-    enabled: true
+    enabled: false
     name: "Tokyo"
     name_local: "東京"  # Optional: local name for display
     country: "Japan"
@@ -90,7 +90,7 @@ cities:
 
   # Example: Paris
   paris:
-    enabled: true
+    enabled: false
     name: "Paris"
     country: "France"
     timezone: "Europe/Paris"
@@ -140,7 +140,7 @@ cities:
 
   # Example: Dubai
   dubai:
-    enabled: true
+    enabled: false
     name: "Dubai"
     country: "UAE"
     timezone: "Asia/Dubai"
