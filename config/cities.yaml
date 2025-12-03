@@ -331,6 +331,787 @@ cities:
       - "#VisitSingapore"
       - "#LionCity"
 
+  # Tel Aviv, Israel
+  tel_aviv:
+    enabled: false
+    name: "Tel Aviv"
+    name_local: "תל אביב"
+    country: "Israel"
+    timezone: "Asia/Jerusalem"
+    coordinates:
+      lat: 32.0853
+      lon: 34.7818
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - White City Bauhaus architecture with flat roofs and curved balconies
+      - Tel Aviv beaches golden sand coastline with Mediterranean waves
+      - Azrieli Center three modern towers including circular observation deck
+      - Carmel Market bustling shuk with colorful produce and street food
+      - Jaffa Old City ancient stone port with artists' quarter and flea market
+      - Rothschild Boulevard tree-lined street with International Style buildings
+      - Tel Aviv Port promenade wooden boardwalk with restaurants and shops
+      - Dizengoff Square iconic modernist fountain with fire and water show
+      - Sarona Market historic Templar buildings converted to food hall
+      - Habima Theatre Brutalist architecture national theater building
+      - Independence Hall white historic building where Israel declared statehood
+      - Neve Tzedek neighborhood pastel-colored houses with narrow streets
+      - Beach promenade waterfront path lined with palm trees
+      - Great Synagogue large white dome with twin towers
+      - Clock Tower Jaffa Ottoman-era stone tower with arched windows
+      - Tel Aviv Museum modern art museum with geometric architecture
+
+    hashtags:
+      - "#TelAviv"
+      - "#Israel"
+      - "#TLV"
+      - "#תלאביב"
+
+  # Rome, Italy
+  rome:
+    enabled: false
+    name: "Rome"
+    country: "Italy"
+    timezone: "Europe/Rome"
+    coordinates:
+      lat: 41.9028
+      lon: 12.4964
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Colosseum massive ancient amphitheater with arched tiers
+      - Trevi Fountain baroque marble fountain with mythological sculptures
+      - Pantheon ancient temple with massive dome and oculus
+      - St. Peter's Basilica Renaissance cathedral with Michelangelo's dome
+      - Roman Forum ancient ruins with columns and temples
+      - Spanish Steps travertine stairway with Trinità dei Monti church
+      - Castel Sant'Angelo cylindrical fortress connected by bridge
+      - Piazza Navona baroque square with Bernini fountains
+      - Vatican City smallest country with iconic buildings
+      - Sistine Chapel interior with Michelangelo ceiling frescoes
+      - Vittoriano white marble monument with bronze chariot
+      - Trastevere neighborhood cobblestone streets with ivy-covered buildings
+      - Baths of Caracalla massive ancient Roman bath complex ruins
+      - Piazza del Popolo twin churches and Egyptian obelisk
+      - Arch of Constantine triumphal arch with relief sculptures
+      - Tiber River winding waterway with historic bridges
+
+    hashtags:
+      - "#Rome"
+      - "#Roma"
+      - "#Italy"
+      - "#RomeWeather"
+
+  # Barcelona, Spain
+  barcelona:
+    enabled: false
+    name: "Barcelona"
+    country: "Spain"
+    timezone: "Europe/Madrid"
+    coordinates:
+      lat: 41.3874
+      lon: 2.1686
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Sagrada Familia Gaudí basilica with ornate spires and facades
+      - Park Güell mosaic-covered terraces with serpentine bench
+      - Casa Batlló wavy facade with colorful mosaic and bone-like balconies
+      - Las Ramblas tree-lined pedestrian boulevard with street performers
+      - Gothic Quarter medieval narrow streets with cathedral
+      - Casa Milà La Pedrera wavy stone facade with rooftop chimneys
+      - Camp Nou massive football stadium home of FC Barcelona
+      - Magic Fountain choreographed water and light show at Montjuïc
+      - Arc de Triomf red brick triumphal arch with palm trees
+      - Barcelona Cathedral Gothic spires and cloister with geese
+      - Montjuïc Castle hilltop fortress with panoramic views
+      - La Boqueria Market colorful food stalls with hanging jamón
+      - Barceloneta Beach sandy coastline with beachfront restaurants
+      - Palau de la Música modernist concert hall with stained glass
+      - Christopher Columbus Monument tall iron column pointing to sea
+      - Port Vell marina with wooden boardwalk and sailboats
+
+    hashtags:
+      - "#Barcelona"
+      - "#Spain"
+      - "#BCN"
+      - "#Catalunya"
+
+  # Sydney, Australia
+  sydney:
+    enabled: false
+    name: "Sydney"
+    country: "Australia"
+    timezone: "Australia/Sydney"
+    coordinates:
+      lat: -33.8688
+      lon: 151.2093
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Sydney Opera House white sail-shaped shells on harbor
+      - Sydney Harbour Bridge steel arch bridge with pylons
+      - Bondi Beach golden sand with turquoise surf waves
+      - Darling Harbour waterfront entertainment precinct with ferris wheel
+      - Royal Botanic Garden lush greenery with harbor views
+      - The Rocks historic sandstone buildings and cobblestone lanes
+      - Queen Victoria Building Romanesque architecture with stained glass dome
+      - Sydney Tower Eye observation deck on tall spire
+      - Circular Quay ferry terminals with Opera House backdrop
+      - Taronga Zoo hillside zoo with harbor panorama
+      - Manly Beach surf beach reached by ferry
+      - Barangaroo modern waterfront development with parkland
+      - St Mary's Cathedral Gothic revival twin spires
+      - Hyde Park urban park with Archibald Fountain
+      - Luna Park amusement park with giant face entrance
+      - Anzac Bridge cable-stayed bridge with white towers
+
+    hashtags:
+      - "#Sydney"
+      - "#Australia"
+      - "#SydneyWeather"
+      - "#Straya"
+
+  # Rio de Janeiro, Brazil
+  rio:
+    enabled: false
+    name: "Rio de Janeiro"
+    country: "Brazil"
+    timezone: "America/Sao_Paulo"
+    coordinates:
+      lat: -22.9068
+      lon: -43.1729
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Christ the Redeemer iconic white statue atop Corcovado mountain
+      - Sugarloaf Mountain granite peak with cable car
+      - Copacabana Beach curved white sand beach with wave-pattern promenade
+      - Ipanema Beach trendy beach with Dois Irmãos mountains backdrop
+      - Maracanã Stadium massive football stadium bowl
+      - Escadaria Selarón colorful tiled staircase artwork
+      - Tijuca Forest urban rainforest with waterfalls
+      - Arcos da Lapa white colonial aqueduct arches
+      - Sambadrome parade avenue for Carnival celebrations
+      - Botanical Garden tropical gardens with royal palms
+      - Favelas hillside colorful housing communities
+      - Municipal Theatre ornate Beaux-Arts opera house
+      - Rodrigo de Freitas Lagoon scenic lagoon with pedal boats
+      - Pão de Açúcar cable car red gondolas ascending peak
+      - Catedral Metropolitana cone-shaped modernist cathedral
+      - Flamengo Park waterfront park with palm trees
+
+    hashtags:
+      - "#Rio"
+      - "#Brazil"
+      - "#RioDeJaneiro"
+      - "#Brasil"
+
+  # Amsterdam, Netherlands
+  amsterdam:
+    enabled: false
+    name: "Amsterdam"
+    country: "Netherlands"
+    timezone: "Europe/Amsterdam"
+    coordinates:
+      lat: 52.3676
+      lon: 4.9041
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Canal Ring UNESCO heritage concentric canals with houseboats
+      - Anne Frank House narrow canal house museum
+      - Rijksmuseum Dutch Golden Age art museum with Gothic revival architecture
+      - Van Gogh Museum modern building housing impressionist collection
+      - Dam Square central square with Royal Palace
+      - Jordaan neighborhood charming streets with gabled houses
+      - Westerkerk Protestant church with tall tower
+      - Bloemenmarkt floating flower market on canal
+      - A'dam Lookout observation deck with swing over edge
+      - Skinny Bridge white wooden drawbridge over Amstel River
+      - Red Light District historic district with canal-side windows
+      - Vondelpark urban park with ponds and sculptures
+      - Centraal Station red brick railway station building
+      - NEMO Science Museum ship-shaped green copper building
+      - Begijnhof courtyard with historic almshouses
+      - Bicycles everywhere iconic Dutch cycling culture
+
+    hashtags:
+      - "#Amsterdam"
+      - "#Netherlands"
+      - "#AMS"
+      - "#Holland"
+
+  # Bangkok, Thailand
+  bangkok:
+    enabled: false
+    name: "Bangkok"
+    country: "Thailand"
+    timezone: "Asia/Bangkok"
+    coordinates:
+      lat: 13.7563
+      lon: 100.5018
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Grand Palace ornate golden buildings with Thai architectural details
+      - Wat Arun Temple of Dawn with Khmer-style prang tower
+      - Wat Pho reclining Buddha golden statue in temple
+      - Floating markets vendors selling from wooden boats
+      - Chao Phraya River major waterway with longtail boats
+      - Khao San Road backpacker street with neon signs
+      - MBK Center massive shopping mall
+      - Jim Thompson House traditional Thai teak houses
+      - Lumphini Park urban park with monitor lizards
+      - Chinatown Yaowarat Road with gold shops and street food
+      - Asiatique riverfront night market with ferris wheel
+      - Erawan Shrine golden four-faced Brahma statue
+      - Skytrain BTS elevated rail above traffic
+      - Temple spires golden stupas dotting skyline
+      - Tuk-tuks colorful three-wheeled motorized rickshaws
+      - Street food stalls vendors with woks and grills
+
+    hashtags:
+      - "#Bangkok"
+      - "#Thailand"
+      - "#BKK"
+      - "#Krungthep"
+
+  # Istanbul, Turkey
+  istanbul:
+    enabled: false
+    name: "Istanbul"
+    country: "Turkey"
+    timezone: "Europe/Istanbul"
+    coordinates:
+      lat: 41.0082
+      lon: 28.9784
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Hagia Sophia Byzantine dome with Islamic minarets
+      - Blue Mosque six minarets with blue Iznik tile interior
+      - Topkapi Palace Ottoman imperial palace with courtyards
+      - Grand Bazaar covered market with thousands of shops
+      - Bosphorus Strait waterway connecting Europe and Asia
+      - Galata Tower medieval stone tower with conical roof
+      - Basilica Cistern underground water reservoir with columns
+      - Dolmabahçe Palace ornate Baroque palace on waterfront
+      - Spice Bazaar Egyptian Bazaar with colorful spice pyramids
+      - Maiden's Tower small tower on island in Bosphorus
+      - Taksim Square modern plaza with Republic Monument
+      - Istiklal Avenue pedestrian street with historic tram
+      - Bosphorus Bridge suspension bridge connecting continents
+      - Süleymaniye Mosque Ottoman mosque with cascading domes
+      - Ortaköy neighborhood waterfront with baroque mosque
+      - Ferries traditional white passenger boats crossing strait
+
+    hashtags:
+      - "#Istanbul"
+      - "#Turkey"
+      - "#Constantinople"
+      - "#Türkiye"
+
+  # Cairo, Egypt
+  cairo:
+    enabled: false
+    name: "Cairo"
+    country: "Egypt"
+    timezone: "Africa/Cairo"
+    coordinates:
+      lat: 30.0444
+      lon: 31.2357
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Pyramids of Giza ancient stone pyramids with precise geometry
+      - Great Sphinx limestone statue with lion body and pharaoh head
+      - Egyptian Museum pink building housing ancient artifacts
+      - Khan el-Khalili bazaar medieval souk with narrow alleys
+      - Cairo Citadel medieval Islamic fortification on hilltop
+      - Mosque of Muhammad Ali Ottoman-style alabaster mosque
+      - Nile River major waterway with felucca sailboats
+      - Cairo Tower concrete lattice observation tower
+      - Al-Azhar Mosque historic university mosque with minarets
+      - Sultan Hassan Mosque massive Mamluk-era mosque
+      - Coptic Cairo ancient Christian quarter with hanging church
+      - Tahrir Square central plaza with museums
+      - Islamic Cairo historic district with medieval architecture
+      - Minarets skyline dotted with towers and domes
+      - Papyrus boats traditional reed boats on Nile
+      - Desert sand dunes visible at city edges
+
+    hashtags:
+      - "#Cairo"
+      - "#Egypt"
+      - "#CairoWeather"
+      - "#مصر"
+
+  # Buenos Aires, Argentina
+  buenos_aires:
+    enabled: false
+    name: "Buenos Aires"
+    country: "Argentina"
+    timezone: "America/Argentina/Buenos_Aires"
+    coordinates:
+      lat: -34.6037
+      lon: -58.3816
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Obelisco iconic white obelisk monument on Avenida 9 de Julio
+      - La Boca neighborhood colorful corrugated metal houses on Caminito
+      - Casa Rosada pink presidential palace on Plaza de Mayo
+      - Recoleta Cemetery elaborate marble mausoleums with sculptures
+      - Teatro Colón opera house with horseshoe-shaped auditorium
+      - Puerto Madero modern waterfront with brick warehouses converted
+      - Floralis Genérica giant metal flower sculpture that opens and closes
+      - Palermo Parks extensive green spaces with rose gardens
+      - Cabildo colonial town hall with white arches
+      - Metropolitan Cathedral neoclassical facade with columns
+      - Café Tortoni historic café with tango shows
+      - El Ateneo Grand Splendid bookstore in converted theater
+      - Puente de la Mujer white angular pedestrian bridge
+      - La Bombonera Boca Juniors football stadium with vertical stands
+      - Tango dancers street performers in traditional dress
+      - Jacaranda trees purple blossoms lining avenues in spring
+
+    hashtags:
+      - "#BuenosAires"
+      - "#Argentina"
+      - "#BA"
+      - "#Baires"
+
+  # Mumbai, India
+  mumbai:
+    enabled: false
+    name: "Mumbai"
+    country: "India"
+    timezone: "Asia/Kolkata"
+    coordinates:
+      lat: 19.0760
+      lon: 72.8777
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Gateway of India Indo-Saracenic arch monument on waterfront
+      - Taj Mahal Palace Hotel heritage luxury hotel with domes
+      - Chhatrapati Shivaji Terminus Victorian Gothic railway station
+      - Marine Drive curved seaside promenade Queen's Necklace
+      - Haji Ali Dargah mosque on island connected by causeway
+      - Elephanta Caves ancient rock-cut temples on island
+      - Bandra-Worli Sea Link cable-stayed bridge over Arabian Sea
+      - Dharavi Asia's largest slum community
+      - Crawford Market Victorian market building with fountain
+      - Siddhivinayak Temple Hindu temple with golden dome
+      - Bollywood film studios and cinema culture
+      - Dabbawalas lunchbox delivery men in white uniforms
+      - Local trains packed suburban railway system
+      - Worli Fort Portuguese fortification remains
+      - Churchgate area colonial-era buildings
+      - Arabian Sea coastline with fishing boats
+
+    hashtags:
+      - "#Mumbai"
+      - "#India"
+      - "#Bombay"
+      - "#मुंबई"
+
+  # Seoul, South Korea
+  seoul:
+    enabled: false
+    name: "Seoul"
+    country: "South Korea"
+    timezone: "Asia/Seoul"
+    coordinates:
+      lat: 37.5665
+      lon: 126.9780
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - N Seoul Tower communications tower on Namsan mountain
+      - Gyeongbokgung Palace traditional Korean palace with tile roofs
+      - Bukchon Hanok Village traditional houses on hillside
+      - Myeongdong shopping district with neon signs and K-beauty stores
+      - Dongdaemun Design Plaza futuristic Zaha Hadid curving building
+      - Lotte World Tower supertall skyscraper fifth tallest in world
+      - Cheonggyecheon Stream restored urban creek with walkways
+      - Gangnam District modern high-rise business area
+      - Bongeunsa Temple Buddhist temple with giant standing Buddha
+      - Insadong neighborhood traditional crafts street with tea houses
+      - Hongdae area youth culture district with street art
+      - Han River bridges and riverside parks with fountains
+      - Changdeokgung Palace UNESCO World Heritage with secret garden
+      - Namdaemun Gate restored traditional gate with two-tier roof
+      - Street food stalls vendors with tteokbokki and hotteok
+      - K-pop culture billboards and entertainment districts
+
+    hashtags:
+      - "#Seoul"
+      - "#Korea"
+      - "#서울"
+      - "#SouthKorea"
+
+  # Mexico City, Mexico
+  mexico_city:
+    enabled: false
+    name: "Mexico City"
+    country: "Mexico"
+    timezone: "America/Mexico_City"
+    coordinates:
+      lat: 19.4326
+      lon: -99.1332
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Zócalo massive main square with Mexican flag
+      - Metropolitan Cathedral Spanish colonial cathedral with baroque facade
+      - Palacio de Bellas Artes Art Nouveau white marble palace
+      - Chapultepec Castle hilltop castle in urban forest park
+      - Angel of Independence golden winged victory column
+      - Frida Kahlo Museum Casa Azul cobalt blue house
+      - Templo Mayor Aztec temple ruins archaeological site
+      - Xochimilco floating gardens with colorful trajinera boats
+      - Paseo de la Reforma wide boulevard with monuments
+      - Basilica of Guadalupe Catholic pilgrimage site
+      - Torre Latinoamericana historic Art Deco skyscraper
+      - Coyoacán neighborhood colonial architecture and plazas
+      - National Museum of Anthropology modernist building with umbrella fountain
+      - Soumaya Museum distinctive silver honeycomb structure
+      - Teotihuacán pyramids ancient Pyramid of the Sun nearby
+      - Lucha Libre masks colorful wrestling culture
+
+    hashtags:
+      - "#MexicoCity"
+      - "#CDMX"
+      - "#Mexico"
+      - "#CiudadDeMéxico"
+
+  # Cape Town, South Africa
+  cape_town:
+    enabled: false
+    name: "Cape Town"
+    country: "South Africa"
+    timezone: "Africa/Johannesburg"
+    coordinates:
+      lat: -33.9249
+      lon: 18.4241
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Table Mountain iconic flat-topped mountain with cable car
+      - Robben Island historic prison island where Mandela was held
+      - Victoria and Alfred Waterfront harbor with colorful buildings
+      - Cape Point dramatic cliffs where oceans meet
+      - Bo-Kaap neighborhood pastel-colored houses on steep streets
+      - Kirstenbosch Botanical Gardens gardens on mountain slopes
+      - Chapman's Peak Drive coastal road carved into cliffs
+      - Signal Hill peak for panoramic city views
+      - Long Street Victorian buildings with wrought iron balconies
+      - Camps Bay Beach white sand with Twelve Apostles mountains
+      - Castle of Good Hope star-shaped colonial fort
+      - Clifton Beaches four coves with boulders and blue water
+      - Company's Garden historic park in city center
+      - District Six Museum memorial to forced removals
+      - Boulders Beach penguin colony with granite rocks
+      - Wine estates vineyards in surrounding valleys
+
+    hashtags:
+      - "#CapeTown"
+      - "#SouthAfrica"
+      - "#TableMountain"
+      - "#MotherCity"
+
+  # Moscow, Russia
+  moscow:
+    enabled: false
+    name: "Moscow"
+    country: "Russia"
+    timezone: "Europe/Moscow"
+    coordinates:
+      lat: 55.7558
+      lon: 37.6173
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Red Square vast brick-paved plaza with Kremlin walls
+      - St. Basil's Cathedral colorful onion domes with patterns
+      - Kremlin fortified complex with towers and golden domes
+      - GUM Department Store ornate shopping arcade with glass roof
+      - Moscow Metro palatial underground stations with chandeliers
+      - Bolshoi Theatre neoclassical theater with columns
+      - Sparrow Hills observation point with Moscow State University
+      - Ostankino Tower tallest free-standing structure in Europe
+      - Cathedral of Christ the Saviour massive white cathedral rebuilt
+      - Arbat Street pedestrian street with historic buildings
+      - Moscow River winding waterway with tour boats
+      - Seven Sisters Stalinist skyscrapers Gothic style
+      - Gorky Park Soviet-era park with fountains
+      - Izmailovo Market colorful wooden structures flea market
+      - Novodevichy Convent monastery complex with cemetery
+      - Winter snow covering city in white blanket
+
+    hashtags:
+      - "#Moscow"
+      - "#Russia"
+      - "#Москва"
+      - "#RedSquare"
+
+  # Athens, Greece
+  athens:
+    enabled: false
+    name: "Athens"
+    country: "Greece"
+    timezone: "Europe/Athens"
+    coordinates:
+      lat: 37.9838
+      lon: 23.7275
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Acropolis ancient citadel on rocky outcrop above city
+      - Parthenon Doric temple with columns dedicated to Athena
+      - Acropolis Museum modern glass building with ancient sculptures
+      - Plaka neighborhood neoclassical houses in old town
+      - Temple of Olympian Zeus massive columns of ancient temple
+      - Panathenaic Stadium marble stadium for first modern Olympics
+      - Syntagma Square central plaza with Parliament building
+      - Mount Lycabettus limestone hill with chapel on top
+      - Ancient Agora marketplace ruins with Temple of Hephaestus
+      - Monastiraki flea market area with Ottoman influences
+      - Odeon of Herodes Atticus stone theater on Acropolis slope
+      - National Archaeological Museum neoclassical building with artifacts
+      - Ermou Street pedestrian shopping boulevard
+      - Anafiotika whitewashed Cycladic-style houses
+      - Byzantine churches small domed structures throughout city
+      - Mediterranean light golden sunshine illuminating marble
+
+    hashtags:
+      - "#Athens"
+      - "#Greece"
+      - "#Αθήνα"
+      - "#Acropolis"
+
+  # Hong Kong
+  hong_kong:
+    enabled: false
+    name: "Hong Kong"
+    country: "Hong Kong SAR"
+    timezone: "Asia/Hong_Kong"
+    coordinates:
+      lat: 22.3193
+      lon: 114.1694
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Victoria Peak hilltop viewpoint overlooking harbor and skyline
+      - Victoria Harbour waterway between Hong Kong Island and Kowloon
+      - Star Ferry iconic green and white ferries crossing harbor
+      - International Commerce Centre tallest building with observation deck
+      - Tian Tan Buddha giant bronze seated Buddha on Lantau Island
+      - Temple Street Night Market bustling market with fortune tellers
+      - Man Mo Temple traditional temple with spiral incense coils
+      - Tsim Sha Tsui waterfront promenade with Symphony of Lights
+      - Ladies' Market Mong Kok street market with clothing stalls
+      - Hong Kong Tramway double-decker trams "ding dings"
+      - Bank of China Tower geometric glass tower by I.M. Pei
+      - Dragon's Back hiking trail with mountain ridge views
+      - Lan Kwai Fong nightlife district with bars on steep streets
+      - Wong Tai Sin Temple ornate Taoist temple with red pillars
+      - Neon signs iconic vertical Chinese characters lighting streets
+      - Sampans traditional wooden boats in Aberdeen harbor
+
+    hashtags:
+      - "#HongKong"
+      - "#HK"
+      - "#香港"
+      - "#HKWeather"
+
+  # Berlin, Germany
+  berlin:
+    enabled: false
+    name: "Berlin"
+    country: "Germany"
+    timezone: "Europe/Berlin"
+    coordinates:
+      lat: 52.5200
+      lon: 13.4050
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Brandenburg Gate neoclassical triumphal arch with quadriga
+      - Berlin Wall remaining sections with graffiti art
+      - Reichstag glass dome on parliament building
+      - East Side Gallery longest remaining wall section with murals
+      - Museum Island UNESCO site with five museums
+      - TV Tower Fernsehturm distinctive sphere observation deck
+      - Holocaust Memorial field of concrete stelae
+      - Checkpoint Charlie former border crossing with guard booth
+      - Charlottenburg Palace baroque palace with gardens
+      - Gendarmenmarkt square with twin cathedrals and concert hall
+      - Unter den Linden boulevard with linden trees
+      - Potsdamer Platz modern square rebuilt after reunification
+      - Oberbaum Bridge distinctive brick bridge with towers
+      - Kaiser Wilhelm Memorial Church bombed church ruins preserved
+      - Spree River waterway with tour boats
+      - Street art vibrant murals on building walls
+
+    hashtags:
+      - "#Berlin"
+      - "#Germany"
+      - "#Deutschland"
+      - "#BerlinWeather"
+
+  # Vienna, Austria
+  vienna:
+    enabled: false
+    name: "Vienna"
+    country: "Austria"
+    timezone: "Europe/Vienna"
+    coordinates:
+      lat: 48.2082
+      lon: 16.3738
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Schönbrunn Palace yellow baroque imperial summer residence
+      - St. Stephen's Cathedral Gothic cathedral with tiled roof pattern
+      - Hofburg Palace former imperial palace complex
+      - Belvedere Palace baroque palace with Upper and Lower sections
+      - Vienna State Opera Renaissance revival opera house
+      - Ringstrasse circular boulevard with grand buildings
+      - Prater amusement park with iconic giant ferris wheel
+      - Naschmarkt outdoor market with food stalls
+      - Karlskirche baroque church with large dome and columns
+      - Spanish Riding School Lipizzaner horses performing
+      - MuseumsQuartier cultural complex in former imperial stables
+      - Hundertwasserhaus colorful apartment building with irregular design
+      - Vienna City Hall neo-Gothic building with tower
+      - Danube River flowing through city
+      - Coffee houses historic cafés with chandeliers
+      - Horse-drawn carriages Fiaker traditional transport
+
+    hashtags:
+      - "#Vienna"
+      - "#Austria"
+      - "#Wien"
+      - "#ViennaWeather"
+
+  # Lisbon, Portugal
+  lisbon:
+    enabled: false
+    name: "Lisbon"
+    country: "Portugal"
+    timezone: "Europe/Lisbon"
+    coordinates:
+      lat: 38.7223
+      lon: -9.1393
+
+    platforms:
+      twitter: false
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Belém Tower Manueline fortress on Tagus River
+      - Jerónimos Monastery ornate monastery with maritime motifs
+      - Tram 28 vintage yellow tram climbing hills
+      - São Jorge Castle Moorish fortification on hilltop
+      - Alfama district oldest neighborhood with narrow alleys
+      - Praça do Comércio grand waterfront plaza with arch
+      - Santa Justa Lift neo-Gothic iron elevator tower
+      - Padrão dos Descobrimentos monument to Age of Discoveries
+      - Baixa district grid-pattern downtown with mosaic sidewalks
+      - LX Factory creative space in industrial buildings
+      - Cristo Rei statue Christ statue across river
+      - Pink Street nightlife area with colorful pavement
+      - Azulejos decorative ceramic tiles on buildings
+      - Miradouros scenic viewpoints overlooking terracotta roofs
+      - Fado music traditional melancholic songs
+      - Pastel de nata custard tarts at historic bakeries
+
+    hashtags:
+      - "#Lisbon"
+      - "#Portugal"
+      - "#Lisboa"
+      - "#LisbonWeather"
+
 # Template for adding new cities:
 # --------------------------------
 # IMPORTANT: Landmarks are randomly selected (5-8 per image) to ensure variety.
