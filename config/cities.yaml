@@ -76,12 +76,25 @@ cities:
       twitter: true
       instagram: false
       tiktok: false
-    
-    landmarks: >
-      Statue of Liberty, Empire State Building, One World Trade Center,
-      Brooklyn Bridge, Central Park, Times Square billboards,
-      yellow taxi cabs, subway entrances
-    
+
+    landmarks:
+      - Statue of Liberty with iconic copper green torch and pedestal on Liberty Island
+      - Empire State Building art deco spire with observation deck
+      - One World Trade Center modern reflective glass tower
+      - Brooklyn Bridge with Gothic revival stone towers and suspension cables
+      - Central Park with tree-lined paths, Bethesda Fountain, and Bow Bridge
+      - Times Square with massive LED billboards, Broadway theaters, and crowds
+      - Yellow taxi cabs with distinctive checkered stripe pattern
+      - Historic subway entrances with green globe lights and ornate metalwork
+      - Charging Bull bronze sculpture in Financial District
+      - Chrysler Building with distinctive stainless steel art deco crown
+      - Flatiron Building triangular wedge-shaped Beaux-Arts architecture
+      - Grand Central Terminal with Beaux-Arts facade and celestial ceiling
+      - Rockefeller Center with ice skating rink and golden Prometheus statue
+      - High Line elevated park with modern landscaping and Hudson views
+      - Washington Square Arch marble triumphal arch in Greenwich Village
+      - New York Public Library with iconic lion statues Patience and Fortitude
+
     hashtags:
       - "#NYC"
       - "#NewYork"
@@ -156,12 +169,25 @@ cities:
       twitter: true
       instagram: false
       tiktok: false
-    
-    landmarks: >
-      Burj Khalifa, Burj Al Arab sail-shaped hotel, Palm Jumeirah,
-      Dubai Frame, traditional souks, modern glass skyscrapers,
-      desert dunes in the background, luxury yachts
-    
+
+    landmarks:
+      - Burj Khalifa towering needle-like structure, world's tallest building
+      - Burj Al Arab distinctive sail-shaped luxury hotel on artificial island
+      - Palm Jumeirah iconic palm tree-shaped artificial archipelago
+      - Dubai Frame massive golden picture frame structure
+      - Traditional Arabian souks with colorful fabric canopies and spice stalls
+      - Modern glass and steel skyscrapers with futuristic designs
+      - Dubai Marina with sleek residential towers lining waterfront
+      - Desert dunes with golden sand visible in background
+      - Luxury yachts and superyachts in marina harbors
+      - Dubai Fountain with choreographed water jets and lights
+      - Museum of the Future with torus-shaped calligraphy-covered facade
+      - Gold Souk traditional covered market with gold jewelry displays
+      - Jumeirah Mosque white stone Islamic architecture with twin minarets
+      - Atlantis The Palm pink resort with distinctive Arabian architecture
+      - Dhow boats traditional wooden sailing vessels in creek
+      - Sheikh Zayed Road superhighway lined with ultramodern towers
+
     hashtags:
       - "#Dubai"
       - "#UAE"
@@ -170,6 +196,9 @@ cities:
 
 # Template for adding new cities:
 # --------------------------------
+# IMPORTANT: Landmarks are randomly selected (5-8 per image) to ensure variety.
+# Provide 12-20 detailed landmark descriptions for best results.
+#
 #   city_id:
 #     enabled: true
 #     name: "City Name"
@@ -185,6 +214,19 @@ cities:
 #       twitter: true
 #       instagram: true
 #       tiktok: true
-#     landmarks: "Comma-separated list of famous landmarks"
+#     landmarks:  # 12-20 items recommended (5-8 randomly selected per image)
+#       - Famous Landmark 1 with distinctive architectural feature description
+#       - Famous Landmark 2 with unique visual characteristics
+#       - Famous Landmark 3 with recognizable shape or color
+#       - Iconic building or structure 1
+#       - Iconic building or structure 2
+#       - Traditional/cultural element 1
+#       - Traditional/cultural element 2
+#       - Natural feature (if applicable)
+#       - Transportation element (taxis, boats, etc.)
+#       - Street/plaza characteristic
+#       - Architectural style element
+#       - Cultural symbol or sculpture
+#       # Add 8-15 more unique, visually distinct landmarks
 #     hashtags:  # Optional
 #       - "#CityName"

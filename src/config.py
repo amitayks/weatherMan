@@ -30,7 +30,7 @@ class CityConfig:
     timezone: str
     coordinates: Coordinates
     platforms: PlatformConfig
-    landmarks: str
+    landmarks: list[str]
     enabled: bool = True
     name_local: Optional[str] = None
     posting_times: list = field(default_factory=lambda: ["08:00", "18:00"])
@@ -100,7 +100,7 @@ class Config:
                     instagram=platforms.get("instagram", False),
                     tiktok=platforms.get("tiktok", False),
                 ),
-                landmarks=city_data.get("landmarks", ""),
+                landmarks=city_data.get("landmarks", []),
                 enabled=city_data.get("enabled", True),
                 name_local=city_data.get("name_local"),
                 posting_times=city_data.get(

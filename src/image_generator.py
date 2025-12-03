@@ -2,6 +2,7 @@
 
 import os
 import base64
+import random
 from pathlib import Path
 from typing import Optional
 from datetime import datetime
@@ -55,6 +56,11 @@ class ImageGenerator:
         is_dark = not weather.is_daytime or 'rain' in weather.description.lower() or 'cloud' in weather.main_condition.lower()
         window_lights = "Interior building lights visible glowing warmly" if is_dark else "Windows reflective, interior lights off for bright day"
 
+        # Randomly select 5-8 landmarks for variety
+        num_landmarks = random.randint(5, min(8, len(city.landmarks)))
+        selected_landmarks = random.sample(city.landmarks, num_landmarks)
+        landmarks_text = "\n".join(f"- {landmark}" for landmark in selected_landmarks)
+
         # Build the comprehensive prompt
         prompt = f"""Generate a professional 3D isometric miniature diorama city model with weather overlay for {city.name}, {city.country}.
 
@@ -71,7 +77,7 @@ Base Structure:
 
 Architectural Elements - Iconic Landmarks and Buildings:
 The scene must feature these specific landmarks and architectural elements of {city.name}:
-{city.landmarks}
+{landmarks_text}
 
 Additional architectural requirements:
 - Render 2-4 most iconic structures as detailed miniatures with accurate proportions and recognizable signature features
