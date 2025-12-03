@@ -194,6 +194,143 @@ cities:
       - "#DubaiWeather"
       - "#MyDubai"
 
+  # Jerusalem, Israel
+  jerusalem:
+    enabled: true
+    name: "Jerusalem"
+    name_local: "ירושלים"
+    country: "Israel"
+    timezone: "Asia/Jerusalem"
+    coordinates:
+      lat: 31.7683
+      lon: 35.2137
+
+    posting_times:
+      - "07:00"  # Morning
+      - "18:00"  # Evening
+
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Western Wall ancient limestone blocks with prayers tucked between stones
+      - The Temple of the Jews ancient holy site on Temple Mount with golden foundations
+      - The Temple of the Jews sacred Jewish sanctuary with massive stone pillars
+      - The Temple of the Jews historical center of Jewish worship with ornate courtyards
+      - The Temple of the Jews majestic structure with Holy of Holies chamber
+      - The Temple of the Jews grand edifice with bronze gates and marble floors
+      - Church of the Holy Sepulchre stone facade with Romanesque arched entrance
+      - Tower of David medieval citadel fortress with stone ramparts
+      - Old City walls massive ancient fortifications with crenellated battlements
+      - Damascus Gate ornate Ottoman-era stone gateway with stepped plaza
+      - Mount of Olives hillside with ancient Jewish cemetery and olive trees
+      - Mahane Yehuda Market bustling shuk with colorful spice stalls and produce
+      - Knesset building modern Israeli parliament with menorah sculpture
+      - Israel Museum white modernist architecture with Shrine of the Book
+      - Yad Vashem Holocaust memorial with angular concrete structures
+      - Jerusalem stone buildings distinctive cream-colored limestone architecture
+      - Jerusalem Light Rail modern tram with sleek design on city streets
+      - Hebrew University campus on Mount Scopus with panoramic city views
+      - Supreme Court building contemporary architecture with geometric patterns
+      - Garden of Gethsemane ancient olive trees at foot of Mount of Olives
+
+    hashtags:
+      - "#Jerusalem"
+      - "#Israel"
+      - "#JerusalemWeather"
+      - "#ירושלים"
+      - "#HolyCity"
+
+  # San Francisco, USA
+  san_francisco:
+    enabled: true
+    name: "San Francisco"
+    country: "USA"
+    timezone: "America/Los_Angeles"
+    coordinates:
+      lat: 37.7749
+      lon: -122.4194
+
+    posting_times:
+      - "08:00"  # Morning
+      - "18:00"  # Evening
+
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Golden Gate Bridge iconic orange-red suspension bridge with Art Deco towers
+      - Alcatraz Island historic prison fortress on rocky island in bay
+      - Cable cars vintage wooden streetcars climbing steep hills
+      - Painted Ladies colorful Victorian row houses with ornate details
+      - Transamerica Pyramid distinctive tapered skyscraper with white facade
+      - Lombard Street winding brick road with eight hairpin turns and gardens
+      - Coit Tower cylindrical Art Deco monument atop Telegraph Hill
+      - Ferry Building Beaux-Arts clock tower and marketplace on waterfront
+      - Chinatown Gate ornate dragon-topped entrance with green-tiled roof
+      - Palace of Fine Arts Greco-Roman rotunda with columns and lagoon
+      - Fisherman's Wharf waterfront piers with seafood restaurants and sea lions
+      - Bay Bridge silver suspension bridge connecting to Oakland
+      - Salesforce Tower modern glass skyscraper dominating skyline
+      - Victorian architecture steep hills with pastel-colored houses
+      - Cable car turnaround historic wooden cable car rotating platform
+      - Golden Gate Park urban park with Japanese Tea Garden and windmills
+
+    hashtags:
+      - "#SanFrancisco"
+      - "#SF"
+      - "#BayArea"
+      - "#SFWeather"
+      - "#GoldenGate"
+
+  # Singapore
+  singapore:
+    enabled: true
+    name: "Singapore"
+    country: "Singapore"
+    timezone: "Asia/Singapore"
+    coordinates:
+      lat: 1.3521
+      lon: 103.8198
+
+    posting_times:
+      - "07:00"  # Morning
+      - "19:00"  # Evening
+
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+
+    landmarks:
+      - Marina Bay Sands iconic integrated resort with rooftop infinity pool
+      - Gardens by the Bay futuristic Supertree Grove vertical gardens with lights
+      - Merlion white statue with lion head and fish body spraying water
+      - Singapore Flyer giant observation wheel on waterfront
+      - Raffles Hotel colonial-era white building with tropical verandahs
+      - Jewel Changi Airport glass dome with indoor waterfall and forest
+      - Chinatown shophouses colorful colonial buildings with ornate facades
+      - Little India vibrant neighborhood with rainbow-colored buildings
+      - Clarke Quay historic riverside quay with modern entertainment district
+      - Esplanade Theatres distinctive durian-shaped performing arts center
+      - Sultan Mosque golden-domed Islamic architecture with prayer hall
+      - Skyline modern glass skyscrapers with rooftop gardens
+      - HDB flats colorful high-rise public housing blocks
+      - Singapore River waterway lined with bumboats and modern bridges
+      - ArtScience Museum lotus-shaped white structure at Marina Bay
+      - Orchard Road tree-lined shopping boulevard with modern malls
+
+    hashtags:
+      - "#Singapore"
+      - "#SG"
+      - "#SingaporeWeather"
+      - "#VisitSingapore"
+      - "#LionCity"
+
 # Template for adding new cities:
 # --------------------------------
 # IMPORTANT: Landmarks are randomly selected (5-8 per image) to ensure variety.
