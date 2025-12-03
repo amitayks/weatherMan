@@ -26,46 +26,140 @@ class ImageGenerator:
         
         # Initialize the client
         self.client = genai.Client(api_key=self.api_key)
-    
-    def build_prompt(self, city: CityConfig, weather: WeatherData) -> str:
-        """Build the image generation prompt."""
-        
-        # Format the date
-        date_str = weather.format_date("%B %d, %Y")
-        
-        # Build the comprehensive prompt
-        prompt = f"""Present a clear, 45° top-down isometric miniature 3D cartoon scene of {city.name}, featuring its most iconic landmarks and architectural elements.
 
-LANDMARKS TO INCLUDE:
+    def get_atmospheric_condition(self, weather: WeatherData) -> str:
+        """Map weather data to detailed atmospheric description."""
+        condition_lower = weather.main_condition.lower()
+        desc_lower = weather.description.lower()
+
+        if 'rain' in condition_lower or 'rain' in desc_lower or 'drizzle' in desc_lower:
+            return "Rainy atmosphere - wet surfaces with reflective sheen, puddles on streets and plazas, rain streaks visible in air, darker color saturation on buildings and surfaces, overcast lighting with soft diffused shadows, grey sky, moisture in the air"
+        elif 'clear' in condition_lower or ('clear' in desc_lower and 'sky' in desc_lower):
+            return "Sunny atmosphere - bright even lighting across entire scene, strong defined shadows cast by buildings and objects, vibrant saturated colors, clear blue sky element visible, warm temperature feel with golden tones, crisp air quality"
+        elif 'cloud' in condition_lower:
+            return "Cloudy atmosphere - soft diffused lighting throughout scene, muted pastel colors, grey atmospheric tone, no harsh shadows, overcast mood, gentle even illumination"
+        elif 'snow' in condition_lower or 'snow' in desc_lower:
+            return "Snowy atmosphere - white snow covering roofs and ground surfaces, icicles hanging from eaves, cold blue color tones throughout, winter atmosphere, soft white blanket over scene, crisp winter air feeling"
+        elif 'mist' in condition_lower or 'fog' in condition_lower or 'haze' in desc_lower or 'mist' in desc_lower:
+            return "Foggy atmosphere - misty haze around buildings, reduced visibility at scene edges, ethereal dreamy quality, soft diffused lighting through fog, mysterious mood"
+        else:
+            return "Pleasant clear weather - natural balanced lighting, gentle soft shadows, moderate color saturation, comfortable atmosphere"
+
+    def build_prompt(self, city: CityConfig, weather: WeatherData) -> str:
+        """Build the comprehensive image generation prompt."""
+
+        # Get weather-specific atmospheric condition
+        atmospheric_condition = self.get_atmospheric_condition(weather)
+
+        # Determine window lighting based on weather and time
+        is_dark = not weather.is_daytime or 'rain' in weather.description.lower() or 'cloud' in weather.main_condition.lower()
+        window_lights = "Interior building lights visible glowing warmly" if is_dark else "Windows reflective, interior lights off for bright day"
+
+        # Build the comprehensive prompt
+        prompt = f"""Generate a professional 3D isometric miniature diorama city model with weather overlay for {city.name}, {city.country}.
+
+CONCEPT:
+Create a charming architectural toy model aesthetic meeting functional weather visualization design. This is a square 1080x1080px social media graphic combining miniature city model craftsmanship with current weather information display.
+
+CITY DIORAMA CONSTRUCTION FOR {city.name}, {city.country}:
+
+Base Structure:
+- Rounded rectangular miniature base with beveled wooden-textured edges (approximately 2cm thick appearance)
+- Compact city section fitting 3-4 city blocks with efficient use of space
+- 45-degree isometric viewing angle, top-down perspective showing all architectural details clearly
+- Organic city planning with curved streets, river or waterway if geographically applicable, main landmarks prominently featured in composition
+
+Architectural Elements - Iconic Landmarks and Buildings:
+The scene must feature these specific landmarks and architectural elements of {city.name}:
 {city.landmarks}
 
-STYLE REQUIREMENTS:
-- Use soft, refined textures with realistic PBR materials
-- Gentle, lifelike lighting and shadows
-- Clean, minimalistic composition
-- Soft, solid-colored background (subtle gradient acceptable)
+Additional architectural requirements:
+- Render 2-4 most iconic structures as detailed miniatures with accurate proportions and recognizable signature features
+- Include cluster of characteristic local architecture: row houses, apartments, historic buildings in authentic regional style
+- Roof details with appropriate materials: terracotta clay tiles, slate, copper patina, or region-appropriate roofing with realistic texture and color
+- Tiny individual windows with subtle reflections and interior lighting glow, properly scaled
+- Miniature street-level doors and entrances with architectural detail and character
+- Architectural style must be authentic to {city.name}'s historical period and cultural aesthetic
 
-CURRENT WEATHER CONDITIONS TO INTEGRATE:
-- Weather: {weather.description}
-- {weather.atmosphere_prompt}
-- Time of day: {weather.time_of_day}
-- Temperature feel: {"warm" if weather.temperature_c > 25 else "cool" if weather.temperature_c < 15 else "mild"}
+Urban Infrastructure:
+- Streets with realistic texture (cobblestone, asphalt, or appropriate paving) with proper street grid or historically-accurate layout
+- Central squares and plazas with miniature paving patterns, small monuments, fountains as landmarks
+- If city features iconic bridges: include them with detailed stone or metal construction
+- If city has waterways: render rivers, canals, or harbors with realistic water texture showing gentle ripples, reflections, and subtle movement indication
+- If applicable: tiny boats, gondolas, ferries, or watercraft appropriate to the city rendered at miniature scale with details
 
-TEXT OVERLAY (must be clearly legible):
-- At the top-center, place the title "{city.name}" in large bold text
-- Below the title: a prominent weather icon {weather.emoji}
-- Below the icon: the date "{date_str}" in small text
-- Below the date: the temperature "{weather.format_temperature('C')}" in medium text
+Landscape Elements:
+- Miniature stylized trees with round puffy foliage in appropriate green shades, cartoon-style appearance but realistic texture quality
+- Parks and green spaces with grass texture, pathways, organized landscaping elements
+- Topographical variation if city is hilly: elevated areas with terracing, slopes with buildings following terrain
+- Vegetation details: bushes, garden areas, tree-lined streets with appropriate seasonal coloring for current date
 
-TEXT STYLING:
-- All text must be centered with consistent spacing
-- Text may subtly overlap the tops of the buildings
-- Use a clean, modern sans-serif font
-- Ensure high contrast for readability
+Miniature People & Vehicles:
+- Tiny human figures at 2-3mm scale scattered naturally throughout streets and squares (approximately 20-30 people visible)
+- Miniature vehicles: cars, trams, buses appropriate to {city.name} - simplified forms but recognizable, proper colors (approximately 5-10 vehicles)
+- If city has waterways: small boats, tourist vessels, gondolas, ferries at appropriate scale
+- Density: populated but not crowded, creating authentic lived-in feeling without clutter
 
-OUTPUT:
-- Square 1080x1080 dimension
-- High quality, suitable for social media posting"""
+CURRENT WEATHER INTEGRATION:
+Weather condition: {weather.description}
+Temperature: {weather.format_temperature('C')}
+
+Atmospheric Condition to Apply:
+{atmospheric_condition}
+
+Lighting Adaptation:
+- Time of day atmosphere: {weather.time_of_day}
+- {window_lights}
+- Overall scene brightness and color temperature adapting to weather mood and conditions
+- Shadow quality matching weather: soft for cloudy/rainy, defined for sunny, minimal for foggy
+
+TEXT OVERLAY SYSTEM - CRITICAL TYPOGRAPHY REQUIREMENTS:
+All text elements must be clearly legible with high contrast against the background.
+
+1. CITY NAME (Primary Header):
+   Content: "{city.name}, {city.country}"
+   Typography: BOLD SANS-SERIF font (Montserrat Bold style or similar), ALL CAPITALS
+   Color: Dark gray #3D4A5C
+   Size: Large 72-80pt equivalent
+   Position: Top-center of image, 80-100px from top edge
+   Style: Generous letter-spacing for modern clean aesthetic
+
+2. WEATHER ICON (Visual Weather Indicator):
+   Content: Simple line-art weather icon representing: {weather.emoji}
+   Style: Minimalist outlined icon design with 3-4px stroke weight
+   Color: Dark gray #3D4A5C matching text
+   Size: Approximately 120x120px
+   Position: Directly below city name, horizontally centered, 20px gap from name
+
+3. DATE (Temporal Information):
+   Content: "{weather.format_date('%B %d, %Y')}"
+   Typography: Regular sans-serif font (Montserrat Regular style or similar), sentence case
+   Color: Dark gray #3D4A5C
+   Size: Small 28-32pt equivalent
+   Position: To the right of weather icon, vertically aligned with top of icon
+   Alignment: Left-aligned starting 15px from icon's right edge
+
+4. TEMPERATURE (Weather Data):
+   Content: "{weather.format_temperature('C')}"
+   Typography: Regular sans-serif font (Montserrat Regular style or similar)
+   Color: Dark gray #3D4A5C
+   Size: Medium 48-52pt equivalent
+   Position: Below date text, left-aligned with date
+   Spacing: 10px gap below date line
+
+Text Hierarchy and Layout Rules:
+- Text elements may subtly overlap the tops of the tallest buildings to suggest depth integration
+- All text must remain clearly legible - no buildings obscuring critical text information
+- Text occupies approximately the top 25% of the image composition
+- Diorama model occupies the remaining 75% of the image composition
+- Maintain visual balance between text information and miniature city model
+
+OUTPUT SPECIFICATIONS:
+- Exact dimensions: Square 1080x1080 pixels
+- High quality rendering with anti-aliasing and smooth textures
+- Professional finish suitable for social media posting on Instagram, Twitter, TikTok
+- Consistent lighting across entire scene matching weather conditions
+- Polished miniature model aesthetic with realistic PBR materials"""
 
         return prompt
     
