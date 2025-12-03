@@ -19,7 +19,7 @@ from typing import Optional
 import pytz
 from dotenv import load_dotenv
 
-from .config import get_config, CityConfig
+from .config import get_config, CityConfig, Config
 from .weather import get_weather_for_city, WeatherData
 from .image_generator import generate_city_image
 from .platforms.twitter import post_to_twitter
