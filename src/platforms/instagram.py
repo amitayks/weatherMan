@@ -15,17 +15,17 @@ class InstagramPoster:
     
     GRAPH_API_URL = "https://graph.facebook.com/v18.0"
     
-    def __init__(self, city: CityConfig):
+    def __init__(self, city: CityConfig, credentials: dict):
         self.city = city
-        self.credentials = city.get_credentials("instagram")
+        self.credentials = credentials
         self._validate_credentials()
     
     def _validate_credentials(self):
         """Validate Instagram credentials."""
         if not self.credentials.get("access_token"):
-            raise ValueError(f"Missing Instagram access token for {self.city.name}")
+            raise ValueError(f"Missing Instagram access token (used for {self.city.name})")
         if not self.credentials.get("account_id"):
-            raise ValueError(f"Missing Instagram account ID for {self.city.name}")
+            raise ValueError(f"Missing Instagram account ID (used for {self.city.name})")
     
     @property
     def access_token(self) -> str:
@@ -228,16 +228,17 @@ def post_to_instagram(
     city: CityConfig,
     image_path: Path,
     weather: WeatherData,
+    credentials: dict,
     dry_run: bool = False,
 ) -> Optional[str]:
     """Convenience function to post to Instagram."""
     if not city.platforms.instagram:
         print(f"Instagram disabled for {city.name}")
         return None
-    
+
     try:
-        poster = InstagramPoster(city)
+        poster = InstagramPoster(city, credentials)
         return poster.post(image_path, weather, dry_run)
     except ValueError as e:
-        print(f"Instagram configuration error for {city.name}: {e}")
+        print(f"Instagram configuration error: {e}")
         return None

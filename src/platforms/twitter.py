@@ -11,9 +11,9 @@ from ..weather import WeatherData
 class TwitterPoster:
     """Post images to X (Twitter) using API v2."""
     
-    def __init__(self, city: CityConfig):
+    def __init__(self, city: CityConfig, credentials: dict):
         self.city = city
-        self.credentials = city.get_credentials("twitter")
+        self.credentials = credentials
         self.client = None
         self.api_v1 = None  # Needed for media upload
         self._authenticate()
@@ -28,7 +28,7 @@ class TwitterPoster:
             creds.get("access_token"),
             creds.get("access_token_secret"),
         ]):
-            raise ValueError(f"Missing Twitter credentials for {self.city.name}")
+            raise ValueError(f"Missing Twitter credentials (used for {self.city.name})")
         
         # API v2 client for posting tweets
         self.client = tweepy.Client(
@@ -111,16 +111,17 @@ def post_to_twitter(
     city: CityConfig,
     image_path: Path,
     weather: WeatherData,
+    credentials: dict,
     dry_run: bool = False,
 ) -> Optional[str]:
     """Convenience function to post to Twitter."""
     if not city.platforms.twitter:
         print(f"Twitter disabled for {city.name}")
         return None
-    
+
     try:
-        poster = TwitterPoster(city)
+        poster = TwitterPoster(city, credentials)
         return poster.post(image_path, weather, dry_run)
     except ValueError as e:
-        print(f"Twitter configuration error for {city.name}: {e}")
+        print(f"Twitter configuration error: {e}")
         return None

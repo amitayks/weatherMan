@@ -74,8 +74,8 @@ cities:
     
     platforms:
       twitter: true
-      instagram: true
-      tiktok: false  # Example: TikTok disabled for this city
+      instagram: false
+      tiktok: false
     
     landmarks: >
       Statue of Liberty, Empire State Building, One World Trade Center,
@@ -140,22 +140,22 @@ cities:
 
   # Example: Dubai
   dubai:
-    enabled: false
+    enabled: true
     name: "Dubai"
     country: "UAE"
     timezone: "Asia/Dubai"
     coordinates:
       lat: 25.2048
       lon: 55.2708
-    
+
     posting_times:
       - "06:00"  # Before it gets too hot
       - "19:00"  # Sunset time
-    
+
     platforms:
       twitter: true
-      instagram: true
-      tiktok: true
+      instagram: false
+      tiktok: false
     
     landmarks: >
       Burj Khalifa, Burj Al Arab sail-shaped hotel, Palm Jumeirah,

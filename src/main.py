@@ -63,19 +63,21 @@ def should_post_now(city: CityConfig, tolerance_minutes: int = 30) -> bool:
 
 def process_city(
     city: CityConfig,
+    config: Config,
     dry_run: bool = False,
     force: bool = False,
     output_dir: str = None,
 ) -> dict:
     """
     Process a single city: fetch weather, generate image, post to platforms.
-    
+
     Args:
         city: City configuration
+        config: Global configuration object
         dry_run: If True, simulate without actually posting
         force: If True, post regardless of scheduled time
         output_dir: Directory for generated images
-    
+
     Returns:
         Dict with results for each platform
     """
@@ -135,21 +137,24 @@ def process_city(
     
     # Step 3: Post to platforms
     print("\n📱 Posting to social media...")
-    
+
     # Twitter/X
     if city.platforms.twitter:
         print("\n🐦 Posting to Twitter/X...")
-        results["twitter"] = post_to_twitter(city, image_path, weather, dry_run)
-    
+        twitter_creds = config.get_platform_credentials("twitter")
+        results["twitter"] = post_to_twitter(city, image_path, weather, twitter_creds, dry_run)
+
     # Instagram
     if city.platforms.instagram:
         print("\n📸 Posting to Instagram...")
-        results["instagram"] = post_to_instagram(city, image_path, weather, dry_run)
-    
+        instagram_creds = config.get_platform_credentials("instagram")
+        results["instagram"] = post_to_instagram(city, image_path, weather, instagram_creds, dry_run)
+
     # TikTok
     if city.platforms.tiktok:
         print("\n🎵 Posting to TikTok...")
-        results["tiktok"] = post_to_tiktok(city, image_path, weather, dry_run)
+        tiktok_creds = config.get_platform_credentials("tiktok")
+        results["tiktok"] = post_to_tiktok(city, image_path, weather, tiktok_creds, dry_run)
     
     # Check if any platform succeeded
     platforms_attempted = []
@@ -246,11 +251,39 @@ def main():
     if not config.google_ai_api_key:
         print("❌ Error: GOOGLE_AI_API_KEY not set")
         return 1
-    
+
     if not config.openweather_api_key:
         print("❌ Error: OPENWEATHER_API_KEY not set")
         return 1
-    
+
+    # Validate platform credentials
+    # Check which platforms are enabled across all cities
+    needs_twitter = any(city.platforms.twitter for city in config.get_enabled_cities())
+    needs_instagram = any(city.platforms.instagram for city in config.get_enabled_cities())
+    needs_tiktok = any(city.platforms.tiktok for city in config.get_enabled_cities())
+
+    if needs_twitter:
+        twitter_creds = config.get_platform_credentials("twitter")
+        if not all([twitter_creds.get("api_key"), twitter_creds.get("api_secret"),
+                    twitter_creds.get("access_token"), twitter_creds.get("access_token_secret")]):
+            print("❌ Error: Twitter credentials incomplete")
+            print("   Required: TWITTER_API_KEY, TWITTER_API_SECRET, TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET")
+            return 1
+
+    if needs_instagram:
+        instagram_creds = config.get_platform_credentials("instagram")
+        if not all([instagram_creds.get("access_token"), instagram_creds.get("account_id")]):
+            print("❌ Error: Instagram credentials incomplete")
+            print("   Required: INSTAGRAM_ACCESS_TOKEN, INSTAGRAM_ACCOUNT_ID")
+            return 1
+
+    if needs_tiktok:
+        tiktok_creds = config.get_platform_credentials("tiktok")
+        if not tiktok_creds.get("access_token"):
+            print("❌ Error: TikTok credentials incomplete")
+            print("   Required: TIKTOK_ACCESS_TOKEN")
+            return 1
+
     # Determine which cities to process
     if args.city:
         city = config.get_city(args.city)
@@ -280,6 +313,7 @@ def main():
         try:
             result = process_city(
                 city,
+                config,
                 dry_run=args.dry_run,
                 force=args.force,
                 output_dir=args.output_dir,

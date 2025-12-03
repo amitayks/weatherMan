@@ -20,15 +20,15 @@ class TikTokPoster:
     
     API_BASE = "https://open.tiktokapis.com/v2"
     
-    def __init__(self, city: CityConfig):
+    def __init__(self, city: CityConfig, credentials: dict):
         self.city = city
-        self.credentials = city.get_credentials("tiktok")
+        self.credentials = credentials
         self._validate_credentials()
     
     def _validate_credentials(self):
         """Validate TikTok credentials."""
         if not self.credentials.get("access_token"):
-            raise ValueError(f"Missing TikTok access token for {self.city.name}")
+            raise ValueError(f"Missing TikTok access token (used for {self.city.name})")
     
     @property
     def access_token(self) -> str:
@@ -234,16 +234,17 @@ def post_to_tiktok(
     city: CityConfig,
     image_path: Path,
     weather: WeatherData,
+    credentials: dict,
     dry_run: bool = False,
 ) -> Optional[str]:
     """Convenience function to post to TikTok."""
     if not city.platforms.tiktok:
         print(f"TikTok disabled for {city.name}")
         return None
-    
+
     try:
-        poster = TikTokPoster(city)
+        poster = TikTokPoster(city, credentials)
         return poster.post(image_path, weather, dry_run)
     except ValueError as e:
-        print(f"TikTok configuration error for {city.name}: {e}")
+        print(f"TikTok configuration error: {e}")
         return None

@@ -40,29 +40,6 @@ class CityConfig:
     def tz(self):
         """Get pytz timezone object."""
         return pytz.timezone(self.timezone)
-    
-    def get_credentials(self, platform: str) -> dict:
-        """Get credentials for a platform from environment variables."""
-        prefix = f"{self.id.upper()}_{platform.upper()}"
-        
-        if platform == "twitter":
-            return {
-                "api_key": os.getenv(f"{prefix}_API_KEY"),
-                "api_secret": os.getenv(f"{prefix}_API_SECRET"),
-                "access_token": os.getenv(f"{prefix}_ACCESS_TOKEN"),
-                "access_token_secret": os.getenv(f"{prefix}_ACCESS_TOKEN_SECRET"),
-            }
-        elif platform == "instagram":
-            return {
-                "access_token": os.getenv(f"{prefix}_ACCESS_TOKEN"),
-                "account_id": os.getenv(f"{prefix}_ACCOUNT_ID"),
-            }
-        elif platform == "tiktok":
-            return {
-                "access_token": os.getenv(f"{prefix}_ACCESS_TOKEN"),
-                "open_id": os.getenv(f"{prefix}_OPEN_ID"),
-            }
-        return {}
 
 
 @dataclass
@@ -150,6 +127,68 @@ class Config:
     def openweather_api_key(self) -> str:
         """Get OpenWeatherMap API key from environment."""
         return os.getenv("OPENWEATHER_API_KEY", "")
+
+    # Platform credentials (global, shared across all cities)
+    @property
+    def twitter_api_key(self) -> str:
+        """Get Twitter API key from environment."""
+        return os.getenv("TWITTER_API_KEY", "")
+
+    @property
+    def twitter_api_secret(self) -> str:
+        """Get Twitter API secret from environment."""
+        return os.getenv("TWITTER_API_SECRET", "")
+
+    @property
+    def twitter_access_token(self) -> str:
+        """Get Twitter access token from environment."""
+        return os.getenv("TWITTER_ACCESS_TOKEN", "")
+
+    @property
+    def twitter_access_token_secret(self) -> str:
+        """Get Twitter access token secret from environment."""
+        return os.getenv("TWITTER_ACCESS_TOKEN_SECRET", "")
+
+    @property
+    def instagram_access_token(self) -> str:
+        """Get Instagram access token from environment."""
+        return os.getenv("INSTAGRAM_ACCESS_TOKEN", "")
+
+    @property
+    def instagram_account_id(self) -> str:
+        """Get Instagram account ID from environment."""
+        return os.getenv("INSTAGRAM_ACCOUNT_ID", "")
+
+    @property
+    def tiktok_access_token(self) -> str:
+        """Get TikTok access token from environment."""
+        return os.getenv("TIKTOK_ACCESS_TOKEN", "")
+
+    @property
+    def tiktok_open_id(self) -> str:
+        """Get TikTok Open ID from environment."""
+        return os.getenv("TIKTOK_OPEN_ID", "")
+
+    def get_platform_credentials(self, platform: str) -> dict:
+        """Get global credentials for a platform."""
+        if platform == "twitter":
+            return {
+                "api_key": self.twitter_api_key,
+                "api_secret": self.twitter_api_secret,
+                "access_token": self.twitter_access_token,
+                "access_token_secret": self.twitter_access_token_secret,
+            }
+        elif platform == "instagram":
+            return {
+                "access_token": self.instagram_access_token,
+                "account_id": self.instagram_account_id,
+            }
+        elif platform == "tiktok":
+            return {
+                "access_token": self.tiktok_access_token,
+                "open_id": self.tiktok_open_id,
+            }
+        return {}
 
 
 # Singleton instance
