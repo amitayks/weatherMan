@@ -95,13 +95,21 @@ OUTPUT:
             
             # Extract the image from the response
             image_data = None
-            for part in response.candidates[0].content.parts:
-                if part.inline_data is not None:
-                    image_data = part.inline_data.data
-                    break
-            
+
+            # Debug: Check what we got back
+            print(f"Response candidates: {len(response.candidates)}")
+            if response.candidates:
+                print(f"Parts in response: {len(response.candidates[0].content.parts)}")
+                for i, part in enumerate(response.candidates[0].content.parts):
+                    print(f"Part {i}: has inline_data={part.inline_data is not None}, text={part.text is not None if hasattr(part, 'text') else 'N/A'}")
+                    if part.inline_data is not None:
+                        image_data = part.inline_data.data
+                        print(f"Found image data in part {i}")
+                        break
+
             if image_data is None:
                 print(f"No image generated for {city.name}")
+                print(f"Full response: {response}")
                 return None
             
             # Determine output path
