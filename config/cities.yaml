@@ -1,0 +1,190 @@
+# City Weather Poster Configuration
+# Each city can have its own social media accounts and posting schedule
+
+# Global settings
+global:
+  # Default posting times if not specified per city (in local timezone)
+  default_posting_times:
+    - "08:00"
+    - "18:00"
+  
+  # Image settings
+  image:
+    width: 1080
+    height: 1080
+    format: "png"
+  
+  # Retry settings
+  retry:
+    max_attempts: 3
+    delay_seconds: 60
+
+# City configurations
+cities:
+  # Example: Tokyo
+  tokyo:
+    enabled: true
+    name: "Tokyo"
+    name_local: "東京"  # Optional: local name for display
+    country: "Japan"
+    timezone: "Asia/Tokyo"
+    coordinates:
+      lat: 35.6762
+      lon: 139.6503
+    
+    # Override default posting times (optional)
+    posting_times:
+      - "07:30"   # Morning commute
+      - "12:00"   # Lunch
+      - "19:00"   # Evening
+    
+    # Which platforms to post to
+    platforms:
+      twitter: true
+      instagram: true
+      tiktok: true
+    
+    # City-specific landmarks for the AI prompt
+    landmarks: >
+      Tokyo Tower, Tokyo Skytree, Shibuya Crossing with neon signs,
+      traditional temples with pagodas, cherry blossom trees,
+      Mount Fuji visible in the distance, bullet trains
+    
+    # Optional: custom hashtags
+    hashtags:
+      - "#Tokyo"
+      - "#Japan"
+      - "#TokyoWeather"
+      - "#東京"
+      - "#日本"
+
+  # Example: New York
+  new_york:
+    enabled: true
+    name: "New York"
+    country: "USA"
+    timezone: "America/New_York"
+    coordinates:
+      lat: 40.7128
+      lon: -74.0060
+    
+    posting_times:
+      - "07:00"
+      - "18:30"
+    
+    platforms:
+      twitter: true
+      instagram: true
+      tiktok: false  # Example: TikTok disabled for this city
+    
+    landmarks: >
+      Statue of Liberty, Empire State Building, One World Trade Center,
+      Brooklyn Bridge, Central Park, Times Square billboards,
+      yellow taxi cabs, subway entrances
+    
+    hashtags:
+      - "#NYC"
+      - "#NewYork"
+      - "#NYCWeather"
+      - "#Manhattan"
+
+  # Example: Paris
+  paris:
+    enabled: true
+    name: "Paris"
+    country: "France"
+    timezone: "Europe/Paris"
+    coordinates:
+      lat: 48.8566
+      lon: 2.3522
+    
+    posting_times:
+      - "08:00"
+      - "20:00"
+    
+    platforms:
+      twitter: true
+      instagram: true
+      tiktok: true
+    
+    landmarks: >
+      Eiffel Tower, Arc de Triomphe, Notre-Dame Cathedral,
+      Sacré-Cœur Basilica, Louvre pyramid, classic Parisian
+      buildings with mansard roofs, outdoor cafés, Seine River
+    
+    hashtags:
+      - "#Paris"
+      - "#France"
+      - "#ParisWeather"
+      - "#Parisjetaime"
+
+  # Example: London
+  london:
+    enabled: false  # Disabled example
+    name: "London"
+    country: "United Kingdom"
+    timezone: "Europe/London"
+    coordinates:
+      lat: 51.5074
+      lon: -0.1278
+    
+    platforms:
+      twitter: true
+      instagram: true
+      tiktok: true
+    
+    landmarks: >
+      Big Ben and Houses of Parliament, Tower Bridge, London Eye,
+      The Shard, St. Paul's Cathedral, red double-decker buses,
+      classic red phone booths, Buckingham Palace
+
+  # Example: Dubai
+  dubai:
+    enabled: true
+    name: "Dubai"
+    country: "UAE"
+    timezone: "Asia/Dubai"
+    coordinates:
+      lat: 25.2048
+      lon: 55.2708
+    
+    posting_times:
+      - "06:00"  # Before it gets too hot
+      - "19:00"  # Sunset time
+    
+    platforms:
+      twitter: true
+      instagram: true
+      tiktok: true
+    
+    landmarks: >
+      Burj Khalifa, Burj Al Arab sail-shaped hotel, Palm Jumeirah,
+      Dubai Frame, traditional souks, modern glass skyscrapers,
+      desert dunes in the background, luxury yachts
+    
+    hashtags:
+      - "#Dubai"
+      - "#UAE"
+      - "#DubaiWeather"
+      - "#MyDubai"
+
+# Template for adding new cities:
+# --------------------------------
+#   city_id:
+#     enabled: true
+#     name: "City Name"
+#     country: "Country"
+#     timezone: "Continent/City"  # IANA timezone
+#     coordinates:
+#       lat: 00.0000
+#       lon: 00.0000
+#     posting_times:  # Optional, uses global default if not set
+#       - "08:00"
+#       - "18:00"
+#     platforms:
+#       twitter: true
+#       instagram: true
+#       tiktok: true
+#     landmarks: "Comma-separated list of famous landmarks"
+#     hashtags:  # Optional
+#       - "#CityName"

@@ -1,0 +1,21 @@
+# Google AI / Gemini
+google-genai>=1.0.0
+
+# Weather API
+requests>=2.31.0
+
+# Social Media APIs
+tweepy>=4.14.0          # Twitter/X API
+instagrapi>=2.0.0       # Instagram (alternative to official API)
+python-facebook-api>=0.13.0  # Meta Graph API
+
+# Utilities
+pyyaml>=6.0.1           # Configuration
+pytz>=2024.1            # Timezone handling
+python-dateutil>=2.8.2  # Date parsing
+pillow>=10.0.0          # Image processing
+aiohttp>=3.9.0          # Async HTTP
+python-dotenv>=1.0.0    # Environment variables
+
+# TikTok
+tiktokapipy>=0.1.0      # TikTok integration
