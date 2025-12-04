@@ -343,8 +343,8 @@ cities:
       lon: 34.7818
 
     platforms:
-      twitter: true
-      instagram: false
+      twitter: false
+      instagram: true
       tiktok: false
 
     landmarks:
