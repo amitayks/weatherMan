@@ -23,7 +23,7 @@ global:
 cities:
   # Example: Tokyo
   tokyo:
-    enabled: false
+    enabled: true
     name: "Tokyo"
     name_local: "東京"  # Optional: local name for display
     country: "Japan"
@@ -41,8 +41,8 @@ cities:
     # Which platforms to post to
     platforms:
       twitter: true
-      instagram: true
-      tiktok: true
+      instagram: false
+      tiktok: false
     
     # City-specific landmarks for the AI prompt
     landmarks: >
@@ -103,7 +103,7 @@ cities:
 
   # Example: Paris
   paris:
-    enabled: false
+    enabled: true
     name: "Paris"
     country: "France"
     timezone: "Europe/Paris"
@@ -117,8 +117,8 @@ cities:
     
     platforms:
       twitter: true
-      instagram: true
-      tiktok: true
+      instagram: false
+      tiktok: false
     
     landmarks: >
       Eiffel Tower, Arc de Triomphe, Notre-Dame Cathedral,
@@ -133,7 +133,7 @@ cities:
 
   # Example: London
   london:
-    enabled: false  # Disabled example
+    enabled: true  # Disabled example
     name: "London"
     country: "United Kingdom"
     timezone: "Europe/London"
@@ -143,8 +143,8 @@ cities:
     
     platforms:
       twitter: true
-      instagram: true
-      tiktok: true
+      instagram: false
+      tiktok: false
     
     landmarks: >
       Big Ben and Houses of Parliament, Tower Bridge, London Eye,
@@ -343,7 +343,7 @@ cities:
       lon: 34.7818
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: true
       tiktok: false
 
@@ -373,7 +373,7 @@ cities:
 
   # Rome, Italy
   rome:
-    enabled: false
+    enabled: true
     name: "Rome"
     country: "Italy"
     timezone: "Europe/Rome"
@@ -382,7 +382,7 @@ cities:
       lon: 12.4964
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: false
       tiktok: false
 
@@ -412,7 +412,7 @@ cities:
 
   # Barcelona, Spain
   barcelona:
-    enabled: false
+    enabled: true
     name: "Barcelona"
     country: "Spain"
     timezone: "Europe/Madrid"
@@ -421,7 +421,7 @@ cities:
       lon: 2.1686
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: false
       tiktok: false
 
@@ -451,7 +451,7 @@ cities:
 
   # Sydney, Australia
   sydney:
-    enabled: false
+    enabled: true
     name: "Sydney"
     country: "Australia"
     timezone: "Australia/Sydney"
@@ -460,7 +460,7 @@ cities:
       lon: 151.2093
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: false
       tiktok: false
 
@@ -490,7 +490,7 @@ cities:
 
   # Rio de Janeiro, Brazil
   rio:
-    enabled: false
+    enabled: true
     name: "Rio de Janeiro"
     country: "Brazil"
     timezone: "America/Sao_Paulo"
@@ -499,7 +499,7 @@ cities:
       lon: -43.1729
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: false
       tiktok: false
 
@@ -529,7 +529,7 @@ cities:
 
   # Amsterdam, Netherlands
   amsterdam:
-    enabled: false
+    enabled: true
     name: "Amsterdam"
     country: "Netherlands"
     timezone: "Europe/Amsterdam"
@@ -538,7 +538,7 @@ cities:
       lon: 4.9041
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: false
       tiktok: false
 
@@ -568,7 +568,7 @@ cities:
 
   # Bangkok, Thailand
   bangkok:
-    enabled: false
+    enabled: true
     name: "Bangkok"
     country: "Thailand"
     timezone: "Asia/Bangkok"
@@ -577,7 +577,7 @@ cities:
       lon: 100.5018
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: false
       tiktok: false
 
@@ -607,7 +607,7 @@ cities:
 
   # Istanbul, Turkey
   istanbul:
-    enabled: false
+    enabled: true
     name: "Istanbul"
     country: "Turkey"
     timezone: "Europe/Istanbul"
@@ -616,7 +616,7 @@ cities:
       lon: 28.9784
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: false
       tiktok: false
 
@@ -646,7 +646,7 @@ cities:
 
   # Cairo, Egypt
   cairo:
-    enabled: false
+    enabled: true
     name: "Cairo"
     country: "Egypt"
     timezone: "Africa/Cairo"
@@ -655,7 +655,7 @@ cities:
       lon: 31.2357
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: false
       tiktok: false
 
@@ -685,7 +685,7 @@ cities:
 
   # Buenos Aires, Argentina
   buenos_aires:
-    enabled: false
+    enabled: true
     name: "Buenos Aires"
     country: "Argentina"
     timezone: "America/Argentina/Buenos_Aires"
@@ -694,7 +694,7 @@ cities:
       lon: -58.3816
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: false
       tiktok: false
 
@@ -724,7 +724,7 @@ cities:
 
   # Mumbai, India
   mumbai:
-    enabled: false
+    enabled: true
     name: "Mumbai"
     country: "India"
     timezone: "Asia/Kolkata"
@@ -733,7 +733,7 @@ cities:
       lon: 72.8777
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: false
       tiktok: false
 
@@ -763,7 +763,7 @@ cities:
 
   # Seoul, South Korea
   seoul:
-    enabled: false
+    enabled: true
     name: "Seoul"
     country: "South Korea"
     timezone: "Asia/Seoul"
@@ -772,7 +772,7 @@ cities:
       lon: 126.9780
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: false
       tiktok: false
 
@@ -802,7 +802,7 @@ cities:
 
   # Mexico City, Mexico
   mexico_city:
-    enabled: false
+    enabled: true
     name: "Mexico City"
     country: "Mexico"
     timezone: "America/Mexico_City"
@@ -811,7 +811,7 @@ cities:
       lon: -99.1332
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: false
       tiktok: false
 
@@ -841,7 +841,7 @@ cities:
 
   # Cape Town, South Africa
   cape_town:
-    enabled: false
+    enabled: true
     name: "Cape Town"
     country: "South Africa"
     timezone: "Africa/Johannesburg"
@@ -850,7 +850,7 @@ cities:
       lon: 18.4241
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: false
       tiktok: false
 
@@ -880,7 +880,7 @@ cities:
 
   # Moscow, Russia
   moscow:
-    enabled: false
+    enabled: true
     name: "Moscow"
     country: "Russia"
     timezone: "Europe/Moscow"
@@ -889,7 +889,7 @@ cities:
       lon: 37.6173
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: false
       tiktok: false
 
@@ -919,7 +919,7 @@ cities:
 
   # Athens, Greece
   athens:
-    enabled: false
+    enabled: true
     name: "Athens"
     country: "Greece"
     timezone: "Europe/Athens"
@@ -928,7 +928,7 @@ cities:
       lon: 23.7275
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: false
       tiktok: false
 
@@ -958,7 +958,7 @@ cities:
 
   # Hong Kong
   hong_kong:
-    enabled: false
+    enabled: true
     name: "Hong Kong"
     country: "Hong Kong SAR"
     timezone: "Asia/Hong_Kong"
@@ -967,7 +967,7 @@ cities:
       lon: 114.1694
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: false
       tiktok: false
 
@@ -997,7 +997,7 @@ cities:
 
   # Berlin, Germany
   berlin:
-    enabled: false
+    enabled: true
     name: "Berlin"
     country: "Germany"
     timezone: "Europe/Berlin"
@@ -1006,7 +1006,7 @@ cities:
       lon: 13.4050
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: false
       tiktok: false
 
@@ -1036,7 +1036,7 @@ cities:
 
   # Vienna, Austria
   vienna:
-    enabled: false
+    enabled: true
     name: "Vienna"
     country: "Austria"
     timezone: "Europe/Vienna"
@@ -1075,7 +1075,7 @@ cities:
 
   # Lisbon, Portugal
   lisbon:
-    enabled: false
+    enabled: true
     name: "Lisbon"
     country: "Portugal"
     timezone: "Europe/Lisbon"
@@ -1084,7 +1084,7 @@ cities:
       lon: -9.1393
 
     platforms:
-      twitter: false
+      twitter: true
       instagram: false
       tiktok: false
 
