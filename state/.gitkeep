@@ -1,0 +1,2 @@
+# This file ensures the state directory is tracked by git
+# The daily_schedule.json file will be created automatically on first run

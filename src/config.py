@@ -32,6 +32,7 @@ class CityConfig:
     platforms: PlatformConfig
     landmarks: list[str]
     enabled: bool = True
+    weight: int = 1  # Probability weight (1-100) for daily selection
     name_local: Optional[str] = None
     posting_times: list = field(default_factory=lambda: ["08:00", "18:00"])
     hashtags: list = field(default_factory=list)
@@ -59,8 +60,8 @@ class Config:
     def __init__(self, config_path: str = None):
         if config_path is None:
             config_path = Path(__file__).parent.parent / "config" / "cities.yaml"
-        
-        with open(config_path, "r") as f:
+
+        with open(config_path, "r", encoding="utf-8") as f:
             self._raw = yaml.safe_load(f)
         
         self._load_global()
@@ -102,9 +103,10 @@ class Config:
                 ),
                 landmarks=city_data.get("landmarks", []),
                 enabled=city_data.get("enabled", True),
+                weight=city_data.get("weight", 1),
                 name_local=city_data.get("name_local"),
                 posting_times=city_data.get(
-                    "posting_times", 
+                    "posting_times",
                     self.global_config.default_posting_times
                 ),
                 hashtags=city_data.get("hashtags", []),

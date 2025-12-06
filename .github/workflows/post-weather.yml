@@ -7,7 +7,7 @@ on:
   # Run every hour at minute 0
   schedule:
     - cron: '0 * * * *'
-  
+
   # Allow manual triggering
   workflow_dispatch:
     inputs:
@@ -59,6 +59,11 @@ env:
   TIKTOK_ACCESS_TOKEN: ${{ secrets.TIKTOK_ACCESS_TOKEN }}
   TIKTOK_OPEN_ID: ${{ secrets.TIKTOK_OPEN_ID }}
 
+# Prevent concurrent workflow runs to avoid state conflicts
+concurrency:
+  group: weather-posting
+  cancel-in-progress: false
+
 jobs:
   post-weather:
     runs-on: ubuntu-latest
@@ -81,7 +86,10 @@ jobs:
       
       - name: Create output directory
         run: mkdir -p output
-      
+
+      - name: Create state directory
+        run: mkdir -p state
+
       - name: Run weather poster
         run: |
           # Build command with optional arguments
@@ -112,6 +120,15 @@ jobs:
           name: weather-images-${{ github.run_number }}
           path: output/
           retention-days: 7
+
+      - name: Commit state changes
+        if: always()
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add state/daily_schedule.json
+          git diff --staged --quiet || git commit -m "Update daily schedule state [skip ci]"
+          git push
 
   # Optional: Separate job per city for parallel processing
   # Uncomment and modify for large number of cities

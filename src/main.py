@@ -16,6 +16,12 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
+# Fix Windows console encoding for emojis
+if sys.platform == "win32":
+    import codecs
+    sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
+    sys.stderr = codecs.getwriter("utf-8")(sys.stderr.detach())
+
 import pytz
 from dotenv import load_dotenv
 
@@ -25,45 +31,33 @@ from .image_generator import generate_city_image
 from .platforms.twitter import post_to_twitter
 from .platforms.instagram import post_to_instagram
 from .platforms.tiktok import post_to_tiktok
+from .state_manager import StateManager, DailySchedule
 
 
-def should_post_now(city: CityConfig, tolerance_minutes: int = 30) -> bool:
+def should_post_now(city: CityConfig, schedule: 'DailySchedule', force: bool = False) -> bool:
     """
-    Check if current time is within posting window for the city.
-    
+    Check if city should post now based on daily schedule.
+
     Args:
         city: City configuration
-        tolerance_minutes: Minutes before/after scheduled time to allow posting
-    
+        schedule: Daily schedule with selected cities and times
+        force: Override schedule check if True
+
     Returns:
-        True if within a posting window
+        True if city should post now
     """
-    now = datetime.now(city.tz)
-    current_time = now.strftime("%H:%M")
-    current_minutes = now.hour * 60 + now.minute
-    
-    for posting_time in city.posting_times:
-        try:
-            pt_hour, pt_minute = map(int, posting_time.split(":"))
-            pt_minutes = pt_hour * 60 + pt_minute
-            
-            # Check if within tolerance window
-            diff = abs(current_minutes - pt_minutes)
-            # Handle midnight wraparound
-            diff = min(diff, 1440 - diff)
-            
-            if diff <= tolerance_minutes:
-                return True
-        except ValueError:
-            print(f"Invalid posting time format: {posting_time}")
-            continue
-    
-    return False
+    if force:
+        return True
+
+    from datetime import timezone
+    current_time_utc = datetime.now(timezone.utc)
+    return schedule.needs_posting(city.id, current_time_utc)
 
 
 def process_city(
     city: CityConfig,
     config: Config,
+    schedule: 'DailySchedule',
     dry_run: bool = False,
     force: bool = False,
     output_dir: str = None,
@@ -74,6 +68,7 @@ def process_city(
     Args:
         city: City configuration
         config: Global configuration object
+        schedule: Daily schedule with selected cities and times
         dry_run: If True, simulate without actually posting
         force: If True, post regardless of scheduled time
         output_dir: Directory for generated images
@@ -98,10 +93,10 @@ def process_city(
     print(f"{'='*50}")
     
     # Check posting time (unless forced)
-    if not force and not should_post_now(city):
-        now = datetime.now(city.tz)
-        print(f"Current time: {now.strftime('%H:%M')} ({city.timezone})")
-        print(f"Scheduled times: {', '.join(city.posting_times)}")
+    if not should_post_now(city, schedule, force):
+        from datetime import timezone
+        now_utc = datetime.now(timezone.utc)
+        print(f"Current time: {now_utc.strftime('%H:%M UTC')}")
         print("Not within posting window. Skipping.")
         results["error"] = "Not within posting window"
         return results
@@ -284,8 +279,18 @@ def main():
             print("   Required: TIKTOK_ACCESS_TOKEN")
             return 1
 
+    # NEW: Initialize state manager
+    state_manager = StateManager()
+
+    # NEW: Get or create today's schedule
+    schedule = state_manager.get_or_create_schedule(config)
+
+    print(f"\n📅 Today's selected cities: {', '.join([c['city_id'] for c in schedule.selected_cities])}")
+    print()
+
     # Determine which cities to process
     if args.city:
+        # Manual override - process specific city
         city = config.get_city(args.city)
         if not city:
             print(f"❌ Error: City '{args.city}' not found in configuration")
@@ -293,7 +298,12 @@ def main():
             return 1
         cities_to_process = [city]
     else:
-        cities_to_process = config.get_enabled_cities()
+        # NEW: Only process cities in today's schedule
+        scheduled_city_ids = [c['city_id'] for c in schedule.selected_cities]
+        cities_to_process = [
+            config.get_city(cid) for cid in scheduled_city_ids
+            if config.get_city(cid) is not None
+        ]
     
     if not cities_to_process:
         print("No cities to process")
@@ -308,16 +318,24 @@ def main():
     
     # Process each city
     all_results = []
-    
+
     for city in cities_to_process:
         try:
             result = process_city(
                 city,
                 config,
+                schedule,  # NEW: Pass schedule
                 dry_run=args.dry_run,
                 force=args.force,
                 output_dir=args.output_dir,
             )
+
+            # NEW: Mark as posted if successful
+            if result.get("success"):
+                schedule.mark_posted(city.id)
+                state_manager.save_schedule(schedule)
+                print(f"✅ {city.name} marked as posted")
+
             all_results.append(result)
         except Exception as e:
             print(f"❌ Error processing {city.name}: {e}")
