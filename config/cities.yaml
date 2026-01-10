@@ -1140,6 +1140,5235 @@ cities:
       - "#Lisboa"
       - "#LisbonWeather"
 
+# ============================================
+# MEDITERRANEAN ISLANDS
+# ============================================
+
+  # Greece - Santorini
+  santorini:
+    enabled: true
+    weight: 1
+    name: "Santorini"
+    name_local: "Σαντορίνη"
+    country: "Greece"
+    timezone: "Europe/Athens"
+    coordinates:
+      lat: 36.3932
+      lon: 25.4615
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Blue-domed churches iconic white chapels with cobalt blue cupolas overlooking caldera
+      - Whitewashed cubic houses traditional Cycladic architecture cascading down cliffs
+      - Caldera volcanic crater rim with dramatic 300-meter cliffs dropping to sea
+      - Oia village picturesque town famous for golden sunsets and windmills
+      - Fira town capital perched on cliff edge with winding cobblestone paths
+      - Black sand beaches volcanic dark shores at Perissa and Kamari
+      - Red Beach dramatic crimson volcanic cliffs meeting turquoise water
+      - Ancient Akrotiri Bronze Age settlement preserved under volcanic ash
+      - Windmills traditional white cylindrical structures with canvas sails
+      - Donkey paths steep staircases connecting port to clifftop villages
+      - Cave houses traditional dwellings carved into volcanic rock
+      - Infinity pools luxury hotel pools appearing to merge with Aegean Sea
+      - Bell towers white arched structures with bronze bells silhouetted against sky
+      - Volcanic islands Nea Kameni and Palea Kameni in center of caldera
+      - Bougainvillea cascading purple and pink flowers on white walls
+      - Amoudi Bay tiny fishing port with colorful boats at base of Oia cliffs
+    hashtags:
+      - "#Santorini"
+      - "#Greece"
+      - "#Cyclades"
+      - "#GreekIslands"
+
+  # Greece - Mykonos
+  mykonos:
+    enabled: true
+    weight: 1
+    name: "Mykonos"
+    name_local: "Μύκονος"
+    country: "Greece"
+    timezone: "Europe/Athens"
+    coordinates:
+      lat: 37.4467
+      lon: 25.3289
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Windmills of Kato Mili row of iconic 16th-century white cylindrical windmills
+      - Little Venice colorful buildings with wooden balconies hanging over sea
+      - Paraportiani Church asymmetrical whitewashed Byzantine chapel cluster
+      - Chora maze-like old town with narrow marble-paved alleyways
+      - Pelican mascot Petros the pelican wandering waterfront streets
+      - Blue and white buildings traditional Cycladic painted doors and shutters
+      - Matoyianni Street main shopping lane with boutiques and cafes
+      - Delos Island nearby ancient sacred island with marble ruins
+      - Super Paradise Beach famous party beach with turquoise waters
+      - Fishing boats colorful wooden caiques in old port harbor
+      - Bougainvillea archways purple flowers framing white passageways
+      - Orthodox churches small chapels with red-domed roofs
+      - Ornos Bay sheltered beach with traditional fishing village
+      - Ano Mera village inland settlement with Panagia Tourliani monastery
+      - Stone walls traditional dry-stack boundaries crisscrossing landscape
+      - Sunset bars clifftop venues with panoramic Aegean views
+    hashtags:
+      - "#Mykonos"
+      - "#Greece"
+      - "#GreekIslands"
+      - "#Cyclades"
+
+  # Greece - Crete
+  crete:
+    enabled: true
+    weight: 1
+    name: "Crete"
+    name_local: "Κρήτη"
+    country: "Greece"
+    timezone: "Europe/Athens"
+    coordinates:
+      lat: 35.2401
+      lon: 24.8093
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Knossos Palace ancient Minoan ruins with red columns and frescoes
+      - Samaria Gorge dramatic 16km canyon with towering cliff walls
+      - Chania Old Town Venetian harbor with lighthouse and pastel buildings
+      - Balos Lagoon shallow turquoise waters with pink-white sand beach
+      - Elafonisi Beach pink sand coastline with crystal clear shallows
+      - Spinalonga Island Venetian fortress and former leper colony
+      - Rethymno Old Town Renaissance architecture with Ottoman mosque minaret
+      - White Mountains Lefka Ori snow-capped peaks visible across island
+      - Venetian fortresses Koules fortress guarding Heraklion harbor
+      - Ancient olive groves gnarled trees thousands of years old
+      - Cretan windmills stone structures on Lasithi Plateau
+      - Arkadi Monastery historic monastery with Renaissance facade
+      - Preveli Beach palm forest meeting Mediterranean waters
+      - Agios Nikolaos Lake Voulismeni bottomless lake in town center
+      - Traditional villages stone houses with terracotta roofs in mountains
+      - Cretan goats kri-kri wild goats on rocky mountainsides
+    hashtags:
+      - "#Crete"
+      - "#Greece"
+      - "#Κρήτη"
+      - "#GreekIslands"
+
+  # Greece - Rhodes
+  rhodes:
+    enabled: true
+    weight: 1
+    name: "Rhodes"
+    name_local: "Ρόδος"
+    country: "Greece"
+    timezone: "Europe/Athens"
+    coordinates:
+      lat: 36.4349
+      lon: 28.2176
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Palace of the Grand Master medieval castle with crenellated towers
+      - Street of Knights cobblestone lane with Gothic inns and archways
+      - Lindos Acropolis ancient temple ruins atop dramatic rocky outcrop
+      - Mandraki Harbor historic port where Colossus of Rhodes once stood
+      - Medieval walls massive fortifications surrounding Old Town
+      - Lindos village whitewashed houses climbing hillside below acropolis
+      - Valley of Butterflies nature reserve with millions of tiger moths
+      - Anthony Quinn Bay emerald green cove named after famous actor
+      - Windmills of Rhodes stone structures at harbor entrance
+      - Tsambika Beach golden sand beneath monastery-topped mountain
+      - Clock tower Ottoman-era tower with panoramic city views
+      - Mosque of Suleiman pink-domed Ottoman mosque in old town
+      - Ancient Stadium remains of Hellenistic athletic grounds
+      - Deer statues bronze deer on columns at harbor entrance
+      - Prasonisi Beach windsurfing spot where two seas meet
+      - Kamiros ancient city ruins overlooking Aegean Sea
+    hashtags:
+      - "#Rhodes"
+      - "#Greece"
+      - "#Dodecanese"
+      - "#GreekIslands"
+
+  # Greece - Corfu
+  corfu:
+    enabled: true
+    weight: 1
+    name: "Corfu"
+    name_local: "Κέρκυρα"
+    country: "Greece"
+    timezone: "Europe/Athens"
+    coordinates:
+      lat: 39.6243
+      lon: 19.9217
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Old Fortress Venetian citadel on rocky peninsula with lighthouse
+      - Liston arcade Parisian-style arched promenade with cafes
+      - Achilleion Palace neoclassical villa with statues and gardens
+      - Canal d'Amour rock formations creating natural swimming channels
+      - Paleokastritsa turquoise bays surrounded by olive-covered hills
+      - Mouse Island tiny islet with white chapel and cypress trees
+      - Spianada Square largest plaza in Balkans with cricket ground
+      - New Fortress massive Venetian fortification overlooking harbor
+      - Old Town UNESCO site with Venetian Italian and British influences
+      - Kassiopi fishing village with Byzantine castle ruins
+      - Sidari beach resort with dramatic sandstone cliffs
+      - Mon Repos Palace birthplace of Prince Philip Duke of Edinburgh
+      - Olive groves ancient trees covering hillsides across island
+      - Vlacherna Monastery white chapel connected by causeway to shore
+      - Angelokastro Byzantine castle ruins on mountain summit
+      - Kumquat orchards unique citrus trees found only on Corfu
+    hashtags:
+      - "#Corfu"
+      - "#Greece"
+      - "#Kerkyra"
+      - "#IonianIslands"
+
+  # Italy - Sicily
+  sicily:
+    enabled: true
+    weight: 1
+    name: "Sicily"
+    name_local: "Sicilia"
+    country: "Italy"
+    timezone: "Europe/Rome"
+    coordinates:
+      lat: 37.5999
+      lon: 14.0154
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Mount Etna active volcano with snow-capped crater and lava flows
+      - Valley of Temples ancient Greek ruins at Agrigento
+      - Taormina Greek Theatre ancient amphitheater with Etna backdrop
+      - Palermo Cathedral Norman Arab Byzantine architectural fusion
+      - Cefalù medieval town with Norman cathedral on coastal cliff
+      - Syracuse Greek ruins and baroque Ortigia island old town
+      - Scala dei Turchi white limestone cliff staircase descending to sea
+      - Baroque towns Noto Ragusa and Modica with ornate facades
+      - Stromboli volcanic island with nightly eruptions visible at sea
+      - Mondello Beach sandy cove with Art Nouveau bathhouses
+      - Cappella Palatina Byzantine mosaics in Norman palace
+      - Catania Fish Market bustling outdoor market with fresh seafood
+      - Aeolian Islands volcanic archipelago off northern coast
+      - Marsala salt pans windmills reflecting in pink-tinged waters
+      - Ceramic tiles colorful majolica decorating staircases and buildings
+      - Puppet theaters traditional Sicilian marionette performances
+    hashtags:
+      - "#Sicily"
+      - "#Italy"
+      - "#Sicilia"
+      - "#Italia"
+
+  # Italy - Sardinia
+  sardinia:
+    enabled: true
+    weight: 1
+    name: "Sardinia"
+    name_local: "Sardegna"
+    country: "Italy"
+    timezone: "Europe/Rome"
+    coordinates:
+      lat: 40.1209
+      lon: 9.0129
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Costa Smeralda emerald waters with luxury yachts and granite outcrops
+      - La Pelosa Beach shallow turquoise lagoon with Spanish watchtower
+      - Nuraghe Su Nuraxi Bronze Age stone fortress towers
+      - Neptune's Grotto dramatic sea cave with stalactites and stalagmites
+      - Cagliari Castello medieval hilltop quarter with limestone bastions
+      - Cala Goloritzé pristine cove with limestone pinnacle and natural arch
+      - Maddalena Archipelago island chain with pink granite beaches
+      - Tharros ancient Phoenician and Roman ruins by the sea
+      - Gorropu Canyon Europe's deepest canyon with towering limestone walls
+      - Porto Flavia mining port carved into coastal cliffs
+      - Alghero old town Catalan-influenced medieval center
+      - Spiaggia Rosa pink sand beach on Budelli island
+      - Su Gorropu dramatic canyon between towering cliffs
+      - Bosa colorful riverside town with tanneries and castle
+      - Wild horses Giara plateau with unique Sardinian ponies
+      - Juniper trees wind-sculpted ancient junipers on coastal cliffs
+    hashtags:
+      - "#Sardinia"
+      - "#Italy"
+      - "#Sardegna"
+      - "#Italia"
+
+  # Italy - Capri
+  capri:
+    enabled: true
+    weight: 1
+    name: "Capri"
+    country: "Italy"
+    timezone: "Europe/Rome"
+    coordinates:
+      lat: 40.5507
+      lon: 14.2224
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Blue Grotto sea cave with brilliant azure illumination
+      - Faraglioni three dramatic limestone sea stacks rising from water
+      - Piazzetta main square with clock tower and outdoor cafes
+      - Villa San Michele gardens with ancient sculptures and panoramic views
+      - Gardens of Augustus terraced gardens overlooking Faraglioni rocks
+      - Marina Grande colorful fishing village with pastel buildings
+      - Anacapri upper town with whitewashed houses and chairlift
+      - Via Krupp zigzagging footpath carved into coastal cliff
+      - Monte Solaro highest point with 360-degree Gulf views
+      - Natural Arch limestone formation on eastern coast
+      - Villa Jovis ruins of Emperor Tiberius clifftop palace
+      - Certosa di San Giacomo 14th-century Carthusian monastery
+      - Funicular railway connecting Marina Grande to Capri town
+      - Luxury boutiques designer shopping along Via Camerelle
+      - Lemon groves terraced orchards producing famous limoncello
+      - White villas elegant homes with Mediterranean gardens
+    hashtags:
+      - "#Capri"
+      - "#Italy"
+      - "#AmalfiCoast"
+      - "#Italia"
+
+  # Italy - Ischia
+  ischia:
+    enabled: true
+    weight: 1
+    name: "Ischia"
+    country: "Italy"
+    timezone: "Europe/Rome"
+    coordinates:
+      lat: 40.7306
+      lon: 13.8949
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Aragonese Castle medieval fortress on volcanic rock islet connected by bridge
+      - Mount Epomeo dormant volcano with panoramic summit views
+      - Thermal gardens hot spring parks with natural spa pools
+      - Sorgeto Bay natural hot springs bubbling into Mediterranean sea
+      - Forio white town with Santa Maria del Soccorso church on promontory
+      - Sant'Angelo fishing village with car-free cobblestone streets
+      - Maronti Beach longest beach with fumaroles and hot sand
+      - Poseidon Gardens terraced thermal pools overlooking Citara Bay
+      - Castello d'Ischia fortress complex with cathedral and convent
+      - La Mortella exotic botanical gardens created by composer's wife
+      - Negombo thermal park with sculptures and Mediterranean gardens
+      - Ischia Porto circular harbor in volcanic crater
+      - Terra Murata fortified medieval village on hilltop
+      - Citara Bay sunset beach with thermal water sources
+      - Vineyards terraced slopes producing Biancolella wine
+      - Pine forests Mediterranean woodland covering volcanic slopes
+    hashtags:
+      - "#Ischia"
+      - "#Italy"
+      - "#Campania"
+      - "#Italia"
+
+  # Spain - Mallorca
+  mallorca:
+    enabled: true
+    weight: 1
+    name: "Mallorca"
+    country: "Spain"
+    timezone: "Europe/Madrid"
+    coordinates:
+      lat: 39.6953
+      lon: 3.0176
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Palma Cathedral La Seu Gothic cathedral with Gaudí interior overlooking bay
+      - Serra de Tramuntana UNESCO mountain range with terraced olive groves
+      - Port de Sóller horseshoe-shaped harbor with vintage tram
+      - Cap de Formentor dramatic headland with lighthouse and pine trees
+      - Valldemossa hilltop village with Chopin monastery
+      - Deià artists village with stone houses in mountain setting
+      - Es Trenc Beach Caribbean-like white sand and turquoise water
+      - Coves del Drach underground lake caves with light show
+      - Bellver Castle circular medieval fortress overlooking Palma
+      - Alcúdia old town Roman walls enclosing medieval streets
+      - Sa Calobra serpentine road descending to hidden beach
+      - Sóller vintage wooden tram through orange groves to port
+      - Fornalutx stone village voted Spain's prettiest
+      - Pollença old town with Calvary steps and Sunday market
+      - Cala Mondragó natural park with twin sandy coves
+      - Windmills traditional stone mills dotting countryside
+    hashtags:
+      - "#Mallorca"
+      - "#Spain"
+      - "#Balearics"
+      - "#MallorcaIsland"
+
+  # Spain - Ibiza
+  ibiza:
+    enabled: true
+    weight: 1
+    name: "Ibiza"
+    country: "Spain"
+    timezone: "Europe/Madrid"
+    coordinates:
+      lat: 38.9067
+      lon: 1.4206
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Dalt Vila UNESCO walled old town with Renaissance fortifications
+      - Es Vedrà mysterious limestone rock island rising from sea
+      - Cala Comte beach with multiple coves and crystal waters
+      - Ibiza Cathedral crowning Dalt Vila with baroque facade
+      - San Antonio sunset strip Café del Mar and Mambo beachfront
+      - Las Salinas salt flats with pink flamingos and beach
+      - Portinatx northern resort with three protected bays
+      - Santa Eulalia palm-lined promenade and yacht marina
+      - Hippy markets Las Dalias and Punta Arabí artisan stalls
+      - White village houses cubic Ibizan architecture
+      - Formentera Island nearby island with pristine beaches
+      - Playa d'en Bossa longest beach with beach clubs
+      - San Juan village authentically Ibizan mountain settlement
+      - Torre des Savinar watchtower with Es Vedrà views
+      - Cova de Can Marçà ancient smuggler's cave with light show
+      - Sunset boats traditional llaüt wooden vessels at dusk
+    hashtags:
+      - "#Ibiza"
+      - "#Spain"
+      - "#Balearics"
+      - "#IbizaIsland"
+
+  # Spain - Tenerife
+  tenerife:
+    enabled: true
+    weight: 1
+    name: "Tenerife"
+    name_local: "Tenerife"
+    country: "Spain"
+    timezone: "Atlantic/Canary"
+    coordinates:
+      lat: 28.2916
+      lon: -16.6291
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Mount Teide Spain's highest peak volcanic cone with cable car
+      - Teide National Park lunar landscape with unique rock formations
+      - Masca Village remote hamlet in dramatic canyon setting
+      - Los Gigantes towering volcanic cliffs dropping to sea
+      - La Laguna UNESCO colonial town with colorful mansions
+      - Anaga Mountains ancient laurel forest with hiking trails
+      - Playa de las Teresitas golden artificial beach with palm trees
+      - Loro Parque famous zoo with orcas and penguins
+      - Garachico historic port town with natural lava pools
+      - Puerto de la Cruz black sand beaches with botanical gardens
+      - Roques de García unique volcanic rock formations
+      - Pyramids of Güímar mysterious stepped stone structures
+      - Santa Cruz auditorium wave-shaped Calatrava concert hall
+      - Dragon trees ancient Dracaena draco specimens
+      - Barranco del Infierno Hell's Gorge with waterfall
+      - Whale watching boats observing pilot whales and dolphins
+    hashtags:
+      - "#Tenerife"
+      - "#CanaryIslands"
+      - "#Spain"
+      - "#Teide"
+
+  # Croatia - Hvar
+  hvar:
+    enabled: true
+    weight: 1
+    name: "Hvar"
+    country: "Croatia"
+    timezone: "Europe/Zagreb"
+    coordinates:
+      lat: 43.1729
+      lon: 16.4411
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Spanish Fortress Fortica fortress overlooking Hvar Town harbor
+      - St. Stephen's Square Renaissance piazza with cathedral
+      - Hvar Town harbor luxury yachts moored in Venetian port
+      - Pakleni Islands archipelago with hidden beaches and restaurants
+      - Lavender fields purple carpets across island hillsides
+      - Venetian Arsenal 17th-century naval building with gallery
+      - Franciscan Monastery 15th-century cloister with cypress garden
+      - Stari Grad Plain UNESCO ancient Greek agricultural landscape
+      - Vrboska village with fortified church and stone bridges
+      - Jelsa waterfront promenade with pine-shaded beaches
+      - Milna Bay secluded cove with sandy beach
+      - Dubovica Beach pebble cove below abandoned stone village
+      - Olive groves ancient trees covering terraced hillsides
+      - Wine roads routes through vineyards producing local varietals
+      - Stone walls dry-stack boundaries crisscrossing landscape
+      - Sunsets golden light illuminating Dalmatian archipelago
+    hashtags:
+      - "#Hvar"
+      - "#Croatia"
+      - "#Dalmatia"
+      - "#CroatianIslands"
+
+  # Croatia - Dubrovnik (Coastal city with island character)
+  dubrovnik:
+    enabled: true
+    weight: 1
+    name: "Dubrovnik"
+    country: "Croatia"
+    timezone: "Europe/Zagreb"
+    coordinates:
+      lat: 42.6507
+      lon: 18.0944
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - City Walls complete medieval fortifications with sea views
+      - Old Town terracotta rooftops enclosed by stone ramparts
+      - Stradun marble-paved main street with baroque buildings
+      - Pile Gate main entrance with drawbridge and patron saint statue
+      - Lokrum Island forested nature reserve with monastery ruins
+      - Fort Lovrijenac dramatic fortress on rocky outcrop
+      - Rector's Palace Gothic-Renaissance palace with courtyard
+      - Sponza Palace 16th-century customs house and archive
+      - Onofrio's Fountain large 15th-century polygonal fountain
+      - Dominican Monastery Gothic cloister with orange trees
+      - Cable car to Mount Srđ panoramic views of coast and islands
+      - Buža Bar cliff bar with Adriatic swimming access
+      - Elafiti Islands nearby archipelago for day trips
+      - Minčeta Tower circular fortress tower on highest wall point
+      - Banje Beach pebble beach with old town backdrop
+      - Game of Thrones filming locations recognizable King's Landing scenes
+    hashtags:
+      - "#Dubrovnik"
+      - "#Croatia"
+      - "#GameOfThrones"
+      - "#AdriaticSea"
+
+  # Malta
+  malta:
+    enabled: true
+    weight: 1
+    name: "Malta"
+    country: "Malta"
+    timezone: "Europe/Malta"
+    coordinates:
+      lat: 35.8997
+      lon: 14.5147
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Valletta fortified capital with honey-colored limestone buildings
+      - Blue Lagoon Comino crystal-clear swimming cove
+      - Mdina silent city medieval walled town on hilltop
+      - St. John's Co-Cathedral baroque interior with Caravaggio paintings
+      - Megalithic temples oldest free-standing structures in world
+      - Three Cities Vittoriosa Senglea Cospicua historic harbor towns
+      - Azure Window site former natural arch at Dwejra Bay
+      - Upper Barrakka Gardens terraced gardens with harbor panorama
+      - Hypogeum underground prehistoric temple complex
+      - Gozo Island sister island with Citadel fortress
+      - Marsaxlokk fishing village with colorful luzzu boats
+      - Golden Bay sandy beach with dramatic cliff backdrop
+      - Popeye Village film set turned attraction in Anchor Bay
+      - Saluting Battery daily cannon firing from Valletta walls
+      - Dingli Cliffs highest point with Mediterranean views
+      - Traditional balconies enclosed wooden gallariji in various colors
+    hashtags:
+      - "#Malta"
+      - "#Valletta"
+      - "#VisitMalta"
+      - "#Mediterranean"
+
+  # Cyprus - Paphos
+  paphos:
+    enabled: true
+    weight: 1
+    name: "Paphos"
+    name_local: "Πάφος"
+    country: "Cyprus"
+    timezone: "Asia/Nicosia"
+    coordinates:
+      lat: 34.7754
+      lon: 32.4245
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Paphos Archaeological Park UNESCO Roman mosaics and ruins
+      - Tombs of the Kings underground Hellenistic burial chambers
+      - Aphrodite's Rock Petra tou Romiou legendary birthplace of goddess
+      - Paphos Castle medieval Ottoman fort guarding harbor
+      - Kato Paphos harbor fishing boats and waterfront restaurants
+      - House of Dionysus intricate Roman floor mosaics
+      - Akamas Peninsula wild coastline with Blue Lagoon
+      - Coral Bay popular beach with golden sand
+      - Adonis Baths natural pools in mountain gorge
+      - St. Paul's Pillar where apostle was flogged
+      - Byzantine museum icons and religious artifacts
+      - Avakas Gorge dramatic canyon through limestone cliffs
+      - Lara Beach turtle nesting site with protected coves
+      - Chrysorrogiatissa Monastery mountaintop with vineyard
+      - Troodos Mountains cedar forests and painted churches
+      - Sea caves natural rock formations along coastline
+    hashtags:
+      - "#Paphos"
+      - "#Cyprus"
+      - "#VisitCyprus"
+      - "#Mediterranean"
+
+  # Turkey - Bodrum Peninsula (Island-like character)
+  bodrum:
+    enabled: true
+    weight: 1
+    name: "Bodrum"
+    country: "Turkey"
+    timezone: "Europe/Istanbul"
+    coordinates:
+      lat: 37.0344
+      lon: 27.4305
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Bodrum Castle 15th-century Crusader fortress with underwater museum
+      - Mausoleum at Halicarnassus ancient wonder site with ruins
+      - Whitewashed houses cubic buildings with purple bougainvillea
+      - Marina with gulets traditional wooden sailing yachts
+      - Bodrum Amphitheater ancient theater overlooking bay
+      - Windmills stone mills on peninsula between bays
+      - Gümüşlük village fishing harbor over submerged ancient city
+      - Bitez Bay protected beach with windsurfing
+      - Ortakent long sandy beach with turquoise water
+      - Türkbükü exclusive bay with boutique hotels
+      - Ancient city walls Myndos Gate and fortifications
+      - Zeki Müren Arts Museum dedicated to Turkish singer
+      - Fish market fresh catch sold at harborside restaurants
+      - Blue Cruise boats departure point for coastal voyages
+      - Sunset views golden light over Greek islands on horizon
+      - Mandarin trees citrus orchards scenting coastal air
+    hashtags:
+      - "#Bodrum"
+      - "#Turkey"
+      - "#Türkiye"
+      - "#AegeanCoast"
+
+  # Montenegro - Kotor Bay (Fjord-like setting)
+  kotor:
+    enabled: true
+    weight: 1
+    name: "Kotor"
+    country: "Montenegro"
+    timezone: "Europe/Podgorica"
+    coordinates:
+      lat: 42.4247
+      lon: 18.7712
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Kotor Old Town UNESCO medieval walled city at bay's end
+      - Fortress walls zigzagging fortifications climbing mountain
+      - Bay of Kotor Southern Europe's deepest fjord with mountains
+      - Our Lady of the Rocks artificial island church in bay
+      - St. Tryphon Cathedral Romanesque cathedral with twin bell towers
+      - Perast baroque village with palaces and bell towers
+      - Cats of Kotor famous feline population throughout old town
+      - Maritime Museum housed in baroque palace with naval history
+      - Church of St. Luke 12th-century church with two altars
+      - Lovcen National Park dramatic mountain backdrop with mausoleum
+      - Sveti Stefan exclusive island resort connected by causeway
+      - Blue Cave natural sea cave near Herceg Novi
+      - Cruise ships large vessels anchored in stunning bay
+      - Venetian architecture lion sculptures and Renaissance details
+      - Ladder of Kotor steep path with 1350 steps to fortress
+      - Oyster farms floating beds in pristine bay waters
+    hashtags:
+      - "#Kotor"
+      - "#Montenegro"
+      - "#BayOfKotor"
+      - "#Adriatic"
+
+  # Greece - Zakynthos
+  zakynthos:
+    enabled: true
+    weight: 1
+    name: "Zakynthos"
+    name_local: "Ζάκυνθος"
+    country: "Greece"
+    timezone: "Europe/Athens"
+    coordinates:
+      lat: 37.7870
+      lon: 20.8979
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Navagio Beach Shipwreck Beach with rusting ship in white sand cove
+      - Blue Caves sea caverns reflecting brilliant azure light
+      - Zakynthos Town Venetian bell tower and waterfront promenade
+      - Agios Dionysios Church patron saint's silver sarcophagus
+      - Loggerhead turtles Caretta caretta nesting on southern beaches
+      - Keri Caves dramatic limestone sea caves and arches
+      - Bohali Castle Venetian fortress ruins with panoramic views
+      - Gerakas Beach protected turtle nesting habitat
+      - Porto Limnionas natural rock pool swimming spots
+      - Laganas Bay party beach strip and turtle waters
+      - Marathonisi Island Turtle Island with shell-shaped beach
+      - Cameo Island tiny islet connected by wooden bridge
+      - Solomos Square main plaza with statue of Greek poet
+      - Venetian wells ornate stone wellheads throughout town
+      - Olive oil production island known for quality olive groves
+      - Xigia Beach natural sulfur springs on beach
+    hashtags:
+      - "#Zakynthos"
+      - "#Greece"
+      - "#NavagioBeach"
+      - "#IonianIslands"
+
+  # France - Corsica
+  corsica:
+    enabled: true
+    weight: 1
+    name: "Corsica"
+    name_local: "Corse"
+    country: "France"
+    timezone: "Europe/Paris"
+    coordinates:
+      lat: 42.0396
+      lon: 9.0129
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Calanques de Piana UNESCO red granite rock formations
+      - Bonifacio clifftop citadel with limestone houses overhanging sea
+      - Cap Corse wild peninsula with Genoese watchtowers
+      - GR20 challenging hiking trail through mountain spine
+      - Ajaccio Napoleon's birthplace with palm-lined waterfront
+      - Scandola Reserve UNESCO marine and cliff reserve
+      - Porto Gulf dramatic red cliffs meeting turquoise sea
+      - Corte mountain citadel former island capital
+      - Lavezzi Islands granite islets with Caribbean-like waters
+      - Bastia old port Genoese-style harbor with baroque churches
+      - Restonica Valley glacial lakes and dramatic gorges
+      - Chestnut forests vast groves covering mountain slopes
+      - Maquis shrubland aromatic Mediterranean vegetation
+      - Calvi citadel fortified town with claimed Columbus birthplace
+      - Propriano bay resort town with sandy beaches
+      - Wild pigs sangliers roaming interior forests
+    hashtags:
+      - "#Corsica"
+      - "#France"
+      - "#Corse"
+      - "#IsleOfBeauty"
+
+  # Spain - Menorca
+  menorca:
+    enabled: true
+    weight: 1
+    name: "Menorca"
+    country: "Spain"
+    timezone: "Europe/Madrid"
+    coordinates:
+      lat: 39.9496
+      lon: 4.1104
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Cala Macarella turquoise cove with pine-covered cliffs
+      - Ciutadella old town former capital with Gothic cathedral
+      - Mahón harbor deep natural port with Georgian architecture
+      - Talayotic monuments prehistoric stone towers and settlements
+      - Cala Mitjana hidden beach accessible only by foot
+      - Monte Toro highest point with sanctuary and views
+      - Binibèquer Vell whitewashed fishermen's village
+      - Naveta des Tudons Bronze Age burial chamber
+      - Cala Pregonda red sand beach with unique landscape
+      - Fornells fishing village famous for lobster stew
+      - Camí de Cavalls coastal path circling entire island
+      - Pont d'en Gil natural sea arch
+      - Son Bou longest beach with dune systems
+      - Gin distilleries producing xoriguer juniper spirit
+      - Torralba d'en Salort prehistoric taula sanctuary
+      - Lighthouse at Cavallería northernmost point with dramatic cliffs
+    hashtags:
+      - "#Menorca"
+      - "#Spain"
+      - "#Balearics"
+      - "#MenorcaIsland"
+
+  # Spain - Formentera
+  formentera:
+    enabled: true
+    weight: 1
+    name: "Formentera"
+    country: "Spain"
+    timezone: "Europe/Madrid"
+    coordinates:
+      lat: 38.7058
+      lon: 1.4366
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Ses Illetes Beach Caribbean-like white sand peninsula
+      - Es Pujols main resort with beachfront restaurants
+      - La Mola lighthouse clifftop beacon at island's eastern end
+      - Cap de Barbaria lighthouse isolated southern tip monument
+      - Posidonia seagrass UNESCO marine meadows creating crystal waters
+      - Espalmador uninhabited island with natural mud baths
+      - Sant Francesc Xavier whitewashed main town with fortress church
+      - Es Caló fishing harbor with wooden boat shelters
+      - Platja de Migjorn six-kilometer long southern beach
+      - Faro de la Mola lighthouse mentioned by Jules Verne
+      - Green Routes cycling paths through pine forests
+      - Traditional windmills stone grinding mills for wheat
+      - Fig trees ancient specimens providing shade
+      - Hippie markets artisan stalls with handmade goods
+      - Ses Salines salt flats connecting to Ibiza
+      - Beach bars chiringuitos with rustic Mediterranean charm
+    hashtags:
+      - "#Formentera"
+      - "#Spain"
+      - "#Balearics"
+      - "#FormenteraIsland"
+
+  # Spain - Lanzarote
+  lanzarote:
+    enabled: true
+    weight: 1
+    name: "Lanzarote"
+    country: "Spain"
+    timezone: "Atlantic/Canary"
+    coordinates:
+      lat: 29.0469
+      lon: -13.5899
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Timanfaya National Park volcanic landscape with fire mountains
+      - Jameos del Agua underground volcanic cave with albino crabs
+      - Cueva de los Verdes lava tube extending underground
+      - César Manrique Foundation artist's home built into volcanic bubbles
+      - Papagayo Beaches golden sand coves in nature reserve
+      - El Golfo green lagoon in volcanic crater by sea
+      - Mirador del Río clifftop viewpoint over La Graciosa island
+      - La Geria wine region vines grown in volcanic ash pits
+      - Jardín de Cactus terraced garden with thousands of cacti
+      - Salinas de Janubio salt pans with pink and white patterns
+      - Charco de los Clicos green volcanic lake
+      - Traditional white houses with green doors and windows
+      - Los Hervideros volcanic cliffs with crashing waves
+      - Teguise historic former capital with Sunday market
+      - La Graciosa island car-free sandy island offshore
+      - Geothermal restaurant cooking over volcanic heat
+    hashtags:
+      - "#Lanzarote"
+      - "#CanaryIslands"
+      - "#Spain"
+      - "#Timanfaya"
+
+  # Spain - Fuerteventura
+  fuerteventura:
+    enabled: true
+    weight: 1
+    name: "Fuerteventura"
+    country: "Spain"
+    timezone: "Atlantic/Canary"
+    coordinates:
+      lat: 28.3587
+      lon: -14.0537
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Corralejo Dunes vast golden sand dunes and turquoise waters
+      - Cofete Beach remote 12km wild beach beneath mountains
+      - Betancuria historic capital in volcanic valley
+      - Sotavento Beach kitesurfing lagoon with endless sand
+      - El Cotillo fishing village with natural rock pools
+      - Isla de Lobos uninhabited islet nature reserve
+      - Ajuy Caves sea caves and fossil beach
+      - Jandía Peninsula southern mountainous tip with beaches
+      - La Oliva traditional village with Casa de los Coroneles
+      - Caleta de Fuste family resort with horseshoe bay
+      - Volcanic landscapes barren lava fields and cinder cones
+      - Windmills traditional molinos and modern wind farms
+      - Majorero goats native breed producing renowned cheese
+      - Aloe vera plantations cultivation for cosmetics
+      - Salinas del Carmen traditional salt works and museum
+      - Windsurfing and kitesurfing world championship beaches
+    hashtags:
+      - "#Fuerteventura"
+      - "#CanaryIslands"
+      - "#Spain"
+      - "#CorralejoDunes"
+
+  # Spain - Gran Canaria
+  gran_canaria:
+    enabled: true
+    weight: 1
+    name: "Gran Canaria"
+    country: "Spain"
+    timezone: "Atlantic/Canary"
+    coordinates:
+      lat: 27.9202
+      lon: -15.5474
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Maspalomas Dunes vast Sahara-like sand dunes meeting ocean
+      - Roque Nublo volcanic rock pinnacle sacred to Guanches
+      - Las Palmas de Gran Canaria colonial Vegueta old town
+      - Tejeda village mountaintop pueblo with almond blossoms
+      - Playa de las Canteras urban beach with natural reef
+      - Puerto de Mogán Little Venice with flower-lined canals
+      - Teror pilgrimage town with Basilica de Nuestra Señora del Pino
+      - Cueva Pintada painted cave pre-Hispanic archaeological museum
+      - Barranco de Guayadeque cave village and troglodyte restaurants
+      - Casa de Colón museum in Columbus's supposed residence
+      - Pico de las Nieves highest point with caldera views
+      - Arucas neo-Gothic church in historic town
+      - Agaete port town with natural rock pools
+      - Fataga picturesque valley with palm trees and whitewashed houses
+      - Cenobio de Valerón ancient grain silo cave complex
+      - Poema del Mar aquarium with deep ocean tank
+    hashtags:
+      - "#GranCanaria"
+      - "#CanaryIslands"
+      - "#Spain"
+      - "#Maspalomas"
+
+  # Spain - La Palma
+  la_palma:
+    enabled: true
+    weight: 1
+    name: "La Palma"
+    name_local: "La Isla Bonita"
+    country: "Spain"
+    timezone: "Atlantic/Canary"
+    coordinates:
+      lat: 28.6835
+      lon: -17.7642
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Caldera de Taburiente vast volcanic crater national park
+      - Roque de los Muchachos world-class astronomical observatory
+      - Los Tilos laurel forest UNESCO biosphere reserve
+      - Santa Cruz de La Palma colonial capital with wooden balconies
+      - Cumbre Vieja volcano recent 2021 eruption landscape
+      - Volcán de San Antonio walkable volcanic crater
+      - Las Salinas de Fuencaliente salt pans with lighthouse
+      - Charco Azul natural ocean swimming pools
+      - La Zamora banana plantations covering hillsides
+      - Cueva de las Palomas lava tube cave system
+      - Mirador de la Cumbrecita caldera viewpoint
+      - San Andrés traditional village with dragon trees
+      - Porís de Candelaria houses built into sea caves
+      - Starry skies UNESCO Starlight Reserve
+      - Ancient dragon trees Dracaena specimens in gardens
+      - Volcanic wine vineyards on black ash slopes
+    hashtags:
+      - "#LaPalma"
+      - "#CanaryIslands"
+      - "#Spain"
+      - "#LaIslaBonita"
+
+  # Greece - Kefalonia
+  kefalonia:
+    enabled: true
+    weight: 1
+    name: "Kefalonia"
+    name_local: "Κεφαλονιά"
+    country: "Greece"
+    timezone: "Europe/Athens"
+    coordinates:
+      lat: 38.1794
+      lon: 20.4895
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Myrtos Beach dramatic white pebble beach beneath towering cliffs
+      - Melissani Cave underground lake with sunlight through collapsed roof
+      - Drogarati Cave enormous cavern with stalactites and acoustics
+      - Assos village Venetian castle on peninsula with pastel houses
+      - Argostoli capital with palm-lined promenade and lighthouse
+      - Fiskardo Venetian port village with elegant architecture
+      - Mount Ainos national park with rare Greek fir forest
+      - Katavothres sea mills where water disappears underground
+      - Antisamos Beach filming location for Captain Corelli's Mandolin
+      - Robola wine region vineyards producing crisp white wine
+      - Sami harbor town with waterfront restaurants
+      - Xi Beach red sand beach with clay cliffs
+      - Kipoureon Monastery cliffside monastery with sunset views
+      - St. Gerasimos Monastery patron saint relics and pilgrimage site
+      - Ithaca Island legendary home of Odysseus nearby
+      - Loggerhead turtles nesting on southern beaches
+    hashtags:
+      - "#Kefalonia"
+      - "#Greece"
+      - "#IonianIslands"
+      - "#MyrtoBeach"
+
+  # Greece - Paros
+  paros:
+    enabled: true
+    weight: 1
+    name: "Paros"
+    name_local: "Πάρος"
+    country: "Greece"
+    timezone: "Europe/Athens"
+    coordinates:
+      lat: 37.0858
+      lon: 25.1520
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Naoussa fishing port with Venetian castle remnants and whitewashed lanes
+      - Panagia Ekatontapiliani Byzantine church with hundred doors legend
+      - Parikia capital with windmill and waterfront tavernas
+      - Marble quarries ancient source of famous Parian marble
+      - Lefkes mountain village with medieval architecture
+      - Kolymbithres Beach sculpted granite rock formations on shore
+      - Santa Maria Beach windsurfing destination with golden sand
+      - Antiparos Island nearby with ancient cave and beaches
+      - Valley of Butterflies Petaloudes nature reserve
+      - Frankish Castle ruins in Parikia old town
+      - Blue-domed churches traditional Cycladic religious architecture
+      - Fishing boats colorful caiques in harbor waters
+      - Narrow alleys whitewashed passages with flowering vines
+      - Golden Beach championship kitesurfing waters
+      - Ancient Cemetery excavated Hellenistic burial grounds
+      - Sunset at Parikia waterfront dining with western views
+    hashtags:
+      - "#Paros"
+      - "#Greece"
+      - "#Cyclades"
+      - "#GreekIslands"
+
+  # Greece - Naxos
+  naxos:
+    enabled: true
+    weight: 1
+    name: "Naxos"
+    name_local: "Νάξος"
+    country: "Greece"
+    timezone: "Europe/Athens"
+    coordinates:
+      lat: 37.1036
+      lon: 25.3763
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Portara massive marble gateway Apollo temple ruins on islet
+      - Chora hilltop old town with Venetian castle and tower houses
+      - Mount Zas highest peak in Cyclades with mythological significance
+      - Kouros statues ancient unfinished marble giant figures in quarries
+      - Plaka Beach longest sandy beach with dunes and cedar trees
+      - Halki village neoclassical mansions and citron distillery
+      - Temple of Demeter ancient sanctuary with reconstructed columns
+      - Apiranthos mountain village with marble streets and museums
+      - Agios Prokopios Beach golden sand with shallow turquoise water
+      - Venetian Tower houses tall fortified medieval residences
+      - Olive groves extensive cultivation across fertile valleys
+      - Kitron distillery producing local citrus liqueur
+      - Marble quarries source of ancient Greek sculptural stone
+      - Byzantine churches frescoed rural chapels throughout island
+      - Mikri Vigla Beach twin bays for swimming and windsurfing
+      - Cheese and potato farms island known for local produce
+    hashtags:
+      - "#Naxos"
+      - "#Greece"
+      - "#Cyclades"
+      - "#GreekIslands"
+
+  # Greece - Milos
+  milos:
+    enabled: true
+    weight: 1
+    name: "Milos"
+    name_local: "Μήλος"
+    country: "Greece"
+    timezone: "Europe/Athens"
+    coordinates:
+      lat: 36.7456
+      lon: 24.4495
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Sarakiniko Beach lunar white volcanic rock formations
+      - Kleftiko pirate caves accessible only by boat
+      - Plaka hilltop village with sunset views and windmills
+      - Catacombs early Christian underground burial site
+      - Venus de Milo discovery site ancient statue found here
+      - Sykia Cave sea cave with collapsed roof and blue water
+      - Pollonia fishing village with Kimolos ferry
+      - Firopotamos colorful boat houses carved into rock
+      - Ancient Theatre Roman era with sea views
+      - Tsigrado Beach tiny cove accessed by rope ladder
+      - Papafragas sea caves natural swimming pools in volcanic rock
+      - Mandrakia fishing village with syrmata boat garages
+      - Thiorichia abandoned sulfur mines with dramatic landscape
+      - Paleochori Beach hot springs and volcanic colored sands
+      - Volcanic formations multi-colored cliffs and unusual geology
+      - Traditional syrmata colorful boat shelters in coastal rocks
+    hashtags:
+      - "#Milos"
+      - "#Greece"
+      - "#Cyclades"
+      - "#Sarakiniko"
+
+  # Italy - Elba
+  elba:
+    enabled: true
+    weight: 1
+    name: "Elba"
+    country: "Italy"
+    timezone: "Europe/Rome"
+    coordinates:
+      lat: 42.7834
+      lon: 10.2493
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Napoleon's Villa dei Mulini exile residence overlooking harbor
+      - Portoferraio harbor Medici fortifications and pastel buildings
+      - Monte Capanne highest peak with cable car and panoramas
+      - Spiaggia di Sansone white pebble beach with crystal waters
+      - Villa San Martino Napoleon's countryside summer residence
+      - Capoliveri medieval hilltop village with wine trails
+      - Fetovaia Beach sandy cove with dramatic rocky headland
+      - Rio Marina iron ore port with mineral museum
+      - Biodola Bay sandy beach resort with pine forests
+      - Marciana Alta ancient village beneath chestnut forests
+      - Innamorata Beach legend of lovers commemorated
+      - Pomonte sunken ship snorkeling site
+      - Enfola Peninsula natural park with twin beaches
+      - Sant'Andrea granite sculptures and white sand
+      - Chiessi white village with vineyard terraces
+      - Iron mines historic mineral extraction sites
+    hashtags:
+      - "#Elba"
+      - "#Italy"
+      - "#Tuscany"
+      - "#Napoleon"
+
+  # Croatia - Korčula
+  korcula:
+    enabled: true
+    weight: 1
+    name: "Korčula"
+    country: "Croatia"
+    timezone: "Europe/Zagreb"
+    coordinates:
+      lat: 42.9600
+      lon: 17.1358
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Korčula Old Town walled medieval town on peninsula
+      - Marco Polo House claimed birthplace of famous explorer
+      - St. Mark's Cathedral Gothic Renaissance blend with bell tower
+      - Moreska sword dance traditional costumed battle performance
+      - Town walls Venetian fortifications with round towers
+      - Vela Luka fishing town at western end of island
+      - Lumbarda sandy beaches and vineyards producing Grk wine
+      - Stone streets fishbone pattern for wind protection
+      - Korčula Archipelago surrounding islets for island hopping
+      - Olive oil production traditional mills and tastings
+      - Badija Island Franciscan monastery on car-free islet
+      - Pupnatska Luka secluded pebble beach cove
+      - Žrnovo oldest settlement with traditional stone houses
+      - Blato inland town with All Saints Church towers
+      - Vineyards Pošip and Grk grape cultivation
+      - Shipbuilding tradition historic boat construction heritage
+    hashtags:
+      - "#Korcula"
+      - "#Croatia"
+      - "#Dalmatia"
+      - "#MarcoPolo"
+
+  # Greece - Hydra
+  hydra:
+    enabled: true
+    weight: 1
+    name: "Hydra"
+    name_local: "Ύδρα"
+    country: "Greece"
+    timezone: "Europe/Athens"
+    coordinates:
+      lat: 37.3494
+      lon: 23.4617
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Car-free harbor no vehicles or bikes allowed on island
+      - Stone mansions amphitheater of grand archontika climbing hillside
+      - Donkeys only transport method for goods and luggage
+      - Clock tower 19th-century landmark on harbor square
+      - Hydra harbor crescent port with fishing boats and yachts
+      - Kamini fishing hamlet with waterside tavernas
+      - Monastery of Prophet Elias hilltop with panoramic views
+      - Vlychos Beach pebble cove with clear swimming waters
+      - Cannons protecting harbor remnants of maritime past
+      - Historical Archives Museum maritime and war of independence history
+      - Ecclesiastical Museum Byzantine icons and religious art
+      - Artists and writers colony famous creative community since 1960s
+      - Pine forests rare greenery covering island interior
+      - Hydra cats numerous felines roaming picturesque streets
+      - Water taxis traditional boats connecting beaches
+      - Sunset from harbor golden light on stone architecture
+    hashtags:
+      - "#Hydra"
+      - "#Greece"
+      - "#SaronicIslands"
+      - "#CarFreeIsland"
+
+# ============================================
+# CARIBBEAN ISLANDS
+# ============================================
+
+  # Jamaica - Montego Bay
+  montego_bay:
+    enabled: true
+    weight: 1
+    name: "Montego Bay"
+    country: "Jamaica"
+    timezone: "America/Jamaica"
+    coordinates:
+      lat: 18.4762
+      lon: -77.8939
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Doctor's Cave Beach famous white sand beach with crystal waters
+      - Hip Strip lively tourist street with shops and restaurants
+      - Rose Hall Great House haunted 18th-century plantation mansion
+      - Sam Sharpe Square historic downtown with Georgian architecture
+      - Dunn's River Falls terraced waterfalls for climbing nearby
+      - Blue Mountains misty peaks visible in distance
+      - Cruise ship terminal modern port with passenger vessels
+      - Reggae music culture Bob Marley legacy and live performances
+      - Jerk food stands roadside vendors with spicy grilled chicken
+      - Colonial architecture Georgian buildings in downtown
+      - Golf courses luxury resorts with championship greens
+      - Caribbean Sea turquoise waters with coral reefs
+      - Rastafarian culture colorful red gold green decorations
+      - Fishing boats traditional wooden vessels in harbor
+      - Palm-lined beaches swaying coconut palms on white sand
+      - Tropical gardens flowering hibiscus and bougainvillea
+    hashtags:
+      - "#MontegoBay"
+      - "#Jamaica"
+      - "#MoBay"
+      - "#Caribbean"
+
+  # Bahamas - Nassau
+  nassau:
+    enabled: true
+    weight: 1
+    name: "Nassau"
+    country: "Bahamas"
+    timezone: "America/Nassau"
+    coordinates:
+      lat: 25.0480
+      lon: -77.3554
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Paradise Island Atlantis resort with massive water park
+      - Queen's Staircase 65 steps carved from limestone by slaves
+      - Fort Charlotte 18th-century British fortress overlooking harbor
+      - Junkanoo Beach colorful local beach near cruise port
+      - Straw Market traditional crafts and souvenirs
+      - Pink Government House colonial governor's residence
+      - Bay Street shopping district with duty-free stores
+      - Pirates of Nassau museum interactive pirate history
+      - Christ Church Cathedral white colonial Anglican church
+      - Cable Beach resort strip with white sand
+      - Nassau Harbour cruise ships and small boat marina
+      - Pastel colonial buildings pink yellow and blue facades
+      - Conch stands fresh seafood at Potter's Cay
+      - Gregory Arch entrance to historic over-the-hill neighborhood
+      - Prince George Wharf main cruise terminal
+      - Swimming pigs Exuma day trip attraction
+    hashtags:
+      - "#Nassau"
+      - "#Bahamas"
+      - "#Paradise"
+      - "#Caribbean"
+
+  # Barbados
+  barbados:
+    enabled: true
+    weight: 1
+    name: "Barbados"
+    country: "Barbados"
+    timezone: "America/Barbados"
+    coordinates:
+      lat: 13.1939
+      lon: -59.5432
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Crane Beach pink-tinged sand beach with dramatic cliffs
+      - Bridgetown UNESCO capital with colonial architecture
+      - Harrison's Cave crystallized limestone cavern
+      - Bathsheba rock formations eroded boulders on east coast
+      - Mount Gay Rum Distillery world's oldest rum producer
+      - Animal Flower Cave sea cave with natural pool
+      - St. Nicholas Abbey Jacobean plantation house
+      - Carlisle Bay calm turquoise bay with shipwrecks
+      - Parliament Buildings neo-Gothic architecture
+      - Oistins Fish Fry Friday night seafood festival
+      - Andromeda Botanic Gardens tropical hillside gardens
+      - Chattel houses colorful wooden mobile homes
+      - Flying fish national symbol and cuisine
+      - Rum shops traditional local gathering places
+      - Sugar cane fields green stalks covering interior
+      - Cricket at Kensington Oval national sport stadium
+    hashtags:
+      - "#Barbados"
+      - "#VisitBarbados"
+      - "#Caribbean"
+      - "#Bajan"
+
+  # Aruba
+  aruba:
+    enabled: true
+    weight: 1
+    name: "Aruba"
+    country: "Aruba"
+    timezone: "America/Aruba"
+    coordinates:
+      lat: 12.5211
+      lon: -69.9683
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Eagle Beach powdery white sand with divi-divi trees
+      - Natural Bridge coral limestone arch on coast
+      - California Lighthouse Art Deco beacon on hilltop
+      - Oranjestad colorful Dutch colonial capital
+      - Palm Beach resort strip with high-rise hotels
+      - Arikok National Park desert landscape with cacti
+      - Baby Beach shallow lagoon perfect for swimming
+      - Casibari Rock Formations giant boulder clusters
+      - Hooiberg volcanic cone visible across island
+      - Flamingo Beach pink flamingos on private island
+      - Alto Vista Chapel petite desert pilgrimage church
+      - Bushiribana Gold Mill Ruins 19th-century processing site
+      - Divi-divi trees wind-bent native fofoti trees
+      - Colorful buildings Dutch Caribbean architecture
+      - Cunucu houses traditional Aruban countryside homes
+      - Donkeys wild descendants of working animals
+    hashtags:
+      - "#Aruba"
+      - "#OneHappyIsland"
+      - "#Caribbean"
+      - "#VisitAruba"
+
+  # Curaçao
+  curacao:
+    enabled: true
+    weight: 1
+    name: "Curaçao"
+    country: "Curaçao"
+    timezone: "America/Curacao"
+    coordinates:
+      lat: 12.1696
+      lon: -68.9900
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Willemstad UNESCO waterfront with colorful Handelskade
+      - Queen Emma Bridge floating pontoon pedestrian bridge
+      - Pietermaai District restored colonial mansions and nightlife
+      - Shete Boka National Park dramatic volcanic coastline
+      - Blue Curaçao Liqueur distillery colorful signature drink
+      - Playa Kenepa dramatic clifftop beach with turquoise water
+      - Christoffel National Park hiking trails with orchids
+      - Curaçao Sea Aquarium dolphin encounters and marine life
+      - Fort Amsterdam historic Dutch colonial fortification
+      - Landhuis estates colonial plantation houses
+      - Floating Market Venezuelan vendors on boats
+      - Otrobanda and Punda twin city centers across St. Anna Bay
+      - Street art murals vibrant urban artwork
+      - Divi-divi trees windswept iconic silhouettes
+      - Klein Curaçao uninhabited island with lighthouse
+      - Snorkeling reefs abundant marine life close to shore
+    hashtags:
+      - "#Curacao"
+      - "#Curaçao"
+      - "#Caribbean"
+      - "#Willemstad"
+
+  # US Virgin Islands - St. Thomas
+  st_thomas:
+    enabled: true
+    weight: 1
+    name: "St. Thomas"
+    country: "US Virgin Islands"
+    timezone: "America/Virgin"
+    coordinates:
+      lat: 18.3358
+      lon: -64.8963
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Magens Bay heart-shaped beach surrounded by hills
+      - Charlotte Amalie historic Danish colonial capital
+      - 99 Steps stone stairway climbing Government Hill
+      - Blackbeard's Castle historic watchtower with pirate legend
+      - Skyride to Paradise Point cable car with harbor views
+      - Havensight cruise ship dock major terminal
+      - Mountain Top banana daiquiris with panoramic views
+      - Coral World Ocean Park underwater observatory
+      - Drake's Seat viewpoint with scenic overlook
+      - Fort Christian 17th-century Danish fortress
+      - Red Hook ferry terminal connecting to St. John
+      - Duty-free shopping jewelry and liquor bargains
+      - Caribbean architecture pastel buildings with galleries
+      - Sailing yachts marinas filled with charter boats
+      - Secret Harbour Beach protected cove with snorkeling
+      - Island ferries connecting Virgin Islands
+    hashtags:
+      - "#StThomas"
+      - "#USVI"
+      - "#VirginIslands"
+      - "#Caribbean"
+
+  # Puerto Rico - San Juan
+  san_juan:
+    enabled: true
+    weight: 1
+    name: "San Juan"
+    country: "Puerto Rico"
+    timezone: "America/Puerto_Rico"
+    coordinates:
+      lat: 18.4655
+      lon: -66.1057
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - El Morro fortress 16th-century Spanish citadel on headland
+      - Old San Juan cobblestone streets with colorful colonial buildings
+      - San Cristóbal Fort massive Spanish defensive fortification
+      - Castillo San Felipe del Morro six-level historic fortress
+      - La Fortaleza oldest executive mansion in Americas
+      - Condado Beach urban beach strip with hotels
+      - Paseo de la Princesa romantic waterfront promenade
+      - San Juan Cathedral second-oldest cathedral in Americas
+      - Blue cobblestone streets distinctive adoquines paving
+      - La Perla neighborhood colorful hillside community
+      - Bacardi Rum Distillery tours at Casa Bacardi
+      - El Yunque Rainforest nearby tropical forest
+      - Bioluminescent bays glowing waters at night
+      - Street cats sanctuary historic cat colony
+      - Salsa dancing live music and nightlife
+      - Piraguas shaved ice carts with tropical flavors
+    hashtags:
+      - "#SanJuan"
+      - "#PuertoRico"
+      - "#DiscoverPR"
+      - "#Caribbean"
+
+  # Dominican Republic - Punta Cana
+  punta_cana:
+    enabled: true
+    weight: 1
+    name: "Punta Cana"
+    country: "Dominican Republic"
+    timezone: "America/Santo_Domingo"
+    coordinates:
+      lat: 18.5601
+      lon: -68.3725
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Bávaro Beach endless white sand with palm trees
+      - Saona Island paradise island day trip destination
+      - Indigenous Eyes Ecological Park freshwater lagoons
+      - Hoyo Azul cenote natural blue swimming hole
+      - Scape Park adventure activities in tropical setting
+      - Altos de Chavón Italian village replica with amphitheater
+      - Cap Cana Marina luxury yacht harbor
+      - Macao Beach wild beach with dramatic surf
+      - Coconut palm plantations swaying trees to horizon
+      - All-inclusive resorts sprawling beachfront complexes
+      - Golf courses championship courses designed by legends
+      - Manati Park wildlife and cultural shows
+      - Catamaran cruises sailing to offshore islands
+      - Dominican cigars hand-rolled tobacco
+      - Merengue music traditional rhythms and dancing
+      - Tropical gardens flowering exotic plants
+    hashtags:
+      - "#PuntaCana"
+      - "#DominicanRepublic"
+      - "#Caribbean"
+      - "#DR"
+
+  # Turks and Caicos - Providenciales
+  providenciales:
+    enabled: true
+    weight: 1
+    name: "Providenciales"
+    country: "Turks and Caicos"
+    timezone: "America/Grand_Turk"
+    coordinates:
+      lat: 21.7740
+      lon: -72.2657
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Grace Bay Beach world's best beach with powder sand
+      - Chalk Sound National Park electric blue inland lagoon
+      - Sapodilla Bay shallow calm waters ideal for families
+      - Half Moon Bay secluded beach accessible by boat
+      - Iguana Island sanctuary for endangered rock iguanas
+      - Bight Reef snorkeling with coral and tropical fish
+      - Long Bay Beach kiteboarding mecca with steady winds
+      - Turtle Cove Marina waterfront dining and shops
+      - Conch Bar Caves limestone cavern system
+      - JoJo the Dolphin friendly wild bottlenose dolphin
+      - Princess Alexandra Marine Park protected reef system
+      - Beach villas luxury beachfront accommodations
+      - Crystal clear water visibility exceeding 100 feet
+      - Sunset cruises golden hour on catamaran
+      - Conch farms sustainable shellfish cultivation
+      - Little Water Cay iguana nature reserve
+    hashtags:
+      - "#Providenciales"
+      - "#TurksAndCaicos"
+      - "#GraceBay"
+      - "#Caribbean"
+
+  # St. Lucia
+  st_lucia:
+    enabled: true
+    weight: 1
+    name: "St. Lucia"
+    country: "St. Lucia"
+    timezone: "America/St_Lucia"
+    coordinates:
+      lat: 13.9094
+      lon: -60.9789
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Pitons twin volcanic spires rising from Caribbean Sea
+      - Sulphur Springs Drive-in volcano with mud baths
+      - Marigot Bay yacht harbor surrounded by palm-covered hills
+      - Sugar Beach luxury resort between the Pitons
+      - Soufrière historic town beneath volcanic peaks
+      - Diamond Falls Botanical Gardens tropical gardens with waterfall
+      - Anse Chastanet Beach snorkeling with coral reefs
+      - Pigeon Island National Landmark historic fort and beaches
+      - Rodney Bay Marina restaurants and nightlife hub
+      - Rainforest canopy zip-lining through jungle
+      - Jalousie Beach white sand imported between Pitons
+      - Castries capital with colorful wooden buildings
+      - Derek Walcott Square honoring Nobel laureate poet
+      - Banana plantations island's traditional crop
+      - Fishing villages colorful boats on black sand
+      - Lucian Carnival vibrant costume parade
+    hashtags:
+      - "#StLucia"
+      - "#Pitons"
+      - "#Caribbean"
+      - "#SimplyBeautiful"
+
+  # Cayman Islands - Grand Cayman
+  grand_cayman:
+    enabled: true
+    weight: 1
+    name: "Grand Cayman"
+    country: "Cayman Islands"
+    timezone: "America/Cayman"
+    coordinates:
+      lat: 19.3133
+      lon: -81.2546
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Seven Mile Beach long crescent of white sand
+      - Stingray City sandbar for swimming with rays
+      - George Town capital with duty-free shopping
+      - Hell black ironshore rock formation
+      - Cayman Turtle Centre conservation and education
+      - Crystal Caves ancient limestone caverns
+      - Queen Elizabeth II Botanic Park native flora and blue iguanas
+      - Rum Point Beach relaxed north side beach bar
+      - Kittiwake shipwreck artificial reef diving site
+      - Pedro St. James historic great house
+      - Starfish Point shallow sandbar with sea stars
+      - Smith's Cove snorkeling beach with rock formations
+      - Owen Island private island offshore
+      - Wall diving dramatic underwater drop-offs
+      - Luxury condominiums beachfront high-rises
+      - Cruise ship terminal George Town waterfront
+    hashtags:
+      - "#GrandCayman"
+      - "#CaymanIslands"
+      - "#SevenMileBeach"
+      - "#Caribbean"
+
+  # Antigua
+  antigua:
+    enabled: true
+    weight: 1
+    name: "Antigua"
+    country: "Antigua and Barbuda"
+    timezone: "America/Antigua"
+    coordinates:
+      lat: 17.1274
+      lon: -61.8468
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - 365 beaches one for every day of the year
+      - Nelson's Dockyard UNESCO historic British naval base
+      - English Harbour yachting mecca in restored dockyard
+      - Shirley Heights Sunday barbecue and sunset views
+      - Half Moon Bay crescent beach on Atlantic coast
+      - Betty's Hope restored 17th-century sugar plantation
+      - Devil's Bridge natural limestone arch
+      - St. John's capital with pastel colonial buildings
+      - St. John's Cathedral baroque Anglican twin towers
+      - Dickenson Bay beach with water sports and resorts
+      - Jolly Beach all-inclusive resort area
+      - Fig Tree Drive rainforest drive with fruit trees
+      - Sailing Week prestigious annual regatta
+      - Pillars of Hercules rock formations at shoreline
+      - Frigate Bird Sanctuary nesting colony on Barbuda
+      - Hawksbill turtles nesting on protected beaches
+    hashtags:
+      - "#Antigua"
+      - "#AntiguaBarbuda"
+      - "#Caribbean"
+      - "#365Beaches"
+
+  # British Virgin Islands - Tortola
+  tortola:
+    enabled: true
+    weight: 1
+    name: "Tortola"
+    country: "British Virgin Islands"
+    timezone: "America/Tortola"
+    coordinates:
+      lat: 18.4207
+      lon: -64.6400
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Cane Garden Bay palm-lined beach with beach bars
+      - The Baths giant granite boulders forming grottoes (on Virgin Gorda)
+      - Road Town capital with cruise ship dock
+      - Sage Mountain National Park highest point in BVI
+      - Smuggler's Cove secluded beach accessible by rough road
+      - Callwood Rum Distillery oldest operating distillery
+      - Apple Bay surf beach with consistent waves
+      - Jost Van Dyke nearby party island with Soggy Dollar Bar
+      - Norman Island legendary treasure island caves
+      - Marina Cay small island resort
+      - Fort Burt historic lookout with harbor views
+      - Long Bay Beach west end stretch of sand
+      - Skyworld restaurant panoramic views and local cuisine
+      - Yacht charters bareboat sailing capital of world
+      - Peter Island private resort island
+      - Colorful West Indian architecture pastel buildings
+    hashtags:
+      - "#Tortola"
+      - "#BVI"
+      - "#BritishVirginIslands"
+      - "#Caribbean"
+
+  # Grenada
+  grenada:
+    enabled: true
+    weight: 1
+    name: "Grenada"
+    country: "Grenada"
+    timezone: "America/Grenada"
+    coordinates:
+      lat: 12.1165
+      lon: -61.6790
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Grand Anse Beach two-mile crescent of white sand
+      - St. George's harbor hillside capital with Georgian buildings
+      - Underwater Sculpture Park submerged art installation
+      - Grand Etang National Park crater lake in rainforest
+      - Nutmeg processing stations spice island heritage
+      - Morne Rouge Beach secluded bay south of Grand Anse
+      - Fort George 18th-century French fortress views
+      - Annandale Falls tropical waterfall with swimming
+      - Carenage horseshoe harbor with waterfront warehouses
+      - Belmont Estate cocoa plantation and gardens
+      - Concord Falls series of three waterfalls
+      - Gouyave Fish Friday weekly street food festival
+      - Spice plantations nutmeg cinnamon cloves cultivation
+      - Dougaldston Spice Estate working plantation tour
+      - Colorful hillside houses pastel buildings climbing slopes
+      - Caribbean-Georgian architecture distinctive colonial style
+    hashtags:
+      - "#Grenada"
+      - "#SpiceIsland"
+      - "#Caribbean"
+      - "#PureGrenada"
+
+  # St. Kitts
+  st_kitts:
+    enabled: true
+    weight: 1
+    name: "St. Kitts"
+    country: "St. Kitts and Nevis"
+    timezone: "America/St_Kitts"
+    coordinates:
+      lat: 17.3578
+      lon: -62.7830
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Brimstone Hill Fortress UNESCO British military citadel
+      - St. Kitts Scenic Railway sugar cane train around island
+      - Basseterre capital with Georgian architecture
+      - Port Zante cruise terminal and shopping
+      - Mount Liamuiga dormant volcano with crater lake
+      - Timothy Hill viewpoint between Atlantic and Caribbean
+      - Frigate Bay beaches Atlantic and Caribbean sides
+      - Romney Manor estate with botanical gardens
+      - Caribelle Batik factory at Romney Manor
+      - Independence Square central plaza in Basseterre
+      - The Circus roundabout modeled on Piccadilly
+      - Black Rocks volcanic lava formations on coast
+      - Cockleshell Beach south end with Nevis views
+      - Fairview Great House restored plantation mansion
+      - Green vervet monkeys descendants of African imports
+      - Sugar cane fields historic crop covering hillsides
+    hashtags:
+      - "#StKitts"
+      - "#StKittsNevis"
+      - "#Caribbean"
+      - "#LoveSKN"
+
+  # Martinique
+  martinique:
+    enabled: true
+    weight: 1
+    name: "Martinique"
+    country: "France (Martinique)"
+    timezone: "America/Martinique"
+    coordinates:
+      lat: 14.6415
+      lon: -61.0242
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Mount Pelée active volcano that destroyed St. Pierre
+      - Les Salines Beach postcard-perfect palm-fringed beach
+      - Fort-de-France capital with French colonial architecture
+      - Saint-Pierre ruins of city destroyed by 1902 eruption
+      - Diamond Rock volcanic islet with military history
+      - Balata Gardens tropical gardens with Amazonian plants
+      - La Savane park downtown Fort-de-France with statue
+      - Sacré-Coeur de Balata miniature of Paris church
+      - Anse Dufour fishing village with sea turtles
+      - Jardin de Balata exotic botanical gardens
+      - Rum distilleries finest rhum agricole production
+      - Route de la Trace scenic mountain road through rainforest
+      - Grande Anse des Salines perfect beach in southern tip
+      - Trois-Îlets resort area across bay from capital
+      - Martinican Creole culture unique French Caribbean blend
+      - Yoles rondes traditional racing sailboats
+    hashtags:
+      - "#Martinique"
+      - "#France"
+      - "#Caribbean"
+      - "#FWI"
+
+  # Guadeloupe
+  guadeloupe:
+    enabled: true
+    weight: 1
+    name: "Guadeloupe"
+    country: "France (Guadeloupe)"
+    timezone: "America/Guadeloupe"
+    coordinates:
+      lat: 16.2650
+      lon: -61.5510
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - La Soufrière active volcano with lunar landscapes
+      - Butterfly-shaped island Basse-Terre and Grande-Terre
+      - Pointe-à-Pitre largest city with Creole market
+      - Carbet Falls three-tiered jungle waterfalls
+      - Sainte-Anne Beach turquoise lagoon with white sand
+      - Guadeloupe National Park UNESCO biosphere rainforest
+      - Marie-Galante island rum distilleries and beaches
+      - Les Saintes archipelago with French fishing villages
+      - Deshaies botanical gardens former Coluche estate
+      - Plage de la Perle wild beach on Basse-Terre
+      - Mémorial ACTe slavery memorial museum
+      - Spice Market Saint-Antoine in Pointe-à-Pitre
+      - Trace des Crêtes mountain ridge hiking trail
+      - Îlet du Gosier small island offshore resort area
+      - Rum distilleries award-winning Damoiseau and others
+      - Creole architecture wooden houses with fretwork
+    hashtags:
+      - "#Guadeloupe"
+      - "#France"
+      - "#Caribbean"
+      - "#FWI"
+
+  # Sint Maarten / Saint Martin
+  st_martin:
+    enabled: true
+    weight: 1
+    name: "St. Martin"
+    country: "Sint Maarten / Saint Martin"
+    timezone: "America/Lower_Princes"
+    coordinates:
+      lat: 18.0425
+      lon: -63.0548
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Maho Beach planes landing over sunbathers' heads
+      - Philipsburg Dutch capital with boardwalk and shopping
+      - Marigot French capital with open-air market
+      - Orient Bay Beach naturist section and water sports
+      - Fort Louis French fort with panoramic views
+      - Front Street duty-free shopping in Philipsburg
+      - Great Bay Beach main town beach with cruise ships
+      - Loterie Farm zip lines through forest canopy
+      - Pic Paradis highest point with hiking trails
+      - Princess Juliana Airport famous low-flying landings
+      - Border monument dividing Dutch and French sides
+      - Sunset Beach Bar watching planes land overhead
+      - Grand Case gourmet restaurant row on French side
+      - Simpson Bay lagoon with mega-yacht marina
+      - Friars Bay Beach French side with beach bars
+      - Pinel Island offshore snorkeling destination
+    hashtags:
+      - "#StMartin"
+      - "#SintMaarten"
+      - "#Caribbean"
+      - "#MahoBeach"
+
+  # Bonaire
+  bonaire:
+    enabled: true
+    weight: 1
+    name: "Bonaire"
+    country: "Bonaire"
+    timezone: "America/Kralendijk"
+    coordinates:
+      lat: 12.2019
+      lon: -68.2624
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Coral reefs world-class shore diving around entire island
+      - Kralendijk capital with Dutch colonial buildings
+      - Pink Beach salt flats creating rose-colored waters
+      - Salt pyramids white mountains at Cargill Salt Works
+      - Flamingos pink birds at Goto Lake and salt pans
+      - Slave huts tiny stone shelters at salt pans
+      - Washington Slagbaai National Park desert preserve
+      - 1000 Steps dive site dramatic underwater wall
+      - Lac Bay shallow lagoon for windsurfing and kayaking
+      - Donkeys wild descendants roaming the island
+      - Yellow-painted buildings distinctive island architecture
+      - Rincon oldest settlement with Mangazina di Rei museum
+      - Willemstoren Lighthouse southern tip beacon
+      - Cadushy Distillery cactus liqueur and spirits
+      - Klein Bonaire uninhabited offshore island
+      - Diver's paradise yellow stone markers on shore
+    hashtags:
+      - "#Bonaire"
+      - "#DiversParadise"
+      - "#Caribbean"
+      - "#ABC"
+
+  # Trinidad and Tobago - Tobago
+  tobago:
+    enabled: true
+    weight: 1
+    name: "Tobago"
+    country: "Trinidad and Tobago"
+    timezone: "America/Port_of_Spain"
+    coordinates:
+      lat: 11.1889
+      lon: -60.8317
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Pigeon Point Beach palm-lined beach with thatched jetty
+      - Buccoo Reef coral reef and nylon pool natural pool
+      - Speyside fishing village and diving mecca
+      - Main Ridge Forest Reserve oldest protected rainforest
+      - Castara Bay rustic fishing village with beach
+      - Argyle Waterfall three-tiered jungle cascade
+      - Fort King George historic British fortification
+      - Nylon Pool shallow sandbar in middle of reef
+      - Little Tobago Bird of Paradise Island sanctuary
+      - Englishman's Bay secluded palm-fringed beach
+      - Store Bay beach with famous bake and shark
+      - Goat races annual Easter festival tradition
+      - Crown Point airport area with restaurants
+      - Charlotteville remote village with pristine beaches
+      - Manta rays giant rays at dive sites
+      - Cocoa estates historic plantation cultivation
+    hashtags:
+      - "#Tobago"
+      - "#Trinidad"
+      - "#Caribbean"
+      - "#TrinidadAndTobago"
+
+  # Dominica
+  dominica:
+    enabled: true
+    weight: 1
+    name: "Dominica"
+    country: "Dominica"
+    timezone: "America/Dominica"
+    coordinates:
+      lat: 15.4150
+      lon: -61.3710
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Boiling Lake second largest hot spring in world
+      - Trafalgar Falls twin waterfalls accessible by trail
+      - Morne Trois Pitons National Park UNESCO rainforest
+      - Champagne Reef volcanic bubbles rising from seafloor
+      - Roseau capital with French colonial architecture
+      - Emerald Pool rainforest waterfall swimming hole
+      - Titou Gorge narrow canyon with hot and cold water
+      - Waitukubuli National Trail longest hiking trail in Caribbean
+      - Kalinago Territory indigenous Carib people community
+      - Scotts Head southern peninsula between sea and bay
+      - Indian River boat tours through mangrove swamp
+      - Syndicate Nature Trail parrot watching in rainforest
+      - Middleham Falls remote 200-foot jungle waterfall
+      - Victoria Falls tallest waterfall on island
+      - Nature Isle nickname for pristine environment
+      - Pirates of Caribbean filming locations recognizable sites
+    hashtags:
+      - "#Dominica"
+      - "#NatureIsle"
+      - "#Caribbean"
+      - "#DiscoverDominica"
+
+  # St. Vincent and the Grenadines - Bequia
+  bequia:
+    enabled: true
+    weight: 1
+    name: "Bequia"
+    country: "St. Vincent and the Grenadines"
+    timezone: "America/St_Vincent"
+    coordinates:
+      lat: 13.0167
+      lon: -61.2333
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Admiralty Bay horseshoe harbor filled with yachts
+      - Port Elizabeth main town with waterfront walkway
+      - Princess Margaret Beach secluded sandy cove
+      - Lower Bay Beach palm-lined beach with beach bars
+      - Old Hegg Turtle Sanctuary conservation breeding
+      - Friendship Bay Beach Atlantic-side surf
+      - Industry Bay calm beach on windward side
+      - Mount Pleasant panoramic views of Grenadines
+      - Whaling history museum and traditions
+      - Model boat building traditional craft heritage
+      - Frangipani Hotel historic waterfront guesthouse
+      - Mac's Pizzeria legendary island restaurant
+      - Moonhole architectural ruins on south coast
+      - Ferry from St. Vincent inter-island transport
+      - Yacht services boatyard and provisioning
+      - Paget Farm fishing community
+    hashtags:
+      - "#Bequia"
+      - "#Grenadines"
+      - "#StVincent"
+      - "#Caribbean"
+
+  # St. Barthélemy (St. Barts)
+  st_barts:
+    enabled: true
+    weight: 1
+    name: "St. Barthélemy"
+    country: "France (St. Barthélemy)"
+    timezone: "America/St_Barthelemy"
+    coordinates:
+      lat: 17.8969
+      lon: -62.8349
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Gustavia harbor yacht-filled capital with Swedish heritage
+      - Shell Beach shells covering beach near town
+      - St. Jean Beach divided by Eden Rock promontory
+      - Colombier Beach accessible only by boat or hike
+      - Gouverneur Beach secluded south coast paradise
+      - Saline Beach naturist beach with salt pond
+      - Eden Rock iconic hotel on peninsula
+      - Nikki Beach famous beach club
+      - Colorful Creole cottages red-roofed traditional houses
+      - Luxury villas celebrity hideaways on hillsides
+      - Airport runway ends at beach thrilling landings
+      - Fort Karl Swedish-era fortification ruins
+      - Inter Oceans Museum shell collection
+      - Le Ti St Barth cabaret dinner shows
+      - Mega yachts superyachts anchored in harbor
+      - French boutiques designer shopping in Gustavia
+    hashtags:
+      - "#StBarts"
+      - "#SaintBarth"
+      - "#Caribbean"
+      - "#France"
+
+  # Anguilla
+  anguilla:
+    enabled: true
+    weight: 1
+    name: "Anguilla"
+    country: "Anguilla"
+    timezone: "America/Anguilla"
+    coordinates:
+      lat: 18.2206
+      lon: -63.0686
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Shoal Bay East pristine two-mile white sand beach
+      - Meads Bay Beach luxury resorts and beach bars
+      - Sandy Ground village harbor with salt pond
+      - Rendezvous Bay Beach calm waters with St. Martin views
+      - Prickly Pear Cays uninhabited offshore islands
+      - The Valley capital and administrative center
+      - Crocus Bay calm swimming beach
+      - Little Bay Beach only accessible by boat or cliff
+      - Heritage Collection Museum island history exhibits
+      - Wallblake House 18th-century plantation house
+      - Sandy Island offshore sandbar with beach bar
+      - Limestone caves Fountain Cavern with Arawak carvings
+      - Boat racing national sport with traditional boats
+      - Scilly Cay tiny island restaurant off Island Harbour
+      - Maundays Bay half-moon beach with Cap Juluca
+      - Barnes Bay Beach sunset watching spot
+    hashtags:
+      - "#Anguilla"
+      - "#Caribbean"
+      - "#BeyondExtraordinary"
+      - "#ShoalBay"
+
+  # Saba
+  saba:
+    enabled: true
+    weight: 1
+    name: "Saba"
+    country: "Caribbean Netherlands"
+    timezone: "America/Lower_Princes"
+    coordinates:
+      lat: 17.6350
+      lon: -63.2328
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Mount Scenery highest point in Kingdom of Netherlands
+      - The Road winding road down near-vertical cliff
+      - Juancho E. Yrausquin Airport world's shortest commercial runway
+      - The Bottom village in crater of volcano
+      - Windwardside main village with white cottages
+      - Hell's Gate settlement at top of steep road
+      - Saba lace traditional needlework craft
+      - Stone staircases connecting villages across island
+      - Saba Marine Park pristine diving around island
+      - Pinnacles dive site volcanic seamounts
+      - Queen's Garden botanical garden with views
+      - Red-roofed white cottages traditional architecture
+      - Steep cliffs dramatic volcanic island topography
+      - Elfin cloud forest unique high-altitude ecosystem
+      - Unspoiled nature no beaches but dramatic scenery
+      - The Ladder ancient stone stairway from shore
+    hashtags:
+      - "#Saba"
+      - "#Caribbean"
+      - "#UnspoiledQueen"
+      - "#DutchCaribbean"
+
+  # St. Eustatius (Statia)
+  st_eustatius:
+    enabled: true
+    weight: 1
+    name: "St. Eustatius"
+    country: "Caribbean Netherlands"
+    timezone: "America/Lower_Princes"
+    coordinates:
+      lat: 17.4890
+      lon: -62.9736
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - The Quill dormant volcano crater with rainforest
+      - Oranjestad historic capital with colonial ruins
+      - Fort Oranje Dutch fortification overlooking bay
+      - Lower Town historic trading waterfront
+      - Miriam C. Schmidt Botanical Garden native plants
+      - First salute America first foreign acknowledgment
+      - Blue bead diving unique historic trade beads
+      - Zeelandia Beach wild Atlantic-side beach
+      - Dutch Reformed Church 1755 colonial church ruins
+      - Synagogue ruins Honen Dalim oldest in Americas
+      - Slave path historic stone-paved route
+      - Lynch Plantation Museum restored estate
+      - Dive sites shipwrecks and underwater ruins
+      - Fort de Windt southern point views to St. Kitts
+      - Venus flytrap Venus plant discovered here
+      - Crater rim hiking challenging Quill ascent
+    hashtags:
+      - "#Statia"
+      - "#StEustatius"
+      - "#Caribbean"
+      - "#GoldenRock"
+
+  # US Virgin Islands - St. Croix
+  st_croix:
+    enabled: true
+    weight: 1
+    name: "St. Croix"
+    country: "US Virgin Islands"
+    timezone: "America/Virgin"
+    coordinates:
+      lat: 17.7289
+      lon: -64.7351
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Christiansted National Historic Site Danish colonial town
+      - Buck Island Reef National Monument underwater trail
+      - Point Udall easternmost point of United States
+      - Frederiksted Victorian town rebuilt after fire
+      - Fort Christiansvaern yellow star-shaped Danish fortress
+      - Cane Bay Wall dramatic underwater wall dive
+      - Cruzan Rum Distillery historic rum production
+      - Estate Whim Plantation Museum restored sugar estate
+      - Salt River Bay Columbus landing site and mangroves
+      - Rainbow Beach calm west end swimming
+      - Steeple Building museum in 1753 church
+      - Sandy Point sea turtle nesting preserve
+      - Carambola Beach north shore resort area
+      - Mahogany Road tree-canopy drive through rainforest
+      - Sugar mill ruins historic towers across landscape
+      - Moko Jumbie stilt dancers cultural tradition
+    hashtags:
+      - "#StCroix"
+      - "#USVI"
+      - "#VirginIslands"
+      - "#Caribbean"
+
+  # Montserrat
+  montserrat:
+    enabled: true
+    weight: 1
+    name: "Montserrat"
+    country: "Montserrat"
+    timezone: "America/Montserrat"
+    coordinates:
+      lat: 16.7420
+      lon: -62.1874
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Soufrière Hills Volcano active volcano burying capital
+      - Plymouth buried city visible from exclusion zone
+      - Montserrat Volcano Observatory monitoring station
+      - Little Bay new capital under construction
+      - Rendezvous Bay only white sand beach on island
+      - Centre Hills rainforest reserve with orioles
+      - AIR Studios ruins legendary George Martin recording studio
+      - Garibaldi Hill views of devastated southern zone
+      - Runaway Ghaut spring believed to ensure return
+      - Exclusion Zone abandoned southern two-thirds of island
+      - Emerald Isle Irish heritage and shamrock passport stamp
+      - Jack Boy Hill hiking with volcano views
+      - Brades current de facto commercial center
+      - Woodlands Bay black sand beach
+      - St. Patrick's Day celebration green national holiday
+      - Volcanic destruction visible impact of 1995 eruption
+    hashtags:
+      - "#Montserrat"
+      - "#EmeraldIsle"
+      - "#Caribbean"
+      - "#Volcano"
+
+# ============================================
+# PACIFIC ISLANDS
+# ============================================
+
+  # French Polynesia - Bora Bora
+  bora_bora:
+    enabled: true
+    weight: 1
+    name: "Bora Bora"
+    country: "French Polynesia"
+    timezone: "Pacific/Tahiti"
+    coordinates:
+      lat: -16.5004
+      lon: -151.7415
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Mount Otemanu dramatic volcanic peak piercing clouds
+      - Overwater bungalows thatched-roof villas on stilts
+      - Turquoise lagoon crystal-clear waters encircling island
+      - Coral reef barrier reef creating protected lagoon
+      - Matira Beach white sand public beach on southern tip
+      - Vaitape main village with waterfront shops
+      - Four-wheel-drive tours around volcanic interior
+      - Pearl farms black pearl cultivation in lagoon
+      - Shark and ray feeding snorkeling excursions
+      - Coral gardens underwater snorkeling sites
+      - Motu islets small sand islands in lagoon
+      - Sunset dinner cruises romantic sailing on lagoon
+      - Polynesian dancing traditional performances
+      - Tiki sculptures carved wooden figures
+      - Outrigger canoes traditional Polynesian vessels
+      - Infinity pools overlooking lagoon and mountain
+    hashtags:
+      - "#BoraBora"
+      - "#FrenchPolynesia"
+      - "#Tahiti"
+      - "#Paradise"
+
+  # French Polynesia - Tahiti
+  tahiti:
+    enabled: true
+    weight: 1
+    name: "Tahiti"
+    country: "French Polynesia"
+    timezone: "Pacific/Tahiti"
+    coordinates:
+      lat: -17.6509
+      lon: -149.4260
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Papeete capital city with waterfront and market
+      - Black sand beaches volcanic dark shores
+      - Fautaua Waterfall dramatic cascade in tropical valley
+      - Point Venus where Captain Cook observed transit
+      - Arahoho Blowhole geyser spray from lava tubes
+      - Vaipahi Gardens terraced tropical botanical park
+      - Mount Orohena highest peak on island
+      - Gauguin Museum tribute to artist Paul Gauguin
+      - Paofai Gardens waterfront park in Papeete
+      - Le Marché de Papeete colorful local market
+      - Taharaa viewpoint panoramic Moorea views
+      - Three waterfalls Faarumai cascades
+      - Tiki Village cultural center with dance shows
+      - Pearl museum black pearl education
+      - Surfing waves reef breaks around island
+      - Teahupo'o legendary big wave surf spot
+    hashtags:
+      - "#Tahiti"
+      - "#FrenchPolynesia"
+      - "#TheIslandsOfTahiti"
+      - "#Pacific"
+
+  # French Polynesia - Moorea
+  moorea:
+    enabled: true
+    weight: 1
+    name: "Moorea"
+    country: "French Polynesia"
+    timezone: "Pacific/Tahiti"
+    coordinates:
+      lat: -17.5388
+      lon: -149.8295
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Mount Rotui shark-fin shaped volcanic peak
+      - Cook's Bay and Opunohu Bay dramatic twin inlets
+      - Belvedere Lookout panoramic view of both bays
+      - Pineapple plantations fields covering hillsides
+      - Stingray encounters swimming with rays in lagoon
+      - Magic Mountain viewpoint accessible by 4WD
+      - Tiki Village Polynesian cultural performances
+      - Temae Beach white sand public beach
+      - Dolphin watching pods in surrounding waters
+      - Ancient marae stone temple ruins
+      - Juice factories sampling local products
+      - Overwater bungalows luxury lagoon accommodations
+      - Heart-shaped island aerial view of island shape
+      - Tropical gardens lush vegetation everywhere
+      - Sailing to Tahiti views of sister island
+      - Vanilla plantations aromatic cultivation
+    hashtags:
+      - "#Moorea"
+      - "#FrenchPolynesia"
+      - "#Tahiti"
+      - "#Pacific"
+
+  # Fiji - Viti Levu
+  fiji:
+    enabled: true
+    weight: 1
+    name: "Fiji"
+    country: "Fiji"
+    timezone: "Pacific/Fiji"
+    coordinates:
+      lat: -17.7134
+      lon: 178.0650
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Coral Coast resort area with coral reefs
+      - Sigatoka Sand Dunes national park on south coast
+      - Navala Village last surviving traditional thatched village
+      - Garden of the Sleeping Giant orchid gardens
+      - Suva capital with colonial architecture
+      - Denarau Island resort island with golf
+      - Mamanuca Islands island chain for day trips
+      - Yasawa Islands remote island paradise
+      - Kava ceremony traditional welcome drink
+      - Bure traditional thatched huts
+      - Fire walking cultural performance
+      - Sabeto Hot Springs natural mud baths
+      - Pacific Harbour adventure capital
+      - Beqa Lagoon shark diving destination
+      - Cloud 9 floating bar and restaurant
+      - Meke traditional song and dance
+    hashtags:
+      - "#Fiji"
+      - "#BulaFiji"
+      - "#FijiIslands"
+      - "#Pacific"
+
+  # Hawaii - Oahu
+  oahu:
+    enabled: true
+    weight: 1
+    name: "Oahu"
+    country: "USA (Hawaii)"
+    timezone: "Pacific/Honolulu"
+    coordinates:
+      lat: 21.4389
+      lon: -158.0001
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Diamond Head volcanic crater with hiking trail
+      - Waikiki Beach iconic beach with high-rise hotels
+      - Pearl Harbor USS Arizona Memorial
+      - North Shore big wave surfing mecca
+      - Hanauma Bay snorkeling in volcanic bay
+      - Iolani Palace only royal palace in USA
+      - Sunset Beach legendary Pipeline surf
+      - Kualoa Ranch Jurassic Park filming location
+      - Duke Kahanamoku Statue surfing legend tribute
+      - Lanikai Beach twin Mokulua Islands offshore
+      - Ko Olina lagoons man-made swimming coves
+      - Dole Plantation pineapple maze and trains
+      - Byodo-In Temple Japanese temple replica
+      - Polynesian Cultural Center island villages
+      - Shark's Cove tide pools for snorkeling
+      - Manoa Falls rainforest waterfall hike
+    hashtags:
+      - "#Oahu"
+      - "#Hawaii"
+      - "#Waikiki"
+      - "#Aloha"
+
+  # Hawaii - Maui
+  maui:
+    enabled: true
+    weight: 1
+    name: "Maui"
+    country: "USA (Hawaii)"
+    timezone: "Pacific/Honolulu"
+    coordinates:
+      lat: 20.7984
+      lon: -156.3319
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Haleakala Crater massive dormant volcano at sunrise
+      - Road to Hana winding coastal highway with waterfalls
+      - Kaanapali Beach resort beach with Black Rock
+      - Lahaina historic whaling town with banyan tree
+      - Molokini Crater crescent-shaped snorkeling island
+      - Seven Sacred Pools Oheo Gulch waterfalls
+      - Iao Valley Needle volcanic spire in valley
+      - Napili Bay calm snorkeling beach
+      - Wailea beaches luxury resort coastline
+      - Makena Beach Big Beach with bodyboarders
+      - Whale watching humpbacks in winter season
+      - Upcountry lavender farms and vineyards
+      - Pipiwai Trail bamboo forest hike
+      - Maui Ocean Center aquarium and stingray pool
+      - Nakalele Blowhole dramatic coastal geyser
+      - Sunrise above the clouds Haleakala summit
+    hashtags:
+      - "#Maui"
+      - "#Hawaii"
+      - "#Haleakala"
+      - "#Aloha"
+
+  # Hawaii - Big Island
+  big_island_hawaii:
+    enabled: true
+    weight: 1
+    name: "Big Island"
+    country: "USA (Hawaii)"
+    timezone: "Pacific/Honolulu"
+    coordinates:
+      lat: 19.5429
+      lon: -155.6659
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Kilauea active volcano with flowing lava
+      - Hawaii Volcanoes National Park volcanic landscapes
+      - Mauna Kea stargazing observatories at summit
+      - Kona Coast coffee farms and beaches
+      - Punaluu Beach black sand beach with sea turtles
+      - Akaka Falls 442-foot jungle waterfall
+      - Hapuna Beach white sand swimming beach
+      - Waipio Valley lookout Valley of the Kings
+      - Manta ray night snorkel illuminated encounters
+      - Kealakekua Bay Captain Cook monument snorkeling
+      - Mauna Loa world's largest active volcano
+      - Rainbow Falls waterfall near Hilo
+      - Parker Ranch historic cattle ranching
+      - Green sand beach Papakolea olivine beach
+      - Lava tree molds petrified tree formations
+      - Petroglyphs ancient Hawaiian rock carvings
+    hashtags:
+      - "#BigIsland"
+      - "#Hawaii"
+      - "#Kilauea"
+      - "#Aloha"
+
+  # Hawaii - Kauai
+  kauai:
+    enabled: true
+    weight: 1
+    name: "Kauai"
+    country: "USA (Hawaii)"
+    timezone: "Pacific/Honolulu"
+    coordinates:
+      lat: 22.0964
+      lon: -159.5261
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Na Pali Coast dramatic sea cliffs accessible by boat
+      - Waimea Canyon Pacific Grand Canyon with red walls
+      - Hanalei Bay crescent beach with taro fields
+      - Wailua Falls twin 80-foot jungle falls
+      - Poipu Beach sunny south shore with sea turtles
+      - Fern Grotto river boat to tropical cave
+      - Kalalau Trail challenging coastal hike
+      - Princeville luxury resort with golf
+      - Spouting Horn blowhole coastal geyser
+      - Kilauea Lighthouse bird sanctuary point
+      - Tunnels Beach snorkeling reef near cliffs
+      - Lumahai Beach lush beach from South Pacific film
+      - Mount Waialeale wettest spot on earth
+      - Allerton Garden botanical estate in valley
+      - Helicopter tours dramatic aerial island views
+      - Rooster population chickens roaming freely
+    hashtags:
+      - "#Kauai"
+      - "#Hawaii"
+      - "#NaPali"
+      - "#GardenIsle"
+
+  # New Zealand - Bay of Islands
+  bay_of_islands:
+    enabled: true
+    weight: 1
+    name: "Bay of Islands"
+    country: "New Zealand"
+    timezone: "Pacific/Auckland"
+    coordinates:
+      lat: -35.2275
+      lon: 174.0920
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - 144 islands scattered across turquoise waters
+      - Hole in the Rock natural arch at Piercy Island
+      - Waitangi Treaty Grounds birthplace of New Zealand
+      - Paihia tourist town with ferry terminal
+      - Russell historic colonial town first capital
+      - Dolphin swimming pods of bottlenose dolphins
+      - Sailing cruises island hopping on catamarans
+      - Cream Trip mail delivery boat tour tradition
+      - Cape Brett lighthouse coastal peninsula
+      - Urupukapuka Island largest island with trails
+      - Fishing charters world-class game fishing
+      - Maori cultural experiences traditional carvings
+      - Kerikeri oldest European buildings in NZ
+      - Stone Store and Mission House historic sites
+      - Haruru Falls horseshoe waterfall
+      - Subtropical climate warmest region of NZ
+    hashtags:
+      - "#BayOfIslands"
+      - "#NewZealand"
+      - "#NZ"
+      - "#Northland"
+
+  # Samoa - Upolu
+  samoa:
+    enabled: true
+    weight: 1
+    name: "Samoa"
+    country: "Samoa"
+    timezone: "Pacific/Apia"
+    coordinates:
+      lat: -13.8333
+      lon: -171.7500
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - To Sua Ocean Trench swimming hole in volcanic sinkhole
+      - Apia capital with clock tower and waterfront
+      - Robert Louis Stevenson Museum author's last home
+      - Lalomanu Beach white sand with traditional fales
+      - Papaseea Sliding Rocks natural water slides
+      - Piula Cave Pool fresh spring in lava tube
+      - Return to Paradise Beach film location cove
+      - Traditional fale open-sided thatched houses
+      - Saleaula Lava Fields destroyed by 1905 eruption
+      - Manono Island car-free traditional island
+      - Fire knife dancing cultural performance
+      - Sunday church services harmonized singing
+      - Samoan tattoos traditional pe'a and malu
+      - Ava ceremony traditional kava drinking
+      - Blowholes coastal spray at Taga
+      - Rainforest waterfalls jungle cascades throughout
+    hashtags:
+      - "#Samoa"
+      - "#Upolu"
+      - "#Pacific"
+      - "#ToSua"
+
+  # Tonga
+  tonga:
+    enabled: true
+    weight: 1
+    name: "Tonga"
+    country: "Tonga"
+    timezone: "Pacific/Tongatapu"
+    coordinates:
+      lat: -21.2114
+      lon: -175.1498
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Ha'amonga 'a Maui Stonehenge of Pacific coral arch
+      - Whale swimming humpback encounters July to October
+      - Nuku'alofa capital with Royal Palace
+      - Blowholes coastal geysers at Houma
+      - Ancient burial tombs royal langi stone pyramids
+      - Vava'u island group sailing paradise
+      - Mariner's Cave underwater entrance sea cave
+      - Swallows Cave cliff diving and snorkeling
+      - Anahulu Cave underground pools and stalagmites
+      - Flying foxes fruit bats roosting in trees
+      - Sunday church singing powerful harmonized services
+      - Traditional feasts umu underground oven cooking
+      - Tapa cloth bark cloth beaten and decorated
+      - Fishing villages traditional communities
+      - Pristine beaches empty white sand shores
+      - Coral reefs snorkeling and diving sites
+    hashtags:
+      - "#Tonga"
+      - "#FriendlyIslands"
+      - "#Pacific"
+      - "#WhaleSwimming"
+
+  # Vanuatu
+  vanuatu:
+    enabled: true
+    weight: 1
+    name: "Vanuatu"
+    country: "Vanuatu"
+    timezone: "Pacific/Efate"
+    coordinates:
+      lat: -17.7333
+      lon: 168.3167
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Mount Yasur active volcano visitors can approach rim
+      - Blue Holes brilliant blue freshwater swimming spots
+      - Land diving Pentecost Island vine jumping ritual
+      - Port Vila capital with waterfront restaurants
+      - Champagne Beach soft white sand named for bubbles
+      - Millennium Cave adventure through jungle cave
+      - Mele Cascades tiered waterfall swimming
+      - Chief Roi Mata's Domain UNESCO world heritage
+      - Hideaway Island marine sanctuary snorkeling
+      - Underwater Post Office world's only submerged post
+      - Kastom villages traditional custom culture
+      - Black magic island traditional spiritual practices
+      - Kava bars drinking national beverage
+      - World War II relics sunken ships and planes
+      - Banyan trees massive ancient trees
+      - Traditional dance sand drawings
+    hashtags:
+      - "#Vanuatu"
+      - "#Pacific"
+      - "#MountYasur"
+      - "#Efate"
+
+  # Cook Islands - Rarotonga
+  rarotonga:
+    enabled: true
+    weight: 1
+    name: "Rarotonga"
+    country: "Cook Islands"
+    timezone: "Pacific/Rarotonga"
+    coordinates:
+      lat: -21.2367
+      lon: -159.7777
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Muri Beach turquoise lagoon with motu islets
+      - Cross-Island Track hike through jungle to Needle
+      - Te Vara Nui Village cultural show and feast
+      - Avarua capital with colorful buildings
+      - Punanga Nui Market Saturday morning market
+      - Black pearl farms cultivation and shopping
+      - Snorkeling lagoon reef fish and coral
+      - Island Night traditional dancing and feast
+      - Mountain peaks jungle-covered volcanic interior
+      - Arorangi historic village with churches
+      - Reef walking low tide exploration
+      - One Foot Island Aitutaki day trip
+      - Pa traditional fortified sites
+      - Coral sand beaches encircling island
+      - Scooter tours around island road
+      - Sunset at Aroa Marine Reserve
+    hashtags:
+      - "#Rarotonga"
+      - "#CookIslands"
+      - "#Pacific"
+      - "#MuriBeach"
+
+  # Palau
+  palau:
+    enabled: true
+    weight: 1
+    name: "Palau"
+    country: "Palau"
+    timezone: "Pacific/Palau"
+    coordinates:
+      lat: 7.5150
+      lon: 134.5825
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Rock Islands UNESCO limestone islands in lagoon
+      - Jellyfish Lake swimming with stingless jellyfish
+      - Blue Corner world-famous wall diving site
+      - Milky Way natural white mud spa in water
+      - Ngardmau Waterfall tallest waterfall in Palau
+      - Koror main town with restaurants and shops
+      - German Channel manta ray feeding station
+      - Chandelier Cave underwater cathedral with chambers
+      - Long Beach sandbar at low tide
+      - WWII wrecks sunken Japanese ships and planes
+      - Kayaking through Rock Islands marine lakes
+      - Dolphins dolphins pods in surrounding waters
+      - Mandarin fish diving dusk mating display
+      - Pristine coral reefs high reef biodiversity
+      - Bai traditional meeting houses
+      - Storyboards traditional carved wooden art
+    hashtags:
+      - "#Palau"
+      - "#RockIslands"
+      - "#Pacific"
+      - "#JellyfishLake"
+
+  # Guam
+  guam:
+    enabled: true
+    weight: 1
+    name: "Guam"
+    country: "USA (Guam)"
+    timezone: "Pacific/Guam"
+    coordinates:
+      lat: 13.4443
+      lon: 144.7937
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Tumon Bay tourist beach strip with hotels
+      - Two Lovers Point romantic clifftop viewpoint
+      - Latte Stone Park ancient Chamorro stone pillars
+      - Fort Nuestra Señora de la Soledad Spanish fort
+      - Talofofo Falls jungle waterfall and cave
+      - Ypao Beach calm swimming and snorkeling
+      - Gun Beach WWII coastal defense guns
+      - Cocos Island offshore snorkeling island
+      - War in the Pacific National Park WWII sites
+      - Underwater World aquarium and tunnel
+      - K-Mart shopping duty-free tourist shopping
+      - Ritidian Point wildlife refuge and beaches
+      - Chamorro Village Wednesday night market
+      - Plaza de España Spanish colonial ruins
+      - Southern villages traditional Chamorro culture
+      - Fiesta events local celebrations with food
+    hashtags:
+      - "#Guam"
+      - "#Hafa"
+      - "#Pacific"
+      - "#Mariana"
+
+  # Saipan
+  saipan:
+    enabled: true
+    weight: 1
+    name: "Saipan"
+    country: "Northern Mariana Islands"
+    timezone: "Pacific/Guam"
+    coordinates:
+      lat: 15.1900
+      lon: 145.7500
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Grotto world-class diving cave with cathedral
+      - Suicide Cliff tragic WWII memorial site
+      - Banzai Cliff WWII historical cliff
+      - Managaha Island offshore snorkeling paradise
+      - Micro Beach calm lagoon swimming
+      - Bird Island limestone sea stack sanctuary
+      - Last Command Post WWII Japanese bunker
+      - American Memorial Park WWII commemorative
+      - Forbidden Island natural limestone bridge
+      - Mariana Trench deepest ocean point nearby
+      - Obyan Beach snorkeling with sea turtles
+      - Mount Tapochau highest point with views
+      - Flame trees red flowering trees in June
+      - Lau Lau Beach calm protected beach
+      - Japanese Peace Memorial remembrance site
+      - Wings Beach remote wilderness beach
+    hashtags:
+      - "#Saipan"
+      - "#CNMI"
+      - "#Marianas"
+      - "#Pacific"
+
+  # Easter Island (Rapa Nui)
+  easter_island:
+    enabled: true
+    weight: 1
+    name: "Easter Island"
+    name_local: "Rapa Nui"
+    country: "Chile"
+    timezone: "Pacific/Easter"
+    coordinates:
+      lat: -27.1127
+      lon: -109.3497
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Moai statues mysterious carved stone heads
+      - Rano Raraku quarry where moai were carved
+      - Ahu Tongariki 15 restored moai in a row
+      - Orongo ceremonial village with petroglyphs
+      - Rano Kau volcanic crater with lake
+      - Anakena Beach white sand with palm trees and moai
+      - Ahu Akivi seven moai facing the ocean
+      - Birdman cult petroglyphs ancient competition carvings
+      - Volcanic craters Terevaka and other peaks
+      - Sunset at Ahu Tahai silhouetted moai
+      - Ana Kai Tangata cave with bird paintings
+      - Te Pito Kura fallen largest moai ever moved
+      - Red topknot hats pukao volcanic stone
+      - Wild horses roaming the island freely
+      - Tapati Rapa Nui festival annual cultural celebration
+      - Polynesian triangle most remote inhabited island
+    hashtags:
+      - "#EasterIsland"
+      - "#RapaNui"
+      - "#Moai"
+      - "#Chile"
+
+  # Papua New Guinea - Port Moresby
+  papua_new_guinea:
+    enabled: true
+    weight: 1
+    name: "Papua New Guinea"
+    country: "Papua New Guinea"
+    timezone: "Pacific/Port_Moresby"
+    coordinates:
+      lat: -5.4477
+      lon: 145.7781
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Highland tribes traditional sing-sing festivals
+      - Kokoda Track historic WWII jungle trail
+      - Sepik River traditional villages and art
+      - Mount Wilhelm highest peak for trekking
+      - Varirata National Park hiking near Port Moresby
+      - Tufi fjords diving and cultural villages
+      - Rabaul volcanic town with WWII history
+      - Milne Bay island hopping and diving
+      - Spirit houses traditional haus tambaran
+      - Mudmen Asaro tribe with clay-covered bodies
+      - Wigmen Huli tribe with elaborate wigs
+      - Bilum bags traditional woven bags
+      - Coral Triangle world's most biodiverse waters
+      - Bird of paradise endemic exotic birds
+      - Surf in tropical paradise remote breaks
+      - Artifacts carvings and masks for sale
+    hashtags:
+      - "#PapuaNewGuinea"
+      - "#PNG"
+      - "#Pacific"
+      - "#Melanesia"
+
+  # Solomon Islands
+  solomon_islands:
+    enabled: true
+    weight: 1
+    name: "Solomon Islands"
+    country: "Solomon Islands"
+    timezone: "Pacific/Guadalcanal"
+    coordinates:
+      lat: -9.4456
+      lon: 160.0000
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - WWII battlefields Guadalcanal historic sites
+      - Marovo Lagoon world's largest saltwater lagoon
+      - Kennedy Island where JFK swam to safety
+      - Skull caves traditional burial caves
+      - Traditional canoes intricately carved vessels
+      - Munda WWII sites and excellent diving
+      - Bonegi Beach wreck diving near Honiara
+      - Mataniko Falls waterfall near capital
+      - Artificial islands shell money islands
+      - Woodcarvers intricate traditional carvings
+      - Panpipe music traditional bamboo instruments
+      - Tetepare Island largest uninhabited island
+      - Rennell Island UNESCO raised coral atoll
+      - Crocodile watching saltwater crocs in rivers
+      - Volcano trekking active volcanoes to visit
+      - Traditional villages customary lifestyle
+    hashtags:
+      - "#SolomonIslands"
+      - "#Pacific"
+      - "#WWII"
+      - "#Guadalcanal"
+
+  # New Caledonia
+  new_caledonia:
+    enabled: true
+    weight: 1
+    name: "New Caledonia"
+    country: "France (New Caledonia)"
+    timezone: "Pacific/Noumea"
+    coordinates:
+      lat: -22.2758
+      lon: 166.4580
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Noumea capital with French colonial style
+      - Isle of Pines towering araucaria pines
+      - Loyalty Islands traditional Kanak islands
+      - World's largest lagoon UNESCO barrier reef
+      - Heart of Voh mangrove heart shape seen from air
+      - Anse Vata Beach urban beach with windsurfing
+      - Amédée Lighthouse snorkeling and day trips
+      - Tjibaou Cultural Centre Kanak art and culture
+      - French cuisine baguettes and bistros
+      - Kanak culture indigenous Melanesian traditions
+      - Blue River Provincial Park nature reserve
+      - Prony Bay snorkeling and kayaking
+      - Bourail Cemetery WWII memorial
+      - Nickel mines major industry visible on land
+      - Dugong watching sea cow sightings
+      - Nautile submarine underwater tours
+    hashtags:
+      - "#NewCaledonia"
+      - "#Noumea"
+      - "#France"
+      - "#Pacific"
+
+  # Micronesia - Yap
+  yap:
+    enabled: true
+    weight: 1
+    name: "Yap"
+    country: "Federated States of Micronesia"
+    timezone: "Pacific/Chuuk"
+    coordinates:
+      lat: 9.5145
+      lon: 138.1292
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Stone money ancient rai currency in villages
+      - Manta ray diving resident population year-round
+      - Traditional villages unchanged Yapese lifestyle
+      - Men's houses traditional meeting houses
+      - Cultural dances traditional performances
+      - Betel nut chewing widespread local practice
+      - Colonia main town with basic amenities
+      - Outer islands traditional coral islands
+      - Lavalava traditional wrapped clothing
+      - WWII relics Japanese bunkers and planes
+      - Pristine reefs excellent coral coverage
+      - Breadfruit forests staple food cultivation
+      - Taro patches traditional farming
+      - Canoe building traditional outrigger crafting
+      - Diving with mantas gentle giant encounters
+      - Authentic culture least westernized in Pacific
+    hashtags:
+      - "#Yap"
+      - "#Micronesia"
+      - "#StoneMoney"
+      - "#MantaRays"
+
+  # Marshall Islands - Majuro
+  majuro:
+    enabled: true
+    weight: 1
+    name: "Majuro"
+    country: "Marshall Islands"
+    timezone: "Pacific/Majuro"
+    coordinates:
+      lat: 7.0897
+      lon: 171.3803
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Laura Beach best beach on main atoll
+      - Alele Museum Marshallese culture and stick charts
+      - Delap-Uliga-Darrit main urban center DUD
+      - Stick chart navigation traditional wayfinding
+      - Nuclear testing legacy Bikini Atoll history
+      - Coral atolls low-lying ring-shaped islands
+      - Traditional outrigger canoes local sailing vessels
+      - Coconut palm groves primary vegetation
+      - Handicrafts woven baskets and mats
+      - Lagoon waters protected for swimming
+      - Climate change frontline rising sea levels
+      - Fishing culture traditional and commercial
+      - Coral reefs surrounding atoll rings
+      - Peace Park memorial to atomic testing
+      - Airport runway through lagoon
+      - Traditional dancing cultural performances
+    hashtags:
+      - "#Majuro"
+      - "#MarshallIslands"
+      - "#Pacific"
+      - "#Atoll"
+
+  # Kiribati
+  kiribati:
+    enabled: true
+    weight: 1
+    name: "Kiribati"
+    country: "Kiribati"
+    timezone: "Pacific/Tarawa"
+    coordinates:
+      lat: 1.4518
+      lon: 172.9717
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Tarawa Atoll capital with WWII battle sites
+      - Christmas Island world's largest coral atoll
+      - Betio WWII battle relics guns and bunkers
+      - International Date Line first to see new day
+      - Bairiki main town on South Tarawa
+      - Coral atolls low-lying vulnerable islands
+      - Traditional dancing I-Kiribati performances
+      - Fishing culture essential livelihood
+      - Maneaba traditional meeting houses
+      - Phoenix Islands protected marine area
+      - Lagoon fishing traditional canoe fishing
+      - Climate change ground zero rising seas
+      - Copra production coconut economy
+      - Bird watching frigate birds and terns
+      - Causeway connecting islets along atoll
+      - Empty beaches remote white sand shores
+    hashtags:
+      - "#Kiribati"
+      - "#Pacific"
+      - "#Tarawa"
+      - "#Atoll"
+
+  # Nauru
+  nauru:
+    enabled: true
+    weight: 1
+    name: "Nauru"
+    country: "Nauru"
+    timezone: "Pacific/Nauru"
+    coordinates:
+      lat: -0.5228
+      lon: 166.9315
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Phosphate pinnacles bizarre moonscape from mining
+      - Anibare Bay best swimming beach on island
+      - Command Ridge WWII Japanese guns and bunkers
+      - Buada Lagoon inland freshwater lake
+      - Smallest republic third smallest country
+      - Coral cliffs ring road around island edge
+      - No capital or city single continuous settlement
+      - Moqua Well fresh water caves
+      - Detention centres controversial history
+      - Parliament House government building
+      - Frigate bird catching traditional hunting
+      - Tropical ring road encircling island
+      - Phosphate mining history abandoned infrastructure
+      - Topside desolate interior mined landscape
+      - Airport runway former Japanese airstrip
+      - Local fishing traditional reef fishing
+    hashtags:
+      - "#Nauru"
+      - "#Pacific"
+      - "#SmallestRepublic"
+      - "#Island"
+
+  # Tuvalu
+  tuvalu:
+    enabled: true
+    weight: 1
+    name: "Tuvalu"
+    country: "Tuvalu"
+    timezone: "Pacific/Funafuti"
+    coordinates:
+      lat: -8.5167
+      lon: 179.2167
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Funafuti Atoll capital atoll barely above sea
+      - Funafuti Conservation Area marine protected lagoon
+      - Climate change frontline disappearing nation
+      - Traditional dancing fatele performances
+      - WWII airstrip now main runway and recreation
+      - Coral reefs lagoon snorkeling sites
+      - Outer islands even more remote atolls
+      - Low-lying nation highest point 4.6 meters
+      - Coconut palms primary vegetation
+      - Fishing culture essential for survival
+      - Maneapa community meeting houses
+      - Te Ano game traditional island ball game
+      - Handicrafts woven mats and fans
+      - Lagoon swimming calm protected waters
+      - King tides flooding streets increasingly
+      - .tv domain international internet fame
+    hashtags:
+      - "#Tuvalu"
+      - "#Pacific"
+      - "#ClimateChange"
+      - "#Island"
+
+# ============================================
+# SOUTHEAST ASIAN ISLANDS
+# ============================================
+
+  # Indonesia - Bali
+  bali:
+    enabled: true
+    weight: 1
+    name: "Bali"
+    country: "Indonesia"
+    timezone: "Asia/Makassar"
+    coordinates:
+      lat: -8.3405
+      lon: 115.0920
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Tanah Lot temple perched on rocky ocean outcrop
+      - Ubud rice terraces emerald green paddy fields
+      - Uluwatu Temple clifftop temple with ocean views
+      - Sacred Monkey Forest Sanctuary Hindu temple with macaques
+      - Mount Agung active sacred volcano rising above clouds
+      - Tegallalang Rice Terraces dramatic carved hillside paddies
+      - Pura Tirta Empul holy spring water temple
+      - Seminyak Beach trendy beach with beach clubs
+      - Kecak fire dance traditional evening performances
+      - Ubud art market traditional crafts and paintings
+      - Balinese temples ornate Hindu architecture everywhere
+      - Nusa Penida dramatic cliffs and manta rays
+      - Waterfalls jungle cascades like Tegenungan
+      - Jimbaran Bay seafood dining on beach at sunset
+      - Balinese offerings flower and incense daily rituals
+      - Surf breaks world-class waves at Uluwatu
+    hashtags:
+      - "#Bali"
+      - "#Indonesia"
+      - "#Ubud"
+      - "#IslandOfGods"
+
+  # Thailand - Phuket
+  phuket:
+    enabled: true
+    weight: 1
+    name: "Phuket"
+    country: "Thailand"
+    timezone: "Asia/Bangkok"
+    coordinates:
+      lat: 7.9519
+      lon: 98.3381
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Patong Beach famous beach with nightlife strip
+      - Big Buddha 45-meter white marble Buddha statue
+      - Phi Phi Islands dramatic limestone islands day trip
+      - Phang Nga Bay James Bond Island karst scenery
+      - Old Phuket Town Sino-Portuguese architecture
+      - Wat Chalong most important Buddhist temple
+      - Promthep Cape sunset viewpoint at southern tip
+      - Kata Beach family-friendly beach with surf
+      - Tiger Kingdom tiger sanctuary encounters
+      - Elephant sanctuaries ethical elephant experiences
+      - Bangla Road neon-lit entertainment street
+      - Longtail boats traditional wooden vessels
+      - Night markets street food and shopping
+      - Thai massage parlors traditional healing
+      - Coral Island snorkeling day trip
+      - Thai cooking classes learn local cuisine
+    hashtags:
+      - "#Phuket"
+      - "#Thailand"
+      - "#PhiPhi"
+      - "#Amazing"
+
+  # Thailand - Koh Samui
+  koh_samui:
+    enabled: true
+    weight: 1
+    name: "Koh Samui"
+    country: "Thailand"
+    timezone: "Asia/Bangkok"
+    coordinates:
+      lat: 9.5120
+      lon: 100.0136
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Big Buddha golden 12-meter seated Buddha
+      - Ang Thong Marine Park archipelago of 42 islands
+      - Chaweng Beach longest beach with nightlife
+      - Na Muang Waterfalls purple rock cascades in jungle
+      - Wat Plai Laem colorful multi-armed Guanyin temple
+      - Grandfather and Grandmother Rocks suggestive stone formations
+      - Fisherman's Village Bophut walking street
+      - Secret Buddha Garden hillside sculpture park
+      - Mummified monk Wat Khunaram preserved body
+      - Coconut plantations trees covering entire island
+      - Full Moon Party nearby Koh Phangan
+      - Thai boxing Muay Thai stadium fights
+      - Night market Lamai walking street
+      - Snorkeling Japanese Garden coral reef
+      - Sunset viewpoints around island
+      - Traditional fishing villages colorful boats
+    hashtags:
+      - "#KohSamui"
+      - "#Thailand"
+      - "#Samui"
+      - "#GulfOfThailand"
+
+  # Philippines - Palawan
+  palawan:
+    enabled: true
+    weight: 1
+    name: "Palawan"
+    country: "Philippines"
+    timezone: "Asia/Manila"
+    coordinates:
+      lat: 9.8349
+      lon: 118.7384
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - El Nido limestone karst cliffs and lagoons
+      - Puerto Princesa Underground River UNESCO cave
+      - Coron shipwreck diving and pristine lakes
+      - Big Lagoon El Nido kayaking into hidden pools
+      - Bacuit Archipelago island hopping paradise
+      - Kayangan Lake crystal clear mountain lake
+      - Twin Lagoon Coron connected swimming holes
+      - Honda Bay island hopping near Puerto Princesa
+      - Tubbataha Reef UNESCO marine sanctuary
+      - Secret Lagoon hidden beach through rock passage
+      - Pangulasian Island luxury resort island
+      - Banana Island white sand tropical beach
+      - Limestone cliffs dramatic karst scenery everywhere
+      - Banca boats traditional outrigger vessels
+      - Firefly watching evening river tours
+      - Crocodile farm conservation center
+    hashtags:
+      - "#Palawan"
+      - "#Philippines"
+      - "#ElNido"
+      - "#Coron"
+
+  # Philippines - Boracay
+  boracay:
+    enabled: true
+    weight: 1
+    name: "Boracay"
+    country: "Philippines"
+    timezone: "Asia/Manila"
+    coordinates:
+      lat: 11.9674
+      lon: 121.9248
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - White Beach 4km powdery white sand main beach
+      - Station 1 2 3 beach areas with different vibes
+      - Puka Shell Beach northern beach with seashells
+      - Willy's Rock grotto shrine on White Beach
+      - D'Mall open-air shopping and dining complex
+      - Ariel's Point cliff diving and day trip island
+      - Helmet diving underwater walking experience
+      - Sailing paraw traditional boats with striped sails
+      - Sunset watching White Beach golden hour
+      - Bulabog Beach kiteboarding and windsurfing beach
+      - Island hopping snorkeling and beach tours
+      - Fire dancers nightly beach entertainment
+      - Massage on beach beachside spa services
+      - Cocktails on beach bars along shoreline
+      - Beachfront dining seafood restaurants
+      - Full moon parties celebration nights
+    hashtags:
+      - "#Boracay"
+      - "#Philippines"
+      - "#WhiteBeach"
+      - "#MoreFunInThePhilippines"
+
+  # Malaysia - Langkawi
+  langkawi:
+    enabled: true
+    weight: 1
+    name: "Langkawi"
+    country: "Malaysia"
+    timezone: "Asia/Kuala_Lumpur"
+    coordinates:
+      lat: 6.3500
+      lon: 99.8000
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Sky Bridge curved pedestrian bridge at mountaintop
+      - Langkawi Cable Car steep gondola to Machincang peak
+      - Eagle Square giant eagle statue at waterfront
+      - Pantai Cenang main beach strip with activities
+      - Kilim Karst Geoforest Park mangrove kayaking
+      - Telaga Tujuh Seven Wells waterfalls and pools
+      - Underwater World aquarium with penguins
+      - Duty-free shopping tax-free goods throughout
+      - Island hopping Dayang Bunting pregnant maiden lake
+      - Crocodile Adventureland crocodile farm
+      - Oriental Village base station with attractions
+      - Mahsuri Tomb legendary princess memorial
+      - Rice garden museum paddy field heritage
+      - Mangrove tours eagle feeding and caves
+      - Langkawi Craft Complex traditional arts
+      - Sunset cruises sailing around islands
+    hashtags:
+      - "#Langkawi"
+      - "#Malaysia"
+      - "#SkyBridge"
+      - "#TrulyAsia"
+
+  # Indonesia - Lombok
+  lombok:
+    enabled: true
+    weight: 1
+    name: "Lombok"
+    country: "Indonesia"
+    timezone: "Asia/Makassar"
+    coordinates:
+      lat: -8.5833
+      lon: 116.1167
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Mount Rinjani active volcano with crater lake
+      - Gili Islands three car-free coral islands
+      - Senggigi Beach main tourist beach area
+      - Kuta Beach Lombok surfer beach south coast
+      - Tanjung Aan Beach twin bays with powder sand
+      - Pink Beach rare pink sand from coral
+      - Sendang Gile Waterfall multi-tiered jungle cascade
+      - Pusuk Monkey Forest mountain road with macaques
+      - Sade Village traditional Sasak thatched houses
+      - Gili Trawangan party island with nightlife
+      - Gili Meno honeymoon island with turtles
+      - Gili Air balance of quiet and activities
+      - Sasak culture indigenous weaving and traditions
+      - Sembalun Valley highland agriculture and trekking
+      - Merese Hill sunset viewpoint over beaches
+      - Sekotong beaches southern hidden coves
+    hashtags:
+      - "#Lombok"
+      - "#Indonesia"
+      - "#GiliIslands"
+      - "#Rinjani"
+
+  # Vietnam - Phu Quoc
+  phu_quoc:
+    enabled: true
+    weight: 1
+    name: "Phu Quoc"
+    country: "Vietnam"
+    timezone: "Asia/Ho_Chi_Minh"
+    coordinates:
+      lat: 10.2275
+      lon: 103.9631
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Long Beach main beach strip with resorts
+      - Fish sauce factories famous nuoc mam production
+      - Phu Quoc National Park UNESCO biosphere reserve
+      - Night market Dinh Cau seafood and local food
+      - Suoi Tranh Waterfall jungle waterfall with pools
+      - Sao Beach white sand beach on east coast
+      - Dinh Cau Temple night market fishing shrine
+      - Hon Thom Cable Car longest over-sea cable car
+      - Pearl farms cultivation and showrooms
+      - Pepper plantations famous black pepper
+      - Vinpearl Safari zoo and amusement park
+      - Coconut Tree Prison war history museum
+      - An Thoi Islands southern archipelago snorkeling
+      - Starfish Beach shallow water with starfish
+      - Sunset at Long Beach orange skies over ocean
+      - Motorbike island tours exploring coastline
+    hashtags:
+      - "#PhuQuoc"
+      - "#Vietnam"
+      - "#PearlIsland"
+      - "#Vietnam"
+
+  # Indonesia - Komodo
+  komodo:
+    enabled: true
+    weight: 1
+    name: "Komodo"
+    country: "Indonesia"
+    timezone: "Asia/Makassar"
+    coordinates:
+      lat: -8.5500
+      lon: 119.4833
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Komodo dragons giant monitor lizards in wild
+      - Komodo National Park UNESCO world heritage
+      - Pink Beach rare pink sand from coral
+      - Padar Island iconic three-bay viewpoint
+      - Manta Point diving with giant mantas
+      - Rinca Island second dragon-inhabited island
+      - Labuan Bajo gateway town with harbor
+      - Kanawa Island snorkeling and day trip
+      - Batu Bolong diving current-swept pinnacle
+      - Flying foxes thousands of bats at dusk
+      - Coral reefs exceptional biodiversity
+      - Trekking trails ranger-guided walks
+      - Sunset viewpoints dramatic golden hour
+      - Liveaboard diving multi-day boat trips
+      - Traditional fishing villages Bajau communities
+      - Crystal Rock diving colorful coral pinnacle
+    hashtags:
+      - "#Komodo"
+      - "#Indonesia"
+      - "#KomodoDragon"
+      - "#Flores"
+
+  # Cambodia - Koh Rong
+  koh_rong:
+    enabled: true
+    weight: 1
+    name: "Koh Rong"
+    country: "Cambodia"
+    timezone: "Asia/Phnom_Penh"
+    coordinates:
+      lat: 10.7272
+      lon: 103.2333
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Long Set Beach 4km white sand main beach
+      - Bioluminescent plankton glowing water at night
+      - Sok San Beach pristine western beach
+      - Police Beach party area with bars
+      - 4K Beach secluded swimming spot
+      - Palm Beach beach parties and hostels
+      - Jungle interior undeveloped rainforest
+      - Fishing villages local Khmer communities
+      - Lazy Beach relaxed boutique beach
+      - Snorkeling clear waters with coral
+      - Waterfall trek inland adventure hike
+      - High Point sunset bar and restaurant
+      - Speedboat ferries from Sihanoukville
+      - Hammock life beach relaxation culture
+      - Rustic accommodations bungalows on beach
+      - Sunrise eastern beach views
+    hashtags:
+      - "#KohRong"
+      - "#Cambodia"
+      - "#Island"
+      - "#Backpacking"
+
+  # Malaysia - Perhentian Islands
+  perhentian:
+    enabled: true
+    weight: 1
+    name: "Perhentian Islands"
+    country: "Malaysia"
+    timezone: "Asia/Kuala_Lumpur"
+    coordinates:
+      lat: 5.9000
+      lon: 102.7500
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Long Beach Perhentian Kecil backpacker beach
+      - Coral Bay snorkeling directly off beach
+      - Perhentian Besar more upscale larger island
+      - Sea turtles swimming with green and hawksbill
+      - Shark Point reef sharks and marine life
+      - Romantic Beach quieter smaller beach
+      - Jungle trail connecting both sides of island
+      - Bioluminescent plankton glowing beach at night
+      - Abdul's Chalet iconic budget accommodation
+      - Teluk Pauh main beach on Besar
+      - Windmill viewpoint hilltop panorama
+      - Snorkeling gear rental everywhere available
+      - Fishing village local community
+      - Monsoon season closed November to February
+      - Fireflies evening boat tours
+      - Water taxi boat transport between beaches
+    hashtags:
+      - "#Perhentian"
+      - "#Malaysia"
+      - "#TurtleIsland"
+      - "#Backpacking"
+
+  # Indonesia - Raja Ampat
+  raja_ampat:
+    enabled: true
+    weight: 1
+    name: "Raja Ampat"
+    country: "Indonesia"
+    timezone: "Asia/Jayapura"
+    coordinates:
+      lat: -0.5000
+      lon: 130.5000
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Four Kings archipelago of over 1500 islands
+      - Highest marine biodiversity on Earth coral triangle
+      - Piaynemo iconic karst island viewpoint
+      - Misool private island resort and conservation
+      - Wayag limestone peaks and turquoise lagoons
+      - Manta rays cleaning stations and encounters
+      - Arborek Village homestay and sea walking
+      - Diving paradise over 1500 fish species
+      - Waisai gateway town to archipelago
+      - Birdwatching red bird of paradise
+      - Kayaking through limestone islands
+      - Traditional Papuan villages local culture
+      - Jellyfish Lake non-stinging jellyfish swimming
+      - Pristine beaches empty white sand shores
+      - Liveaboard diving multi-day expeditions
+      - Conservation fees supporting marine protection
+    hashtags:
+      - "#RajaAmpat"
+      - "#Indonesia"
+      - "#Diving"
+      - "#Papua"
+
+  # Thailand - Koh Phi Phi
+  koh_phi_phi:
+    enabled: true
+    weight: 1
+    name: "Koh Phi Phi"
+    country: "Thailand"
+    timezone: "Asia/Bangkok"
+    coordinates:
+      lat: 7.7407
+      lon: 98.7784
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Maya Bay The Beach movie filming location
+      - Phi Phi Viewpoint iconic twin bay panorama
+      - Ton Sai Bay main pier and town area
+      - Long Beach east facing sunrise beach
+      - Monkey Beach macaques on beach
+      - Viking Cave ancient paintings and swiftlet nests
+      - Phi Phi Don main inhabited island
+      - Phi Phi Leh uninhabited island with lagoons
+      - Pileh Lagoon turquoise lagoon for swimming
+      - Ao Lo Dalam west side bay with bars
+      - Tsunami memorial 2004 disaster remembrance
+      - Nightlife fire shows and beach parties
+      - Snorkeling Shark Point reef sharks
+      - Cliff jumping spots around islands
+      - Longtail boats colorful traditional vessels
+      - Bioluminescent plankton night swimming
+    hashtags:
+      - "#KohPhiPhi"
+      - "#Thailand"
+      - "#TheBeach"
+      - "#Krabi"
+
+  # Myanmar - Mergui Archipelago
+  mergui:
+    enabled: true
+    weight: 1
+    name: "Mergui Archipelago"
+    country: "Myanmar"
+    timezone: "Asia/Yangon"
+    coordinates:
+      lat: 11.5000
+      lon: 98.0000
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - 800 islands mostly uninhabited archipelago
+      - Moken sea gypsies nomadic boat-dwelling people
+      - Pristine diving unexplored underwater world
+      - Lampi Island only inhabited island with park
+      - Deserted beaches completely empty shores
+      - Mangrove forests extensive coastal ecosystems
+      - Kayaking through islands exploring by paddle
+      - Liveaboard cruises only way to access
+      - Coral reefs recovering from fishing pressure
+      - Endemic species unique island wildlife
+      - Burma Banks shark-rich offshore seamounts
+      - Traditional villages small fishing communities
+      - Black Rock famous dive site
+      - Kawthoung gateway town from Thailand
+      - Permit required special access region
+      - Last frontier tourism rarely visited
+    hashtags:
+      - "#Mergui"
+      - "#Myanmar"
+      - "#Untouched"
+      - "#Archipelago"
+
+  # Indonesia - Gili Islands
+  gili_islands:
+    enabled: true
+    weight: 1
+    name: "Gili Islands"
+    country: "Indonesia"
+    timezone: "Asia/Makassar"
+    coordinates:
+      lat: -8.3500
+      lon: 116.0500
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Gili Trawangan party island with bars and diving
+      - Gili Meno quiet honeymoon and turtle island
+      - Gili Air best balance of quiet and activities
+      - No motorized vehicles bicycles and horses only
+      - Sea turtles swimming with green sea turtles
+      - Underwater sculptures biorock art installations
+      - Sunset swings iconic photo spots on beach
+      - Night market street food on Gili T
+      - Freediving courses popular activity
+      - Glass bottom boat turtle watching
+      - Snorkeling coral reefs around all islands
+      - Beach bars reggae music and cocktails
+      - Cidomo horse carts local transport
+      - Full moon parties monthly celebrations
+      - Island hopping boat connections between
+      - Massage on beach beachfront spa services
+    hashtags:
+      - "#GiliIslands"
+      - "#Indonesia"
+      - "#GiliT"
+      - "#Lombok"
+
+  # Philippines - Siargao
+  siargao:
+    enabled: true
+    weight: 1
+    name: "Siargao"
+    country: "Philippines"
+    timezone: "Asia/Manila"
+    coordinates:
+      lat: 9.8500
+      lon: 126.0500
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Cloud 9 famous surf break and boardwalk
+      - Sugba Lagoon turquoise diving and kayaking spot
+      - Magpupungko Rock Pools tidal rock formations
+      - Naked Island bare sandbar for day trips
+      - Daku Island beach island with palm trees
+      - Guyam Island tiny palm-covered island
+      - Sohoton Cove lagoons and jellyfish sanctuary
+      - Surf culture board rentals and lessons everywhere
+      - General Luna main tourist town
+      - Coconut palms covering entire island
+      - Motorbike culture main transportation method
+      - Sunset watching Cloud 9 boardwalk golden hour
+      - Island hopping boat tours to islets
+      - Pacifico Beach lesser-known surf spot
+      - Fish market local catches and cheap eats
+      - Rope swing Instagram-famous spots
+    hashtags:
+      - "#Siargao"
+      - "#Philippines"
+      - "#Cloud9"
+      - "#SurfCapital"
+
+  # Indonesia - Nusa Penida
+  nusa_penida:
+    enabled: true
+    weight: 1
+    name: "Nusa Penida"
+    country: "Indonesia"
+    timezone: "Asia/Makassar"
+    coordinates:
+      lat: -8.7275
+      lon: 115.5444
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Kelingking Beach T-Rex cliff famous viewpoint
+      - Angel's Billabong natural infinity pool
+      - Broken Beach circular cove with natural arch
+      - Crystal Bay snorkeling and Manta Point
+      - Manta rays diving encounters year-round
+      - Atuh Beach cliff-framed beach with rock formations
+      - Diamond Beach white sand beneath dramatic cliffs
+      - Teletubbies Hills green rolling hills
+      - Peguyangan Waterfall thousand-step descent
+      - Tembeling Beach and forest natural pool
+      - Goa Giri Putri Cave Temple underground Hindu shrine
+      - Rumah Pohon Treehouse cliff-edge tree accommodation
+      - Pura Paluang Car Temple vehicle-shaped temple
+      - Underwater Buddha statue diving site
+      - Rugged roads challenging island infrastructure
+      - Seaweed farming traditional coastal livelihoods
+    hashtags:
+      - "#NusaPenida"
+      - "#Bali"
+      - "#Indonesia"
+      - "#Kelingking"
+
+  # Brunei - Temburong
+  temburong:
+    enabled: true
+    weight: 1
+    name: "Temburong"
+    country: "Brunei"
+    timezone: "Asia/Brunei"
+    coordinates:
+      lat: 4.6000
+      lon: 115.1500
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Ulu Temburong National Park pristine rainforest
+      - Canopy walkway 60-meter high treetop walk
+      - Longboat travel traditional river transport
+      - Temburong River jungle river with rapids
+      - Kampong Ayer water village heritage
+      - Peradayan Forest Reserve hiking trails
+      - Bukit Patoi recreational forest park
+      - Iban longhouse cultural experiences
+      - Waterfall swimming natural jungle pools
+      - Wildlife proboscis monkeys and hornbills
+      - Firefly watching evening river tours
+      - Separated enclave accessed by water
+      - Conservation focus protected environment
+      - Bangar town main settlement
+      - Untouched nature minimal development
+      - Camping in rainforest overnight experiences
+    hashtags:
+      - "#Temburong"
+      - "#Brunei"
+      - "#Rainforest"
+      - "#GreenJewel"
+
+  # Timor-Leste
+  timor_leste:
+    enabled: true
+    weight: 1
+    name: "Timor-Leste"
+    country: "Timor-Leste"
+    timezone: "Asia/Dili"
+    coordinates:
+      lat: -8.5569
+      lon: 125.5603
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Cristo Rei of Dili hilltop Christ statue overlooking bay
+      - Atauro Island marine biodiversity hotspot offshore
+      - Jaco Island uninhabited sacred island
+      - Dili waterfront capital city coastline
+      - Resistance Museum independence struggle history
+      - Cape Fatucama scenic headland and beaches
+      - Mount Ramelau highest peak pilgrimage site
+      - Maubisse Portuguese hill station with church
+      - Traditional tais weaving colorful textile art
+      - Colonial Portuguese architecture historic buildings
+      - Com beach fishing village with pristine beach
+      - Tutuala remote eastern tip with rock art
+      - Nino Konis Santana National Park
+      - Coffee plantations organic cultivation highlands
+      - Coral reefs unexplored diving potential
+      - Independence struggle sites historic landmarks
+    hashtags:
+      - "#TimorLeste"
+      - "#EastTimor"
+      - "#Dili"
+      - "#Untouched"
+
+# ============================================
+# INDIAN OCEAN ISLANDS
+# ============================================
+
+  # Maldives
+  maldives:
+    enabled: true
+    weight: 1
+    name: "Maldives"
+    country: "Maldives"
+    timezone: "Indian/Maldives"
+    coordinates:
+      lat: 3.2028
+      lon: 73.2207
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Overwater villas thatched bungalows on stilts
+      - Crystal clear lagoons turquoise water visibility 30 meters
+      - Private island resorts exclusive luxury accommodation
+      - Manta rays swimming and diving encounters
+      - Whale sharks seasonal gentle giant encounters
+      - Underwater restaurants dining beneath sea
+      - Bioluminescent beaches glowing blue shores at night
+      - Male capital city with Grand Friday Mosque
+      - Seaplane transfers scenic arrivals at resorts
+      - Coral reefs house reefs for snorkeling
+      - Sandbanks empty white sand islets
+      - Dolphin cruises sunset spotting excursions
+      - Spa treatments overwater pavilion massages
+      - Infinity pools blending into ocean horizon
+      - Atolls ring-shaped coral reef islands
+      - Climate change frontline lowest-lying nation
+    hashtags:
+      - "#Maldives"
+      - "#VisitMaldives"
+      - "#Paradise"
+      - "#IndianOcean"
+
+  # Mauritius
+  mauritius:
+    enabled: true
+    weight: 1
+    name: "Mauritius"
+    country: "Mauritius"
+    timezone: "Indian/Mauritius"
+    coordinates:
+      lat: -20.3484
+      lon: 57.5522
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Le Morne Brabant UNESCO mountain peninsula
+      - Underwater Waterfall optical illusion from above
+      - Seven Colored Earth Chamarel geological formation
+      - Black River Gorges National Park endemic forest
+      - Grand Baie tourist hub with beaches and nightlife
+      - Port Louis capital with waterfront and markets
+      - Chamarel Waterfall 100-meter jungle cascade
+      - Ile aux Cerfs popular beach island day trip
+      - Blue Penny Museum rare colonial stamps
+      - Hindu temples colorful shrines throughout
+      - Sugar cane fields covering island landscape
+      - Dodo bird statues extinct icon everywhere
+      - Pamplemousses Botanical Garden giant water lilies
+      - Casela Nature Park wildlife and adventure
+      - Trou aux Biches beach resort area
+      - Rum distilleries tastings and tours
+    hashtags:
+      - "#Mauritius"
+      - "#Paradise"
+      - "#IndianOcean"
+      - "#LeMorne"
+
+  # Seychelles
+  seychelles:
+    enabled: true
+    weight: 1
+    name: "Seychelles"
+    country: "Seychelles"
+    timezone: "Indian/Mahe"
+    coordinates:
+      lat: -4.6796
+      lon: 55.4920
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Anse Source d'Argent iconic boulder-framed beach
+      - Vallée de Mai UNESCO prehistoric palm forest
+      - Coco de Mer giant endemic double coconut palms
+      - Granite boulders ancient rocks on white sand
+      - Aldabra Atoll UNESCO giant tortoise sanctuary
+      - Anse Lazio pristine beach on Praslin
+      - La Digue bicycle-only island
+      - Victoria smallest capital in Africa
+      - Giant tortoises roaming freely on islands
+      - Takamaka Bay secluded southern beaches
+      - Bird Island nesting seabirds and hawksbills
+      - Creole culture French-African fusion heritage
+      - Fruit bats flying foxes at dusk
+      - Clock tower Victoria landmark replica
+      - Copolia Trail granite summit hike
+      - Traditional Creole houses tin-roofed colonial style
+    hashtags:
+      - "#Seychelles"
+      - "#AnseSourceDArgent"
+      - "#Paradise"
+      - "#IndianOcean"
+
+  # Zanzibar
+  zanzibar:
+    enabled: true
+    weight: 1
+    name: "Zanzibar"
+    country: "Tanzania"
+    timezone: "Africa/Dar_es_Salaam"
+    coordinates:
+      lat: -6.1659
+      lon: 39.2026
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Stone Town UNESCO historic Swahili trading center
+      - Spice plantations nutmeg cloves cinnamon tours
+      - House of Wonders former Sultan's palace museum
+      - Nungwi Beach northern tip with dhow builders
+      - Prison Island giant tortoises and snorkeling
+      - Jozani Forest red colobus monkey habitat
+      - Dhow boats traditional wooden sailing vessels
+      - Old Fort 17th-century Arab fortification
+      - Forodhani Gardens evening street food market
+      - Kendwa Beach party beach with full moon events
+      - Carved Zanzibari doors ornate wooden doorways
+      - Slave market memorial historic memorial
+      - Mercury House Freddie Mercury birthplace
+      - Mnemba Atoll marine reserve for snorkeling
+      - Sunset cruises traditional dhow sailing
+      - Swahili cuisine seafood and spice dishes
+    hashtags:
+      - "#Zanzibar"
+      - "#Tanzania"
+      - "#StoneTown"
+      - "#SpiceIsland"
+
+  # Madagascar
+  madagascar:
+    enabled: true
+    weight: 1
+    name: "Madagascar"
+    country: "Madagascar"
+    timezone: "Indian/Antananarivo"
+    coordinates:
+      lat: -18.8792
+      lon: 47.5079
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Avenue of the Baobabs iconic tree-lined dirt road
+      - Lemurs endemic primates found nowhere else
+      - Tsingy de Bemaraha UNESCO razor-sharp limestone
+      - Chameleons two-thirds of world species endemic
+      - Nosy Be island resort with beaches
+      - Isalo National Park canyons and rock formations
+      - Antananarivo hilltop capital with royal palace
+      - Ranomafana rainforest national park
+      - Andasibe lemur sanctuary with indri calls
+      - Vanilla plantations world's largest producer
+      - Baobab trees ancient upside-down trees
+      - Zebu cattle sacred humped cattle everywhere
+      - Rice terraces paddy fields in highlands
+      - Anakao fishing village southwestern coast
+      - Morondava beach gateway to baobabs
+      - Ylang-ylang perfume flower cultivation
+    hashtags:
+      - "#Madagascar"
+      - "#Baobab"
+      - "#Lemurs"
+      - "#IndianOcean"
+
+  # Réunion
+  reunion:
+    enabled: true
+    weight: 1
+    name: "Réunion"
+    country: "France (Réunion)"
+    timezone: "Indian/Reunion"
+    coordinates:
+      lat: -21.1151
+      lon: 55.5364
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Piton de la Fournaise active volcano hiking
+      - Cirque de Mafate isolated village accessible only by foot
+      - Cirque de Salazie lush green amphitheater
+      - Cirque de Cilaos mountain village with hot springs
+      - Piton des Neiges highest point in Indian Ocean
+      - Saint-Denis capital with Creole colonial buildings
+      - Cascade du Voile de la Mariée bridal veil waterfall
+      - Grand Anse beach popular swimming and surfing
+      - Trou de Fer massive waterfall canyon
+      - Vanilla plantations Bourbon vanilla cultivation
+      - Lava flows recent volcanic activity visible
+      - Helicopter tours over cirques and volcano
+      - Sugar cane fields covering lowland areas
+      - Creole temples Tamil Hindu colorful shrines
+      - Maido viewpoint panoramic Mafate vista
+      - Plaine des Sables lunar volcanic landscape
+    hashtags:
+      - "#Reunion"
+      - "#France"
+      - "#PitonDeLaFournaise"
+      - "#IndianOcean"
+
+  # Sri Lanka
+  sri_lanka:
+    enabled: true
+    weight: 1
+    name: "Sri Lanka"
+    country: "Sri Lanka"
+    timezone: "Asia/Colombo"
+    coordinates:
+      lat: 7.8731
+      lon: 80.7718
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Sigiriya Lion Rock ancient fortress on rock pillar
+      - Temple of the Tooth sacred Buddhist relic in Kandy
+      - Ella rock and Nine Arch Bridge scenic highlands
+      - Galle Fort Dutch colonial walled city
+      - Yala National Park leopard safari spotting
+      - Tea plantations emerald hillsides with pluckers
+      - Stilt fishermen traditional fishing on poles
+      - Mirissa whale watching blue whale encounters
+      - Colombo capital with colonial and modern mix
+      - Dambulla Cave Temple golden Buddha cave complex
+      - Polonnaruwa ancient city ruins
+      - Adam's Peak sacred mountain pilgrimage
+      - Arugam Bay surfing mecca on east coast
+      - Pinnawala Elephant Orphanage bathing elephants
+      - Train ride Kandy to Ella scenic highland journey
+      - Ayurvedic spas traditional healing treatments
+    hashtags:
+      - "#SriLanka"
+      - "#Sigiriya"
+      - "#Ceylon"
+      - "#IndianOcean"
+
+  # Comoros
+  comoros:
+    enabled: true
+    weight: 1
+    name: "Comoros"
+    country: "Comoros"
+    timezone: "Indian/Comoro"
+    coordinates:
+      lat: -11.6455
+      lon: 43.3333
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Mount Karthala active volcano crater hiking
+      - Moroni capital with white mosque on waterfront
+      - Ylang-ylang distilleries perfume flower production
+      - Old Friday Mosque whitewashed historic mosque
+      - Moheli Marine Park whale and dolphin sanctuary
+      - Volcanic beaches black sand shores
+      - Coelacanth living fossil fish discovered here
+      - Vanilla plantations fragrant cultivation
+      - Traditional dhow boats wooden sailing vessels
+      - Medina old quarter winding stone streets
+      - Livingstone's fruit bat giant endemic species
+      - Iconi sultanate ruins historic royal sites
+      - Lake Salé crater lake on Grande Comore
+      - Coral reefs unspoiled snorkeling sites
+      - Traditional villages Islamic culture and customs
+      - Cloves and vanilla exports major crops
+    hashtags:
+      - "#Comoros"
+      - "#IndianOcean"
+      - "#MountKarthala"
+      - "#Africa"
+
+  # Andaman Islands
+  andaman_islands:
+    enabled: true
+    weight: 1
+    name: "Andaman Islands"
+    country: "India"
+    timezone: "Asia/Kolkata"
+    coordinates:
+      lat: 11.7401
+      lon: 92.6586
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Havelock Island Radhanagar Beach world-class shore
+      - Cellular Jail historic British colonial prison
+      - Radhanagar Beach pristine sunset beach
+      - Ross Island abandoned British headquarters
+      - Elephant Beach snorkeling and water sports
+      - Port Blair capital with museum and market
+      - Neil Island laid-back beaches and coral
+      - Baratang Island limestone caves and mangroves
+      - Scuba diving clear visibility with marine life
+      - Jarawa tribe protected indigenous community
+      - Mangrove creeks kayaking through forests
+      - Light and Sound show Cellular Jail history
+      - Coral reef snorkeling abundant marine life
+      - Laxmanpur Beach sunset viewing on Neil
+      - Wandoor Beach gateway to marine park
+      - Dugong Sea Cow protected marine mammal
+    hashtags:
+      - "#Andaman"
+      - "#India"
+      - "#HavelockIsland"
+      - "#IndianOcean"
+
+  # Socotra
+  socotra:
+    enabled: true
+    weight: 1
+    name: "Socotra"
+    country: "Yemen"
+    timezone: "Asia/Aden"
+    coordinates:
+      lat: 12.4634
+      lon: 53.8237
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Dragon blood trees umbrella-shaped endemic trees
+      - Bottle trees bulbous desert rose succulents
+      - Dixam Plateau dragon blood tree forest
+      - Detwah Lagoon turquoise swimming lagoon
+      - Hadibo main town and port
+      - Homhil protected area limestone plateau
+      - Qalansiyah Beach white sand western beach
+      - Endemic species 37% plants found nowhere else
+      - Hoq Cave massive limestone cavern
+      - Arher Beach dunes meeting ocean
+      - Firmihin forest dragon tree groves
+      - Shoab Beach boat-access pristine cove
+      - Frankincense trees aromatic resin harvest
+      - Alien landscape otherworldly scenery
+      - Traditional Socotri culture unique island society
+      - Biodiversity hotspot UNESCO natural heritage
+    hashtags:
+      - "#Socotra"
+      - "#Yemen"
+      - "#DragonBloodTree"
+      - "#IndianOcean"
+
+# ============================================
+# ATLANTIC ISLANDS
+# ============================================
+
+  # Azores
+  azores:
+    enabled: true
+    weight: 1
+    name: "Azores"
+    country: "Portugal"
+    timezone: "Atlantic/Azores"
+    coordinates:
+      lat: 37.7412
+      lon: -25.6756
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Sete Cidades twin lakes blue and green volcanic crater
+      - Lagoa do Fogo Fire Lake in volcanic crater
+      - Ponta Delgada capital with black and white streets
+      - Whale watching sperm whales and dolphins
+      - Furnas Valley hot springs and geothermal cooking
+      - Terra Nostra Park botanical gardens with hot pool
+      - Caldeira Velha hot waterfall and natural pool
+      - Pico Mountain highest point in Portugal
+      - Vineyards UNESCO lava stone walls protecting grapes
+      - Hydrangea hedges blue flowers lining roads
+      - Poço Azul natural swimming pool
+      - Miradouros dramatic viewpoints everywhere
+      - Cozido stew cooked in volcanic ground
+      - Canyoning through lush green ravines
+      - Black sand beaches volcanic shores
+      - Gorreana Tea Plantation Europe's only tea producer
+    hashtags:
+      - "#Azores"
+      - "#Portugal"
+      - "#SaoPiguel"
+      - "#Atlantic"
+
+  # Madeira
+  madeira:
+    enabled: true
+    weight: 1
+    name: "Madeira"
+    country: "Portugal"
+    timezone: "Atlantic/Madeira"
+    coordinates:
+      lat: 32.6669
+      lon: -16.9241
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Levada walks irrigation channel hiking trails
+      - Funchal capital with harbor and cathedral
+      - Pico do Arieiro mountain peak above clouds
+      - Cabo Girão Europe's highest sea cliff
+      - Monte toboggan sled wicker basket ride
+      - Laurisilva Forest UNESCO ancient laurel forest
+      - Mercado dos Lavradores colorful produce market
+      - Madeira wine cellars tasting and tours
+      - CR7 Museum Cristiano Ronaldo hometown tribute
+      - Porto Moniz natural volcanic swimming pools
+      - Botanical gardens tropical plants overlooking bay
+      - Traditional A-frame houses Santana triangular cottages
+      - Festa da Flor flower festival
+      - New Year fireworks Guinness record display
+      - Ponta de São Lourenço eastern peninsula hike
+      - Blandy's Wine Lodge historic wine production
+    hashtags:
+      - "#Madeira"
+      - "#Portugal"
+      - "#Atlantic"
+      - "#Funchal"
+
+  # Cape Verde
+  cape_verde:
+    enabled: true
+    weight: 1
+    name: "Cape Verde"
+    country: "Cape Verde"
+    timezone: "Atlantic/Cape_Verde"
+    coordinates:
+      lat: 14.9330
+      lon: -23.5133
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Fogo volcano active cone with caldera village
+      - Sal island Santa Maria beach and salt flats
+      - Mindelo Carnival São Vicente colorful celebration
+      - Praia capital on Santiago island
+      - Boa Vista sand dunes and desert beaches
+      - Morna music melancholic genre Cesária Évora
+      - Santo Antão dramatic mountain hiking
+      - Colonial architecture Portuguese heritage buildings
+      - Ribeira Grande gorge valley trails
+      - Loggerhead turtles nesting on beaches
+      - Pedra de Lume salt crater swimming
+      - Buracona Blue Eye natural pool phenomenon
+      - Traditional fishing villages colorful boats
+      - Cachupa stew national dish
+      - Wind and kitesurfing consistent trade winds
+      - Creole culture music and cuisine
+    hashtags:
+      - "#CapeVerde"
+      - "#CaboVerde"
+      - "#Atlantic"
+      - "#Africa"
+
+  # Bermuda
+  bermuda:
+    enabled: true
+    weight: 1
+    name: "Bermuda"
+    country: "Bermuda"
+    timezone: "Atlantic/Bermuda"
+    coordinates:
+      lat: 32.3078
+      lon: -64.7505
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Pink sand beaches coral-tinted shores
+      - Crystal Cave underground formations and lake
+      - Royal Naval Dockyard historic maritime complex
+      - Hamilton capital with Front Street shops
+      - Horseshoe Bay famous pink sand crescent
+      - Bermuda shorts formal attire with knee socks
+      - Bermuda Triangle mysterious region off coast
+      - St. George's Town UNESCO colonial settlement
+      - Gibb's Hill Lighthouse cast iron lighthouse
+      - Shipwreck diving numerous wrecks to explore
+      - Pastel-colored houses traditional architecture
+      - White roofs limestone catchment for water
+      - Swizzle Inn oldest pub with rum swizzle
+      - Fort St. Catherine historic fortification
+      - Elbow Beach resort and beach area
+      - Glass-bottom boats viewing reefs
+    hashtags:
+      - "#Bermuda"
+      - "#PinkSandBeach"
+      - "#Atlantic"
+      - "#Hamilton"
+
+  # Canary Islands - La Gomera
+  la_gomera:
+    enabled: true
+    weight: 1
+    name: "La Gomera"
+    country: "Spain"
+    timezone: "Atlantic/Canary"
+    coordinates:
+      lat: 28.0916
+      lon: -17.1133
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Garajonay National Park UNESCO laurel forest
+      - Silbo Gomero whistled language communication
+      - San Sebastián Columbus departure port
+      - Valle Gran Rey hippie valley with beaches
+      - Los Organos basalt columns sea cliffs
+      - Mirador de Abrante glass viewing platform
+      - Agulo village surrounded by banana plantations
+      - Ancient laurisilva fog forest hiking
+      - Playa de Santiago fishing village resort
+      - Traditional terraced agriculture steep hillsides
+      - Columbus connections historic visitor sites
+      - Dramatic gorges barrancos cutting landscape
+      - Black sand beaches volcanic shores
+      - Handicrafts pottery and palm weaving
+      - Remote villages preserved traditional life
+      - Ferry from Tenerife scenic sea crossing
+    hashtags:
+      - "#LaGomera"
+      - "#CanaryIslands"
+      - "#Spain"
+      - "#Garajonay"
+
+  # Canary Islands - El Hierro
+  el_hierro:
+    enabled: true
+    weight: 1
+    name: "El Hierro"
+    country: "Spain"
+    timezone: "Atlantic/Canary"
+    coordinates:
+      lat: 27.7410
+      lon: -18.0300
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - El Sabinar twisted juniper trees shaped by wind
+      - Mar de las Calmas protected marine area
+      - Charco Azul natural swimming pools
+      - Roque de la Bonanza distinctive rock formation
+      - La Restinga diving and fishing village
+      - Mirador de la Peña Manrique-designed restaurant viewpoint
+      - 100% renewable energy sustainable island
+      - Smallest Canary Island most remote and quiet
+      - Prime meridian former zero longitude marker
+      - El Golfo valley bay created by landslide
+      - Giant lizards endemic species sanctuary
+      - Volcanic landscape lava fields and craters
+      - Stargazing dark skies destination
+      - Pozo de las Calcosas natural tidal pools
+      - Bimbaches indigenous culture remnants
+      - Scuba diving clear waters and marine life
+    hashtags:
+      - "#ElHierro"
+      - "#CanaryIslands"
+      - "#Spain"
+      - "#Sustainable"
+
+  # Falkland Islands
+  falkland_islands:
+    enabled: true
+    weight: 1
+    name: "Falkland Islands"
+    country: "Falkland Islands"
+    timezone: "Atlantic/Stanley"
+    coordinates:
+      lat: -51.7963
+      lon: -59.5236
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Stanley capital with colorful roofed houses
+      - Penguin colonies five species breeding
+      - Volunteer Point king penguin colony
+      - Saunders Island multiple penguin species
+      - 1982 war history battlefields and memorials
+      - Elephant seals massive colonies on beaches
+      - Sea Lion Island wildlife sanctuary
+      - Carcass Island wildlife and gardens
+      - Christ Church Cathedral southernmost Anglican cathedral
+      - Whale bone arch Stanley harbor memorial
+      - Shipwrecks historic sailing vessel remains
+      - Stone runs mysterious geological formations
+      - Bluff Cove Lagoon king penguins accessible
+      - Dolphins commerson's and Peale's dolphins
+      - Albatross black-browed colonies on cliffs
+      - Remote farm settlements isolated communities
+    hashtags:
+      - "#Falklands"
+      - "#Malvinas"
+      - "#Penguins"
+      - "#Atlantic"
+
+  # South Georgia
+  south_georgia:
+    enabled: true
+    weight: 1
+    name: "South Georgia"
+    country: "South Georgia and South Sandwich Islands"
+    timezone: "Atlantic/South_Georgia"
+    coordinates:
+      lat: -54.2500
+      lon: -36.7500
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - King penguin colonies hundreds of thousands birds
+      - Grytviken abandoned whaling station
+      - Shackleton's grave explorer's final resting place
+      - Elephant seals massive breeding colonies
+      - Fur seals recovering population millions
+      - Glaciers massive ice sheets calving into sea
+      - Albatross wandering albatross nesting sites
+      - Antarctic landscape mountains and ice
+      - Whaling history museum in Grytviken
+      - Expedition cruise destination remote access
+      - No permanent residents only researchers
+      - Reindeer Norwegian-introduced population
+      - Stromness whaling station Shackleton arrival point
+      - Salisbury Plain largest king penguin colony
+      - South Georgia pipit only endemic songbird
+      - Fortuna Bay dramatic mountain backdrop
+    hashtags:
+      - "#SouthGeorgia"
+      - "#Antarctica"
+      - "#Penguins"
+      - "#Shackleton"
+
+  # St. Helena
+  st_helena:
+    enabled: true
+    weight: 1
+    name: "St. Helena"
+    country: "St. Helena"
+    timezone: "Atlantic/St_Helena"
+    coordinates:
+      lat: -15.9650
+      lon: -5.7089
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Longwood House Napoleon's exile residence
+      - Jacob's Ladder 699 steps steep staircase
+      - Jamestown capital wedged in narrow valley
+      - Napoleon's Tomb original empty grave site
+      - Plantation House governor's residence with tortoises
+      - Jonathan the tortoise oldest living land animal
+      - Diana's Peak highest point cloud forest
+      - Remote island location middle of Atlantic
+      - Airport new access opened 2017
+      - Colonial architecture Georgian buildings
+      - Post Box Walks historic trail network
+      - Heart-shaped waterfall romantic cascade
+      - St. Helena coffee unique cultivation
+      - Endemic wirebirds only native land bird
+      - Historic castle defenses fortifications
+      - Bone fish fishing unique species
+    hashtags:
+      - "#StHelena"
+      - "#Napoleon"
+      - "#Atlantic"
+      - "#Remote"
+
+  # Ascension Island
+  ascension_island:
+    enabled: true
+    weight: 1
+    name: "Ascension Island"
+    country: "Ascension Island"
+    timezone: "Atlantic/St_Helena"
+    coordinates:
+      lat: -7.9467
+      lon: -14.3559
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Green Mountain tropical cloud forest on volcanic peak
+      - Sea turtle nesting second largest rookery globally
+      - Georgetown main settlement with NASA station
+      - Volcanic landscape lava flows and cinder cones
+      - Long Beach sea turtle nesting beach
+      - Wideawake fern sooty terns nesting site
+      - RAF base British military installation
+      - NASA tracking station space communication
+      - Letterbox walks hiking to mailboxes
+      - Devils Ashpit spectacular viewpoint
+      - English Bay swimming beach
+      - Ascension frigatebirds endemic breeding colony
+      - Volcanic craters over 40 dormant cones
+      - BBC relay station shortwave transmission
+      - Introduced species green oasis creation
+      - Remote outpost isolated Atlantic location
+    hashtags:
+      - "#Ascension"
+      - "#Atlantic"
+      - "#SeaTurtles"
+      - "#Remote"
+
+  # Tristan da Cunha
+  tristan:
+    enabled: true
+    weight: 1
+    name: "Tristan da Cunha"
+    country: "Tristan da Cunha"
+    timezone: "Atlantic/St_Helena"
+    coordinates:
+      lat: -37.1052
+      lon: -12.2777
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Most remote inhabited island 2800km to nearest land
+      - Edinburgh of the Seven Seas only settlement
+      - Queen Mary's Peak volcanic summit 2062m
+      - 250 permanent residents tight-knit community
+      - Potato patches terraced agriculture
+      - 1961 volcanic eruption evacuation history
+      - Rockhopper penguins breeding colonies
+      - Atlantic yellow-nosed albatross endemic
+      - Tristan lobster fishing only industry
+      - No airport ship access only
+      - Calshot Harbour only landing point
+      - Gough Island UNESCO wildlife reserve
+      - Single road around settlement
+      - Community farming collective agriculture
+      - St. Mary's Church only church on island
+      - Administrator's residence British governance
+    hashtags:
+      - "#Tristan"
+      - "#MostRemote"
+      - "#Atlantic"
+      - "#Island"
+
+  # Fernando de Noronha
+  fernando_de_noronha:
+    enabled: true
+    weight: 1
+    name: "Fernando de Noronha"
+    country: "Brazil"
+    timezone: "America/Noronha"
+    coordinates:
+      lat: -3.8544
+      lon: -32.4247
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Baía do Sancho world's best beach
+      - Morro Dois Irmãos twin rock peaks
+      - Spinner dolphins hundreds in bay each morning
+      - UNESCO World Heritage marine protected area
+      - Baía dos Porcos rock formations and beach
+      - Sea turtles nesting and snorkeling
+      - Visitor limits daily maximum for conservation
+      - Atalaia rock pool tide-dependent snorkeling
+      - Nossa Senhora dos Remédios fortress ruins
+      - Pristine diving clear Atlantic waters
+      - Cacimba do Padre surf beach
+      - Environmental tax sustainable tourism fee
+      - Leão Beach turtle nesting site
+      - Boldró Beach sunset and beach break surf
+      - Buraco da Raquel rock arch formation
+      - Limited accommodation eco-lodges only
+    hashtags:
+      - "#Noronha"
+      - "#Brazil"
+      - "#BestBeach"
+      - "#Atlantic"
+
+  # São Tomé and Príncipe
+  sao_tome:
+    enabled: true
+    weight: 1
+    name: "São Tomé"
+    country: "São Tomé and Príncipe"
+    timezone: "Africa/Sao_Tome"
+    coordinates:
+      lat: 0.1864
+      lon: 6.6131
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Pico Cão Grande volcanic plug needle rock
+      - Roças colonial cocoa plantations
+      - São Tomé Town capital with Portuguese heritage
+      - Equator marker crossing zero degrees
+      - Chocolate production premium cocoa
+      - Lagoa Azul blue lagoon for swimming
+      - Cascata São Nicolau jungle waterfall
+      - Obo National Park rainforest reserve
+      - Praia Jalé turtle nesting beach
+      - Portuguese colonial architecture decay
+      - Endemic birds unique species
+      - Coffee plantations organic cultivation
+      - Boca do Inferno sea blowhole
+      - Príncipe Island UNESCO biosphere
+      - Tropical biodiversity unique species
+      - Former slave trade history
+    hashtags:
+      - "#SaoTome"
+      - "#Principe"
+      - "#Atlantic"
+      - "#Africa"
+
+# ============================================
+# ARCTIC AND REMOTE ISLANDS
+# ============================================
+
+  # Iceland
+  iceland:
+    enabled: true
+    weight: 1
+    name: "Iceland"
+    country: "Iceland"
+    timezone: "Atlantic/Reykjavik"
+    coordinates:
+      lat: 64.1466
+      lon: -21.9426
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Northern Lights aurora borealis display
+      - Blue Lagoon geothermal spa milky blue water
+      - Geysir original geyser erupting regularly
+      - Gullfoss waterfall massive golden falls
+      - Jökulsárlón glacier lagoon with icebergs
+      - Black sand beaches Reynisfjara basalt columns
+      - Thingvellir tectonic plate meeting point
+      - Skógafoss waterfall rainbow mist cascade
+      - Vatnajökull glacier largest in Europe
+      - Puffins summer nesting colonies
+      - Whale watching humpback and orca
+      - Landmannalaugar colorful rhyolite mountains
+      - Ice caves blue crystal formations
+      - Reykjavik capital with Hallgrímskirkja church
+      - Hot springs natural pools everywhere
+      - Midnight sun summer endless daylight
+    hashtags:
+      - "#Iceland"
+      - "#NorthernLights"
+      - "#BlueLagoon"
+      - "#Arctic"
+
+  # Faroe Islands
+  faroe_islands:
+    enabled: true
+    weight: 1
+    name: "Faroe Islands"
+    country: "Denmark (Faroe Islands)"
+    timezone: "Atlantic/Faroe"
+    coordinates:
+      lat: 62.0079
+      lon: -6.7900
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Múlafossur Waterfall cliff waterfall over village
+      - Trælanípan cliff viewpoint over Sørvágsvatn lake
+      - Sørvágsvatn optical illusion lake above sea
+      - Tórshavn capital with grass-roofed houses
+      - Sheep everywhere outnumbering people
+      - Mykines Island puffin colony paradise
+      - Grass-roofed houses traditional architecture
+      - Fjords dramatic steep-sided inlets
+      - Tindhólmur jagged island peaks
+      - Saksun valley village with tidal lagoon
+      - Gjógv natural harbor gorge village
+      - Bøsdalafossur waterfall into ocean
+      - Sea stacks Drangarnir and Tindhólmur
+      - Tunnel connecting islands undersea passages
+      - Viking heritage Norse settlement history
+      - Remote isolation North Atlantic location
+    hashtags:
+      - "#FaroeIslands"
+      - "#Denmark"
+      - "#Waterfalls"
+      - "#Arctic"
+
+  # Svalbard
+  svalbard:
+    enabled: true
+    weight: 1
+    name: "Svalbard"
+    country: "Norway"
+    timezone: "Arctic/Longyearbyen"
+    coordinates:
+      lat: 78.2232
+      lon: 15.6267
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Polar bears Arctic predators on sea ice
+      - Longyearbyen northernmost town with services
+      - Northern Lights long polar night displays
+      - Midnight sun constant summer daylight
+      - Glaciers vast ice covering 60% of land
+      - Global Seed Vault doomsday vault in mountain
+      - Arctic tundra barren permafrost landscape
+      - Dog sledding traditional transport recreation
+      - Polar night months of complete darkness
+      - Walrus colonies hauled out on beaches
+      - Arctic foxes white winter coat wildlife
+      - Coal mining ghost towns abandoned settlements
+      - Ice caves blue glacier formations
+      - Boat expeditions exploring fjords and glaciers
+      - Reindeer grazing on sparse vegetation
+      - Research stations scientific polar base
+    hashtags:
+      - "#Svalbard"
+      - "#Norway"
+      - "#PolarBears"
+      - "#Arctic"
+
+  # Greenland
+  greenland:
+    enabled: true
+    weight: 1
+    name: "Greenland"
+    country: "Denmark (Greenland)"
+    timezone: "America/Nuuk"
+    coordinates:
+      lat: 64.1814
+      lon: -51.6941
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Ilulissat Icefjord UNESCO glacier calving
+      - Northern Lights aurora displays over ice
+      - Nuuk capital with colorful houses
+      - Icebergs massive floating ice sculptures
+      - Inuit culture traditional hunting and art
+      - Midnight sun summer endless daylight
+      - Ice sheet world's second largest glacier
+      - Disko Bay whale watching and icebergs
+      - Dog sledding traditional transport
+      - Hot springs natural warm pools
+      - Viking ruins Norse settlement remains
+      - Glaciers calving into fjords
+      - Polar bears northern coastal areas
+      - Greenlandic cuisine seal and whale meat
+      - Remote settlements isolated communities
+      - Kayaking birthplace of the kayak
+    hashtags:
+      - "#Greenland"
+      - "#Icebergs"
+      - "#Arctic"
+      - "#NorthernLights"
+
+  # Jan Mayen
+  jan_mayen:
+    enabled: true
+    weight: 1
+    name: "Jan Mayen"
+    country: "Norway"
+    timezone: "Atlantic/Jan_Mayen"
+    coordinates:
+      lat: 71.0318
+      lon: -8.2920
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Beerenberg northernmost active volcano
+      - Volcanic landscape lava fields and glaciers
+      - No permanent population only station staff
+      - Meteorological station weather monitoring
+      - LORAN-C radio navigation station
+      - Arctic foxes only land mammal
+      - Seabird colonies nesting on cliffs
+      - Northern Lights aurora at 71 degrees north
+      - Glacier-covered volcano ice and fire
+      - Extremely remote isolated Arctic location
+      - Norwegian sovereignty Arctic territory
+      - Limited access expedition ships only
+      - Polar bear occasional visitors
+      - Volcanic activity recent eruptions
+      - Scientific research weather and seismic
+      - Harsh climate extreme weather conditions
+    hashtags:
+      - "#JanMayen"
+      - "#Norway"
+      - "#Arctic"
+      - "#Volcano"
+
+  # Franz Josef Land
+  franz_josef_land:
+    enabled: true
+    weight: 1
+    name: "Franz Josef Land"
+    country: "Russia"
+    timezone: "Europe/Moscow"
+    coordinates:
+      lat: 80.6500
+      lon: 54.8167
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - 192 islands Russian Arctic archipelago
+      - Polar bears high density population
+      - Glaciers 85% of land ice-covered
+      - Historic expedition sites polar exploration
+      - Walrus colonies Atlantic walrus hauling
+      - Northernmost land close to pole
+      - Tikhaya Bay former Soviet polar station
+      - Ice caps covering most islands
+      - Rare visitors expedition cruise access
+      - Seabird cliffs millions of birds
+      - Polar desert sparse vegetation
+      - Russian Arctic National Park protected area
+      - Fridtjof Nansen exploration history
+      - Climate research monitoring stations
+      - Narwhal occasional sightings
+      - Extreme isolation remotest Russia
+    hashtags:
+      - "#FranzJosefLand"
+      - "#Russia"
+      - "#Arctic"
+      - "#PolarBears"
+
+  # Bouvet Island
+  bouvet_island:
+    enabled: true
+    weight: 1
+    name: "Bouvet Island"
+    country: "Norway"
+    timezone: "UTC"
+    coordinates:
+      lat: -54.4333
+      lon: 3.4000
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Most remote island 1700km to nearest land
+      - Glacier-covered 93% under ice
+      - Volcanic origin shield volcano island
+      - Uninhabited no permanent residents
+      - Weather station only human structure
+      - Seabird colonies breeding populations
+      - Fur seals Antarctic fur seal colony
+      - Norwegian territory dependency claim
+      - Extremely difficult access rare landings
+      - Nyrøysa lava platform newest land
+      - Ice cliffs surrounding coastline
+      - Scientific expeditions occasional research
+      - Sub-Antarctic climate harsh weather
+      - Mystery of the lifeboat unexplained find
+      - Penguin colonies chinstrap and macaroni
+      - Virtually unexplored limited research
+    hashtags:
+      - "#BouvetIsland"
+      - "#Norway"
+      - "#MostRemote"
+      - "#SubAntarctic"
+
+  # Heard Island
+  heard_island:
+    enabled: true
+    weight: 1
+    name: "Heard Island"
+    country: "Australia"
+    timezone: "Indian/Kerguelen"
+    coordinates:
+      lat: -53.1000
+      lon: 73.5167
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Big Ben active volcano under ice
+      - Mawson Peak highest Australian mountain
+      - Glaciers 70% ice-covered
+      - UNESCO World Heritage Site
+      - Uninhabited no human residents
+      - Elephant seals massive breeding colonies
+      - King penguins large colonies
+      - Volcanic activity ongoing eruptions
+      - Sub-Antarctic ecosystem pristine
+      - Fur seals recovering populations
+      - Extremely remote Southern Ocean
+      - Scientific expeditions rare visits
+      - Macaroni penguins breeding colonies
+      - Wandering albatross nesting
+      - Australian Antarctic Territory
+      - No introduced species pristine ecosystem
+    hashtags:
+      - "#HeardIsland"
+      - "#Australia"
+      - "#BigBen"
+      - "#SubAntarctic"
+
+  # Pitcairn Islands
+  pitcairn:
+    enabled: true
+    weight: 1
+    name: "Pitcairn Islands"
+    country: "Pitcairn Islands"
+    timezone: "Pacific/Pitcairn"
+    coordinates:
+      lat: -25.0667
+      lon: -130.1000
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Bounty mutineers descendants of 1789 mutiny
+      - Adamstown only settlement smallest capital
+      - Under 50 residents smallest population
+      - HMS Bounty anchor relic in square
+      - Bounty Bay only landing point
+      - Henderson Island UNESCO uninhabited
+      - Polynesian artifacts pre-mutineer history
+      - Christian's Cave Fletcher Christian hideout
+      - Remote location middle of Pacific
+      - No airport ship access only
+      - Stamp collecting famous postal service
+      - Honey production unique island product
+      - Carving traditional woodwork crafts
+      - Longboat landing precarious landing
+      - Endemic species unique Henderson wildlife
+      - St. Paul's Pool natural swimming
+    hashtags:
+      - "#Pitcairn"
+      - "#Bounty"
+      - "#MostRemote"
+      - "#Pacific"
+
+  # Macquarie Island
+  macquarie_island:
+    enabled: true
+    weight: 1
+    name: "Macquarie Island"
+    country: "Australia"
+    timezone: "Pacific/Auckland"
+    coordinates:
+      lat: -54.6208
+      lon: 158.8556
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Royal penguins endemic species only location
+      - King penguin colonies massive gatherings
+      - Elephant seals breeding season chaos
+      - UNESCO World Heritage geological significance
+      - Australian Antarctic Division research station
+      - Sub-Antarctic tundra windswept vegetation
+      - Albatross wandering and black-browed
+      - Fur seals recovered from near extinction
+      - Tectonic exposure oceanic crust visible
+      - Featherbed flat raised beach terrace
+      - No permanent residents only researchers
+      - Pest eradication conservation success
+      - Sandy Bay penguin royal colony
+      - Harsh climate constant wind and rain
+      - Scientific research long-term monitoring
+      - Endemic plants unique island species
+    hashtags:
+      - "#MacquarieIsland"
+      - "#Australia"
+      - "#Penguins"
+      - "#SubAntarctic"
+
+  # Campbell Island
+  campbell_island:
+    enabled: true
+    weight: 1
+    name: "Campbell Island"
+    country: "New Zealand"
+    timezone: "Pacific/Auckland"
+    coordinates:
+      lat: -52.5433
+      lon: 169.1464
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Southern royal albatross breeding colony
+      - Perseverance Harbour sheltered anchorage
+      - Megaherbs giant flowers blooming
+      - Sub-Antarctic forest rata forest
+      - UNESCO World Heritage Site
+      - Automated weather station only installation
+      - Sea lions NZ sea lions hauling out
+      - Yellow-eyed penguins rare species
+      - Rata forest southernmost forest
+      - No permanent population uninhabited
+      - Expedition cruise access only by ship
+      - Elephant seals occasional visitors
+      - Col-Lyall saddle view point
+      - Historical sites early settler remnants
+      - Feral species removed conservation success
+      - Extreme isolation New Zealand territory
+    hashtags:
+      - "#CampbellIsland"
+      - "#NewZealand"
+      - "#SubAntarctic"
+      - "#Albatross"
+
+  # Antipodes Islands
+  antipodes_islands:
+    enabled: true
+    weight: 1
+    name: "Antipodes Islands"
+    country: "New Zealand"
+    timezone: "Pacific/Auckland"
+    coordinates:
+      lat: -49.6833
+      lon: 178.7667
+    platforms:
+      twitter: true
+      instagram: false
+      tiktok: false
+    landmarks:
+      - Antipodes opposite point to Greenwich
+      - Antipodean albatross endemic breeding
+      - Volcanic origin extinct volcano remnants
+      - UNESCO World Heritage Site
+      - No landing permitted strict protection
+      - Penguin colonies erect-crested endemic
+      - Parakeet species endemic Antipodes parakeet
+      - Uninhabited and protected nature reserve
+      - Harsh climate extreme weather
+      - Shipwreck history maritime disasters
+      - Mouse eradication conservation project
+      - Tussock grassland covering landscape
+      - Fur seals breeding colonies
+      - Scientific expeditions rare access
+      - Biodiversity endemic species concentration
+      - New Zealand subantarctic islands group
+    hashtags:
+      - "#Antipodes"
+      - "#NewZealand"
+      - "#SubAntarctic"
+      - "#UNESCO"
+
+# ============================================
+# TEMPLATE
+# ============================================
 # Template for adding new cities:
 # --------------------------------
 # IMPORTANT: Landmarks are randomly selected (5-8 per image) to ensure variety.
