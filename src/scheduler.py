@@ -15,7 +15,7 @@ if TYPE_CHECKING:
     from .config import Config, CityConfig
 
 
-def select_daily_cities(config: 'Config', num_cities: int = 5) -> list['CityConfig']:
+def select_daily_cities(config: 'Config', num_cities: int = 6) -> list['CityConfig']:
     """
     Select N cities using weighted random selection.
 
@@ -24,7 +24,7 @@ def select_daily_cities(config: 'Config', num_cities: int = 5) -> list['CityConf
 
     Args:
         config: Configuration object containing all cities
-        num_cities: Number of cities to select (default: 5)
+        num_cities: Number of cities to select (default: 6, syncs with 4-hour cron)
 
     Returns:
         List of selected CityConfig objects
@@ -71,9 +71,9 @@ def calculate_posting_times(selected_cities: list['CityConfig']) -> dict[str, da
     - First post at 00:00 UTC
     - Subsequent posts at interval increments
 
-    Example for 5 cities:
-    - Interval: 24/5 = 4.8 hours
-    - Times: 00:00, 04:48, 09:36, 14:24, 19:12 UTC
+    Example for 6 cities:
+    - Interval: 24/6 = 4 hours
+    - Times: 00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC
 
     Args:
         selected_cities: List of CityConfig objects to schedule

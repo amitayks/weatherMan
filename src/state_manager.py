@@ -196,7 +196,7 @@ class StateManager:
         print("📅 Generating new daily schedule...")
 
         # Select cities
-        selected_cities = select_daily_cities(config, num_cities=5)
+        selected_cities = select_daily_cities(config, num_cities=6)
         print(
             f"🎲 Selected cities (weighted random): {', '.join(city.name for city in selected_cities)}"
         )
