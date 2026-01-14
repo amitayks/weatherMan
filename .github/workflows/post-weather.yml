@@ -64,6 +64,10 @@ concurrency:
   group: weather-posting
   cancel-in-progress: false
 
+# Grant write permissions to push state changes
+permissions:
+  contents: write
+
 jobs:
   post-weather:
     runs-on: ubuntu-latest
