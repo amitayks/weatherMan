@@ -3,8 +3,11 @@
 import os
 import time
 import requests
+import tempfile
 from pathlib import Path
 from typing import Optional
+
+from PIL import Image, ImageFilter
 
 from ..config import CityConfig
 from ..weather import WeatherData
@@ -131,6 +134,76 @@ class InstagramPoster:
 
         print("No image hosting configured. Set IMAGE_HOSTING_ENDPOINT or IMGBB_API_KEY")
         return None
+
+    def create_story_image(self, image_path: Path) -> Optional[Path]:
+        """
+        Create a Story-optimized image (9:16) with blurred background.
+
+        Takes the original 1:1 image and places it centered on a 9:16 canvas
+        with a blurred version of the image as the background.
+
+        Returns path to the temporary story image file.
+        """
+        try:
+            # Story dimensions (9:16 aspect ratio)
+            story_width = 1080
+            story_height = 1920
+
+            # Open the original image
+            original = Image.open(image_path)
+            original_width, original_height = original.size
+
+            # Create the blurred background
+            # Scale the original to fill the story dimensions
+            scale = max(story_width / original_width, story_height / original_height)
+            bg_width = int(original_width * scale)
+            bg_height = int(original_height * scale)
+
+            background = original.resize((bg_width, bg_height), Image.Resampling.LANCZOS)
+
+            # Crop to story dimensions (center crop)
+            left = (bg_width - story_width) // 2
+            top = (bg_height - story_height) // 2
+            background = background.crop((left, top, left + story_width, top + story_height))
+
+            # Apply strong blur to background
+            background = background.filter(ImageFilter.GaussianBlur(radius=30))
+
+            # Optionally darken the background slightly for better contrast
+            from PIL import ImageEnhance
+            enhancer = ImageEnhance.Brightness(background)
+            background = enhancer.enhance(0.7)  # 70% brightness
+
+            # Calculate size for the original image on the story
+            # Fit the original image to the story width with some padding
+            padding = 40  # pixels on each side
+            max_width = story_width - (padding * 2)
+            max_height = story_height - (padding * 2)
+
+            # Scale to fit width while maintaining aspect ratio
+            fit_scale = min(max_width / original_width, max_height / original_height)
+            new_width = int(original_width * fit_scale)
+            new_height = int(original_height * fit_scale)
+
+            foreground = original.resize((new_width, new_height), Image.Resampling.LANCZOS)
+
+            # Calculate position to center the image
+            x = (story_width - new_width) // 2
+            y = (story_height - new_height) // 2
+
+            # Paste the original image onto the blurred background
+            background.paste(foreground, (x, y))
+
+            # Save to temporary file
+            temp_file = tempfile.NamedTemporaryFile(suffix='.png', delete=False)
+            background.save(temp_file.name, 'PNG')
+
+            print(f"Story image created: {temp_file.name}")
+            return Path(temp_file.name)
+
+        except Exception as e:
+            print(f"Error creating story image: {e}")
+            return None
 
     def create_media_container(self, image_url: str, caption: str, media_type: str = "IMAGE", max_retries: int = 3) -> Optional[str]:
         """
@@ -264,19 +337,42 @@ class InstagramPoster:
         # Step 6: Also post to STORY if enabled
         if post_to_story:
             print(f"Creating Instagram Story for {self.city.name}...")
-            story_creation_id = self.create_media_container(image_url, caption, media_type="STORIES")
 
-            if story_creation_id:
-                print("Waiting for story processing...")
-                time.sleep(5)
+            # Create story-optimized image (9:16 with blurred background)
+            story_image_path = self.create_story_image(image_path)
 
-                story_id = self.publish_media(story_creation_id)
-                if story_id:
-                    print(f"Instagram Story published! ID: {story_id}")
+            if story_image_path:
+                # Upload story image to hosting
+                print("Uploading story image to hosting...")
+                story_image_url = self.upload_image_to_hosting(story_image_path)
+
+                if story_image_url:
+                    print(f"Story image hosted at: {story_image_url}")
+                    time.sleep(3)  # Wait for image to be accessible
+
+                    story_creation_id = self.create_media_container(story_image_url, caption, media_type="STORIES")
+
+                    if story_creation_id:
+                        print("Waiting for story processing...")
+                        time.sleep(5)
+
+                        story_id = self.publish_media(story_creation_id)
+                        if story_id:
+                            print(f"Instagram Story published! ID: {story_id}")
+                        else:
+                            print(f"Failed to publish Story (feed post succeeded)")
+                    else:
+                        print(f"Failed to create Story container (feed post succeeded)")
                 else:
-                    print(f"Failed to publish Story (feed post succeeded)")
+                    print(f"Failed to upload story image (feed post succeeded)")
+
+                # Clean up temporary story image
+                try:
+                    os.unlink(story_image_path)
+                except Exception:
+                    pass
             else:
-                print(f"Failed to create Story container (feed post succeeded)")
+                print(f"Failed to create story image (feed post succeeded)")
 
         return post_id
 
