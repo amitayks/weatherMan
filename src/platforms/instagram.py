@@ -132,21 +132,33 @@ class InstagramPoster:
         print("No image hosting configured. Set IMAGE_HOSTING_ENDPOINT or IMGBB_API_KEY")
         return None
 
-    def create_media_container(self, image_url: str, caption: str, max_retries: int = 3) -> Optional[str]:
+    def create_media_container(self, image_url: str, caption: str, media_type: str = "IMAGE", max_retries: int = 3) -> Optional[str]:
         """
         Create a media container for the image with retry logic.
 
         Instagram needs time to download the image from the hosting URL.
         This method retries on timeout errors with exponential backoff.
+
+        Args:
+            image_url: Public URL of the image
+            caption: Caption for the post (ignored for Stories)
+            media_type: "IMAGE" for feed posts, "STORIES" for stories
+            max_retries: Number of retry attempts
         """
 
         url = f"{self.GRAPH_API_URL}/{self.account_id}/media"
 
         params = {
             "image_url": image_url,
-            "caption": caption,
             "access_token": self.access_token,
         }
+
+        # Add media_type for Stories
+        if media_type == "STORIES":
+            params["media_type"] = "STORIES"
+        else:
+            # Caption only applies to feed posts, not stories
+            params["caption"] = caption
 
         for attempt in range(max_retries):
             try:
@@ -199,8 +211,9 @@ class InstagramPoster:
         image_path: Path,
         weather: WeatherData,
         dry_run: bool = False,
+        post_to_story: bool = True,
     ) -> Optional[str]:
-        """Post image to Instagram."""
+        """Post image to Instagram feed and optionally to Story."""
 
         caption = self.build_caption(weather)
 
@@ -208,6 +221,7 @@ class InstagramPoster:
             print(f"[DRY RUN] Would post to Instagram for {self.city.name}:")
             print(f"  Image: {image_path}")
             print(f"  Caption: {caption[:100]}...")
+            print(f"  Story: {'Yes' if post_to_story else 'No'}")
             return "dry_run_post_id"
 
         # Step 1: Upload image to public hosting
@@ -225,9 +239,9 @@ class InstagramPoster:
         print("Waiting for image to be accessible...")
         time.sleep(5)
 
-        # Step 3: Create media container (with retry logic)
+        # Step 3: Create media container for FEED (with retry logic)
         print(f"Creating Instagram media container for {self.city.name}...")
-        creation_id = self.create_media_container(image_url, caption)
+        creation_id = self.create_media_container(image_url, caption, media_type="IMAGE")
 
         if not creation_id:
             print(f"Failed to create media container for {self.city.name}")
@@ -237,16 +251,34 @@ class InstagramPoster:
         print("Waiting for media processing...")
         time.sleep(10)  # Increased wait time
 
-        # Step 5: Publish
-        print(f"Publishing to Instagram for {self.city.name}...")
+        # Step 5: Publish to FEED
+        print(f"Publishing to Instagram feed for {self.city.name}...")
         post_id = self.publish_media(creation_id)
 
         if post_id:
-            print(f"Instagram post published! ID: {post_id}")
-            return post_id
+            print(f"Instagram feed post published! ID: {post_id}")
         else:
-            print(f"Failed to publish to Instagram for {self.city.name}")
+            print(f"Failed to publish to Instagram feed for {self.city.name}")
             return None
+
+        # Step 6: Also post to STORY if enabled
+        if post_to_story:
+            print(f"Creating Instagram Story for {self.city.name}...")
+            story_creation_id = self.create_media_container(image_url, caption, media_type="STORIES")
+
+            if story_creation_id:
+                print("Waiting for story processing...")
+                time.sleep(5)
+
+                story_id = self.publish_media(story_creation_id)
+                if story_id:
+                    print(f"Instagram Story published! ID: {story_id}")
+                else:
+                    print(f"Failed to publish Story (feed post succeeded)")
+            else:
+                print(f"Failed to create Story container (feed post succeeded)")
+
+        return post_id
 
 
 def post_to_instagram(
