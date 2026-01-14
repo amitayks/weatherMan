@@ -1,122 +1,91 @@
 #!/usr/bin/env python3
 """
-State management for daily posting schedule.
+State management for tracking recently posted cities.
 
 This module handles:
-1. Daily schedule persistence to JSON file
-2. Loading and validating existing schedules
-3. Tracking which cities have been posted
+1. Tracking cities posted within the last 24 hours
+2. Preventing duplicate posts by excluding recent cities
+3. Simple JSON persistence
 """
 
 import json
 import os
-from dataclasses import dataclass, asdict
-from datetime import datetime, timezone
+from dataclasses import dataclass, field
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from typing import Optional, TYPE_CHECKING
-
-if TYPE_CHECKING:
-    from .config import Config
-
-from .scheduler import select_daily_cities, calculate_posting_times
+from typing import Optional
 
 
 @dataclass
-class DailySchedule:
+class RecentlyPosted:
     """
-    Daily posting schedule with selected cities and posting times.
+    Tracks cities posted within the last 24 hours.
 
     Attributes:
-        date: Date in YYYY-MM-DD format
-        selected_cities: List of dicts with city_id, posting_time_utc, posted status
-        generation_timestamp: When this schedule was created (ISO format)
+        posts: List of dicts with city_id and posted_at timestamp
     """
 
-    date: str
-    selected_cities: list[dict]
-    generation_timestamp: str
+    posts: list[dict] = field(default_factory=list)
 
-    def is_current_day(self) -> bool:
+    def add_posted(self, city_id: str) -> None:
         """
-        Check if this schedule is for today (UTC).
-
-        Returns:
-            True if schedule date matches current UTC date
-        """
-        today_utc = datetime.now(timezone.utc).date()
-        return self.date == today_utc.isoformat()
-
-    def needs_posting(
-        self, city_id: str, current_time: datetime, tolerance_minutes: int = 30
-    ) -> bool:
-        """
-        Check if a city should post now based on its scheduled time.
+        Add a city to the recently posted list.
 
         Args:
-            city_id: City identifier to check
-            current_time: Current time to compare against (should be UTC)
-            tolerance_minutes: Minutes before/after scheduled time to allow posting
-
-        Returns:
-            True if city is scheduled, hasn't been posted yet, and current time
-            is within tolerance window of scheduled time
+            city_id: City identifier that was just posted
         """
-        for city_entry in self.selected_cities:
-            if city_entry["city_id"] == city_id:
-                # Check if already posted
-                if city_entry.get("posted", False):
-                    return False
+        self.posts.append({
+            "city_id": city_id,
+            "posted_at": datetime.now(timezone.utc).isoformat()
+        })
 
-                # Parse scheduled posting time
-                posting_time = datetime.fromisoformat(city_entry["posting_time_utc"])
-
-                # Ensure both times are timezone-aware
-                if current_time.tzinfo is None:
-                    current_time = current_time.replace(tzinfo=timezone.utc)
-                if posting_time.tzinfo is None:
-                    posting_time = posting_time.replace(tzinfo=timezone.utc)
-
-                # Calculate time difference in minutes
-                time_diff = abs((current_time - posting_time).total_seconds() / 60)
-
-                return time_diff <= tolerance_minutes
-
-        # City not in today's schedule
-        return False
-
-    def mark_posted(self, city_id: str) -> None:
+    def cleanup_old(self, hours: int = 24) -> int:
         """
-        Mark a city as posted.
+        Remove entries older than specified hours.
 
         Args:
-            city_id: City identifier to mark as posted
+            hours: Number of hours to keep (default: 24)
+
+        Returns:
+            Number of entries removed
         """
-        for city_entry in self.selected_cities:
-            if city_entry["city_id"] == city_id:
-                city_entry["posted"] = True
-                return
+        cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
+        original_count = len(self.posts)
+
+        self.posts = [
+            p for p in self.posts
+            if datetime.fromisoformat(p["posted_at"]) > cutoff
+        ]
+
+        return original_count - len(self.posts)
+
+    def get_excluded_ids(self) -> list[str]:
+        """
+        Get list of city IDs that should be excluded from selection.
+
+        Returns:
+            List of city IDs posted within the retention period
+        """
+        return [p["city_id"] for p in self.posts]
+
+    def clear(self) -> None:
+        """Clear all entries (used when all cities have been posted)."""
+        self.posts = []
 
     def to_dict(self) -> dict:
-        """
-        Convert schedule to dictionary for JSON serialization.
-
-        Returns:
-            Dictionary representation of the schedule
-        """
-        return asdict(self)
+        """Convert to dictionary for JSON serialization."""
+        return {"posts": self.posts}
 
 
 class StateManager:
     """
-    Manages daily schedule persistence to JSON file.
+    Manages recently posted state persistence to JSON file.
 
-    The state file is stored in the state/ directory and tracks:
-    - Which cities were selected for today
-    - Their scheduled posting times
-    - Whether they've been posted yet
+    The state file tracks which cities have been posted recently
+    to prevent duplicate posts within a 24-hour window.
     """
 
-    STATE_FILE = "state/daily_schedule.json"
+    STATE_FILE = "state/recently_posted.json"
 
     def __init__(self, state_file: Optional[str] = None):
         """
@@ -127,35 +96,39 @@ class StateManager:
         """
         self.state_file = state_file or self.STATE_FILE
 
-    def load_schedule(self) -> Optional[DailySchedule]:
+    def load_recent(self) -> RecentlyPosted:
         """
-        Load schedule from JSON file.
+        Load recently posted data from JSON file.
 
         Returns:
-            DailySchedule object if file exists and is valid, None otherwise
+            RecentlyPosted object (empty if file doesn't exist)
         """
         if not os.path.exists(self.state_file):
-            return None
+            return RecentlyPosted()
 
         try:
             with open(self.state_file, "r", encoding="utf-8") as f:
                 data = json.load(f)
 
-            return DailySchedule(
-                date=data["date"],
-                selected_cities=data["selected_cities"],
-                generation_timestamp=data["generation_timestamp"],
-            )
-        except (json.JSONDecodeError, KeyError, IOError) as e:
-            print(f"⚠️  Warning: Could not load schedule from {self.state_file}: {e}")
-            return None
+            recent = RecentlyPosted(posts=data.get("posts", []))
 
-    def save_schedule(self, schedule: DailySchedule) -> None:
+            # Auto-cleanup old entries on load
+            removed = recent.cleanup_old(hours=24)
+            if removed > 0:
+                print(f"🧹 Cleaned up {removed} old entries from recently posted")
+
+            return recent
+
+        except (json.JSONDecodeError, KeyError, IOError) as e:
+            print(f"⚠️  Warning: Could not load state from {self.state_file}: {e}")
+            return RecentlyPosted()
+
+    def save_recent(self, recent: RecentlyPosted) -> None:
         """
-        Save schedule to JSON file.
+        Save recently posted data to JSON file.
 
         Args:
-            schedule: DailySchedule object to save
+            recent: RecentlyPosted object to save
         """
         # Ensure state directory exists
         state_dir = Path(self.state_file).parent
@@ -163,71 +136,7 @@ class StateManager:
 
         try:
             with open(self.state_file, "w", encoding="utf-8") as f:
-                json.dump(schedule.to_dict(), f, indent=2, ensure_ascii=False)
+                json.dump(recent.to_dict(), f, indent=2, ensure_ascii=False)
         except IOError as e:
-            print(f"❌ Error: Could not save schedule to {self.state_file}: {e}")
+            print(f"❌ Error: Could not save state to {self.state_file}: {e}")
             raise
-
-    def get_or_create_schedule(self, config: 'Config') -> DailySchedule:
-        """
-        Load existing schedule or create new one for today.
-
-        If the existing schedule is for a previous day or doesn't exist,
-        generates a new schedule by:
-        1. Selecting cities using weighted random selection
-        2. Calculating evenly distributed posting times
-        3. Saving the new schedule to disk
-
-        Args:
-            config: Configuration object containing all cities
-
-        Returns:
-            DailySchedule for today
-        """
-        # Try to load existing schedule
-        schedule = self.load_schedule()
-
-        # Check if schedule is valid for today
-        if schedule is not None and schedule.is_current_day():
-            print(f"📅 Loaded existing schedule for {schedule.date}")
-            return schedule
-
-        # Generate new schedule for today
-        print("📅 Generating new daily schedule...")
-
-        # Select cities
-        selected_cities = select_daily_cities(config, num_cities=6)
-        print(
-            f"🎲 Selected cities (weighted random): {', '.join(city.name for city in selected_cities)}"
-        )
-
-        # Calculate posting times
-        posting_times = calculate_posting_times(selected_cities)
-
-        # Create schedule data structure
-        today_utc = datetime.now(timezone.utc)
-        today_date = today_utc.date().isoformat()
-
-        selected_cities_data = []
-        for city in selected_cities:
-            posting_time = posting_times[city.id]
-            selected_cities_data.append(
-                {
-                    "city_id": city.id,
-                    "posting_time_utc": posting_time.isoformat(),
-                    "posted": False,
-                }
-            )
-            print(f"   - {city.name} → {posting_time.strftime('%H:%M UTC')}")
-
-        new_schedule = DailySchedule(
-            date=today_date,
-            selected_cities=selected_cities_data,
-            generation_timestamp=today_utc.isoformat(),
-        )
-
-        # Save to disk
-        self.save_schedule(new_schedule)
-        print(f"💾 Schedule saved to {self.state_file}")
-
-        return new_schedule

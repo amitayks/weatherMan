@@ -1,5 +1,5 @@
 # City Weather Poster - Automated GitHub Actions Workflow
-# Runs every hour and posts for cities that have scheduled times matching current time
+# Runs every 4 hours and posts ONE randomly selected city
 
 name: Post Weather Updates
 
@@ -12,19 +12,19 @@ on:
   workflow_dispatch:
     inputs:
       city:
-        description: 'Specific city ID to process (leave empty for all)'
+        description: 'Specific city ID to process (leave empty for random)'
         required: false
         default: ''
-      force:
-        description: 'Force post regardless of schedule'
+      dry_run:
+        description: 'Dry run (simulate without posting)'
         required: false
         default: 'false'
         type: choice
         options:
           - 'false'
           - 'true'
-      dry_run:
-        description: 'Dry run (simulate without posting)'
+      force:
+        description: 'Force post (ignore recently-posted exclusions)'
         required: false
         default: 'false'
         type: choice
@@ -40,11 +40,6 @@ env:
   # Image hosting (for Instagram/TikTok)
   IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
 
-  # =====================================
-  # Global platform credentials
-  # One account per platform, posts for all cities
-  # =====================================
-
   # Twitter/X
   TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
   TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
@@ -55,11 +50,11 @@ env:
   INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
   INSTAGRAM_ACCOUNT_ID: ${{ secrets.INSTAGRAM_ACCOUNT_ID }}
 
-  # TikTok
+  # TikTok (optional)
   TIKTOK_ACCESS_TOKEN: ${{ secrets.TIKTOK_ACCESS_TOKEN }}
   TIKTOK_OPEN_ID: ${{ secrets.TIKTOK_OPEN_ID }}
 
-# Prevent concurrent workflow runs to avoid state conflicts
+# Prevent concurrent workflow runs
 concurrency:
   group: weather-posting
   cancel-in-progress: false
@@ -72,51 +67,50 @@ jobs:
   post-weather:
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
-      
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      
-      - name: Create output directory
-        run: mkdir -p output
 
-      - name: Create state directory
-        run: mkdir -p state
+      - name: Create directories
+        run: |
+          mkdir -p output
+          mkdir -p state
 
       - name: Run weather poster
         run: |
-          # Build command with optional arguments
+          # Build command
           CMD="python -m src.main --output-dir ./output"
-          
+
           # Add city if specified
           if [ -n "${{ github.event.inputs.city }}" ]; then
             CMD="$CMD --city ${{ github.event.inputs.city }}"
           fi
-          
+
           # Add force flag if specified
           if [ "${{ github.event.inputs.force }}" = "true" ]; then
             CMD="$CMD --force"
           fi
-          
+
           # Add dry-run flag if specified
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             CMD="$CMD --dry-run"
           fi
-          
+
           echo "Running: $CMD"
           $CMD
-      
+
       - name: Upload generated images
         uses: actions/upload-artifact@v4
         if: always()
@@ -126,28 +120,10 @@ jobs:
           retention-days: 7
 
       - name: Commit state changes
-        if: always()
+        if: success()
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add state/daily_schedule.json
-          git diff --staged --quiet || git commit -m "Update daily schedule state [skip ci]"
+          git add state/recently_posted.json
+          git diff --staged --quiet || git commit -m "Update recently posted state [skip ci]"
           git push
-
-  # Optional: Separate job per city for parallel processing
-  # Uncomment and modify for large number of cities
-  
-  # post-tokyo:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #     - uses: actions/setup-python@v5
-  #       with:
-  #         python-version: '3.11'
-  #     - run: pip install -r requirements.txt
-  #     - run: python -m src.main --city tokyo --output-dir ./output
-  #   env:
-  #     GOOGLE_AI_API_KEY: ${{ secrets.GOOGLE_AI_API_KEY }}
-  #     OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
-  #     TOKYO_TWITTER_API_KEY: ${{ secrets.TOKYO_TWITTER_API_KEY }}
-  #     # ... other Tokyo-specific secrets

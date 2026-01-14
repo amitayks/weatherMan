@@ -3,16 +3,17 @@
 City Weather Poster - Main orchestration script.
 
 This script handles the full workflow:
-1. Load configuration for specified city/cities
+1. Select a random city (excluding recently posted)
 2. Fetch current weather data
 3. Generate image using Nano Banana (Gemini)
 4. Post to enabled social media platforms
+5. Track the posted city to prevent duplicates
 """
 
 import argparse
 import sys
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -22,7 +23,6 @@ if sys.platform == "win32":
     sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
     sys.stderr = codecs.getwriter("utf-8")(sys.stderr.detach())
 
-import pytz
 from dotenv import load_dotenv
 
 from .config import get_config, CityConfig, Config
@@ -31,35 +31,14 @@ from .image_generator import generate_city_image
 from .platforms.twitter import post_to_twitter
 from .platforms.instagram import post_to_instagram
 from .platforms.tiktok import post_to_tiktok
-from .state_manager import StateManager, DailySchedule
-
-
-def should_post_now(city: CityConfig, schedule: 'DailySchedule', force: bool = False) -> bool:
-    """
-    Check if city should post now based on daily schedule.
-
-    Args:
-        city: City configuration
-        schedule: Daily schedule with selected cities and times
-        force: Override schedule check if True
-
-    Returns:
-        True if city should post now
-    """
-    if force:
-        return True
-
-    from datetime import timezone
-    current_time_utc = datetime.now(timezone.utc)
-    return schedule.needs_posting(city.id, current_time_utc)
+from .state_manager import StateManager, RecentlyPosted
+from .scheduler import select_random_city
 
 
 def process_city(
     city: CityConfig,
     config: Config,
-    schedule: 'DailySchedule',
     dry_run: bool = False,
-    force: bool = False,
     output_dir: str = None,
 ) -> dict:
     """
@@ -68,9 +47,7 @@ def process_city(
     Args:
         city: City configuration
         config: Global configuration object
-        schedule: Daily schedule with selected cities and times
         dry_run: If True, simulate without actually posting
-        force: If True, post regardless of scheduled time
         output_dir: Directory for generated images
 
     Returns:
@@ -78,6 +55,7 @@ def process_city(
     """
     results = {
         "city": city.name,
+        "city_id": city.id,
         "success": False,
         "weather": None,
         "image_path": None,
@@ -86,50 +64,41 @@ def process_city(
         "tiktok": None,
         "error": None,
     }
-    
+
     print(f"\n{'='*50}")
     print(f"Processing: {city.name}, {city.country}")
     print(f"Timezone: {city.timezone}")
     print(f"{'='*50}")
-    
-    # Check posting time (unless forced)
-    if not should_post_now(city, schedule, force):
-        from datetime import timezone
-        now_utc = datetime.now(timezone.utc)
-        print(f"Current time: {now_utc.strftime('%H:%M UTC')}")
-        print("Not within posting window. Skipping.")
-        results["error"] = "Not within posting window"
-        return results
-    
+
     # Step 1: Fetch weather
     print("\n📡 Fetching weather data...")
     weather = get_weather_for_city(city)
-    
+
     if not weather:
         print("❌ Failed to fetch weather data")
         results["error"] = "Weather fetch failed"
         return results
-    
+
     results["weather"] = {
         "temperature_c": weather.temperature_c,
         "description": weather.description,
         "humidity": weather.humidity,
     }
-    
+
     print(f"✅ Weather: {weather.description}, {weather.temperature_c:.1f}°C")
-    
+
     # Step 2: Generate image
     print("\n🎨 Generating image with Nano Banana...")
     image_path = generate_city_image(city, weather, output_dir)
-    
+
     if not image_path:
         print("❌ Failed to generate image")
         results["error"] = "Image generation failed"
         return results
-    
+
     results["image_path"] = str(image_path)
     print(f"✅ Image generated: {image_path}")
-    
+
     # Step 3: Post to platforms
     print("\n📱 Posting to social media...")
 
@@ -150,32 +119,32 @@ def process_city(
         print("\n🎵 Posting to TikTok...")
         tiktok_creds = config.get_platform_credentials("tiktok")
         results["tiktok"] = post_to_tiktok(city, image_path, weather, tiktok_creds, dry_run)
-    
+
     # Check if any platform succeeded
     platforms_attempted = []
     platforms_succeeded = []
-    
+
     for platform in ["twitter", "instagram", "tiktok"]:
         if getattr(city.platforms, platform):
             platforms_attempted.append(platform)
             if results[platform]:
                 platforms_succeeded.append(platform)
-    
+
     results["success"] = len(platforms_succeeded) > 0
-    
+
     print(f"\n📊 Results for {city.name}:")
     print(f"   Platforms attempted: {', '.join(platforms_attempted) or 'None'}")
     print(f"   Platforms succeeded: {', '.join(platforms_succeeded) or 'None'}")
-    
+
     return results
 
 
 def main():
     """Main entry point."""
-    
+
     # Load environment variables from .env file if present
     load_dotenv()
-    
+
     parser = argparse.ArgumentParser(
         description="City Weather Poster - Generate and post weather images"
     )
@@ -183,19 +152,13 @@ def main():
         "--city",
         "-c",
         type=str,
-        help="Specific city ID to process (default: all enabled cities)",
+        help="Specific city ID to process (default: random selection)",
     )
     parser.add_argument(
         "--dry-run",
         "-d",
         action="store_true",
         help="Simulate without actually posting",
-    )
-    parser.add_argument(
-        "--force",
-        "-f",
-        action="store_true",
-        help="Post regardless of scheduled time",
     )
     parser.add_argument(
         "--output-dir",
@@ -214,12 +177,18 @@ def main():
         action="store_true",
         help="List all configured cities and exit",
     )
-    
+    parser.add_argument(
+        "--force",
+        "-f",
+        action="store_true",
+        help="Ignore recently-posted exclusions (post even if city was recent)",
+    )
+
     args = parser.parse_args()
-    
+
     # Load configuration
     config = get_config(args.config)
-    
+
     # List cities mode
     if args.list_cities:
         print("\nConfigured Cities:")
@@ -233,15 +202,15 @@ def main():
                 platforms.append("Instagram")
             if city.platforms.tiktok:
                 platforms.append("TikTok")
-            
+
             print(f"\n{city_id}:")
             print(f"  Name: {city.name}, {city.country}")
             print(f"  Status: {status}")
             print(f"  Timezone: {city.timezone}")
-            print(f"  Posting times: {', '.join(city.posting_times)}")
+            print(f"  Weight: {city.weight}")
             print(f"  Platforms: {', '.join(platforms) or 'None'}")
         return 0
-    
+
     # Validate API keys
     if not config.google_ai_api_key:
         print("❌ Error: GOOGLE_AI_API_KEY not set")
@@ -251,119 +220,92 @@ def main():
         print("❌ Error: OPENWEATHER_API_KEY not set")
         return 1
 
-    # Validate platform credentials
-    # Check which platforms are enabled across all cities
-    needs_twitter = any(city.platforms.twitter for city in config.get_enabled_cities())
-    needs_instagram = any(city.platforms.instagram for city in config.get_enabled_cities())
-    needs_tiktok = any(city.platforms.tiktok for city in config.get_enabled_cities())
-
-    if needs_twitter:
-        twitter_creds = config.get_platform_credentials("twitter")
-        if not all([twitter_creds.get("api_key"), twitter_creds.get("api_secret"),
-                    twitter_creds.get("access_token"), twitter_creds.get("access_token_secret")]):
-            print("❌ Error: Twitter credentials incomplete")
-            print("   Required: TWITTER_API_KEY, TWITTER_API_SECRET, TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET")
-            return 1
-
-    if needs_instagram:
-        instagram_creds = config.get_platform_credentials("instagram")
-        if not all([instagram_creds.get("access_token"), instagram_creds.get("account_id")]):
-            print("❌ Error: Instagram credentials incomplete")
-            print("   Required: INSTAGRAM_ACCESS_TOKEN, INSTAGRAM_ACCOUNT_ID")
-            return 1
-
-    if needs_tiktok:
-        tiktok_creds = config.get_platform_credentials("tiktok")
-        if not tiktok_creds.get("access_token"):
-            print("❌ Error: TikTok credentials incomplete")
-            print("   Required: TIKTOK_ACCESS_TOKEN")
-            return 1
-
-    # NEW: Initialize state manager
+    # Initialize state manager
     state_manager = StateManager()
+    recent = state_manager.load_recent()
 
-    # NEW: Get or create today's schedule
-    schedule = state_manager.get_or_create_schedule(config)
+    # Get excluded city IDs (unless --force is used)
+    excluded_ids = [] if args.force else recent.get_excluded_ids()
 
-    print(f"\n📅 Today's selected cities: {', '.join([c['city_id'] for c in schedule.selected_cities])}")
-    print()
+    if excluded_ids:
+        print(f"📋 Recently posted ({len(excluded_ids)} cities): {', '.join(excluded_ids[:5])}{'...' if len(excluded_ids) > 5 else ''}")
 
-    # Determine which cities to process
+    # Determine which city to process
     if args.city:
         # Manual override - process specific city
         city = config.get_city(args.city)
         if not city:
             print(f"❌ Error: City '{args.city}' not found in configuration")
-            print(f"Available cities: {', '.join(config.cities.keys())}")
+            print(f"Available cities: {', '.join(list(config.cities.keys())[:10])}...")
             return 1
-        cities_to_process = [city]
+        print(f"\n🎯 Manual selection: {city.name}")
     else:
-        # NEW: Only process cities in today's schedule
-        scheduled_city_ids = [c['city_id'] for c in schedule.selected_cities]
-        cities_to_process = [
-            config.get_city(cid) for cid in scheduled_city_ids
-            if config.get_city(cid) is not None
-        ]
-    
-    if not cities_to_process:
-        print("No cities to process")
-        return 0
-    
-    print(f"🌍 City Weather Poster")
-    print(f"Processing {len(cities_to_process)} city/cities")
+        # Random selection (excluding recent)
+        city = select_random_city(config, excluded_ids)
+        if not city:
+            print("❌ No cities available for selection")
+            return 1
+        print(f"\n🎲 Random selection: {city.name}")
+
+    # Validate platform credentials for selected city
+    if city.platforms.twitter:
+        twitter_creds = config.get_platform_credentials("twitter")
+        if not all([twitter_creds.get("api_key"), twitter_creds.get("api_secret"),
+                    twitter_creds.get("access_token"), twitter_creds.get("access_token_secret")]):
+            print("❌ Error: Twitter credentials incomplete")
+            return 1
+
+    if city.platforms.instagram:
+        instagram_creds = config.get_platform_credentials("instagram")
+        if not all([instagram_creds.get("access_token"), instagram_creds.get("account_id")]):
+            print("❌ Error: Instagram credentials incomplete")
+            return 1
+
+    if city.platforms.tiktok:
+        tiktok_creds = config.get_platform_credentials("tiktok")
+        if not tiktok_creds.get("access_token"):
+            print("❌ Error: TikTok credentials incomplete")
+            return 1
+
+    print(f"\n🌍 City Weather Poster")
     if args.dry_run:
         print("🔸 DRY RUN MODE - No actual posts will be made")
     if args.force:
-        print("🔸 FORCE MODE - Ignoring scheduled times")
-    
-    # Process each city
-    all_results = []
+        print("🔸 FORCE MODE - Ignoring recently-posted exclusions")
 
-    for city in cities_to_process:
-        try:
-            result = process_city(
-                city,
-                config,
-                schedule,  # NEW: Pass schedule
-                dry_run=args.dry_run,
-                force=args.force,
-                output_dir=args.output_dir,
-            )
+    # Process the city
+    try:
+        result = process_city(
+            city,
+            config,
+            dry_run=args.dry_run,
+            output_dir=args.output_dir,
+        )
 
-            # NEW: Mark as posted if successful
-            if result.get("success"):
-                schedule.mark_posted(city.id)
-                state_manager.save_schedule(schedule)
-                print(f"✅ {city.name} marked as posted")
+        # Track successful post (unless dry run)
+        if result.get("success") and not args.dry_run:
+            recent.add_posted(city.id)
+            state_manager.save_recent(recent)
+            print(f"\n✅ {city.name} added to recently posted list")
 
-            all_results.append(result)
-        except Exception as e:
-            print(f"❌ Error processing {city.name}: {e}")
-            all_results.append({
-                "city": city.name,
-                "success": False,
-                "error": str(e),
-            })
-    
+    except Exception as e:
+        print(f"❌ Error processing {city.name}: {e}")
+        result = {
+            "city": city.name,
+            "success": False,
+            "error": str(e),
+        }
+
     # Summary
     print(f"\n{'='*50}")
     print("📋 SUMMARY")
     print(f"{'='*50}")
-    
-    successful = [r for r in all_results if r.get("success")]
-    failed = [r for r in all_results if not r.get("success")]
-    
-    print(f"Total cities processed: {len(all_results)}")
-    print(f"Successful: {len(successful)}")
-    print(f"Failed/Skipped: {len(failed)}")
-    
-    if failed:
-        print("\nFailed/Skipped cities:")
-        for r in failed:
-            print(f"  - {r['city']}: {r.get('error', 'Unknown error')}")
-    
-    # Return non-zero if all failed
-    return 0 if successful or not cities_to_process else 1
+    print(f"City: {result.get('city', 'Unknown')}")
+    print(f"Success: {'✅ Yes' if result.get('success') else '❌ No'}")
+    if result.get("error"):
+        print(f"Error: {result['error']}")
+
+    return 0 if result.get("success") else 1
 
 
 if __name__ == "__main__":
