@@ -17,8 +17,8 @@ from .weather import WeatherData
 class ImageGenerator:
     """Generate city weather images using Nano Banana (Gemini 2.5 Flash Image)."""
     
-    # Model name for Nano Banana
-    MODEL = "gemini-2.5-flash-image-preview"
+    # Model name for Nano Banana (stable GA version)
+    MODEL = "gemini-2.5-flash-image"
     
     def __init__(self, api_key: str = None):
         self.api_key = api_key or get_config().google_ai_api_key
