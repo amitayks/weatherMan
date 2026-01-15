@@ -1,34 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "south_georgia",
-      "posted_at": "2026-01-14T16:45:51.840205+00:00"
-    },
-    {
-      "city_id": "tahiti",
-      "posted_at": "2026-01-14T20:29:23.213744+00:00"
-    },
-    {
-      "city_id": "mykonos",
-      "posted_at": "2026-01-14T21:30:17.410741+00:00"
-    },
-    {
-      "city_id": "mykonos",
-      "posted_at": "2026-01-14T21:34:09.966728+00:00"
-    },
-    {
-      "city_id": "bali",
-      "posted_at": "2026-01-14T21:51:58.378780+00:00"
-    },
-    {
-      "city_id": "santorini",
-      "posted_at": "2026-01-14T22:04:15.963000+00:00"
-    },
-    {
-      "city_id": "jerusalem",
-      "posted_at": "2026-01-14T22:13:07.886128+00:00"
-    },
-    {
       "city_id": "providenciales",
       "posted_at": "2026-01-15T02:10:04.731450+00:00"
     },
@@ -47,6 +19,10 @@
     {
       "city_id": "fuerteventura",
       "posted_at": "2026-01-15T16:43:32.094241+00:00"
+    },
+    {
+      "city_id": "amsterdam",
+      "posted_at": "2026-01-15T22:18:37.480373+00:00"
     }
   ]
 }
