@@ -43,6 +43,10 @@
     {
       "city_id": "jerusalem",
       "posted_at": "2026-01-14T22:13:07.886128+00:00"
+    },
+    {
+      "city_id": "providenciales",
+      "posted_at": "2026-01-15T02:10:04.731450+00:00"
     }
   ]
 }
