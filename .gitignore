@@ -61,3 +61,7 @@ htmlcov/
 tmp/
 temp/
 *.tmp
+
+test_tiktok_oauth.py
+test_tiktok_simple.py
+.claude/*
