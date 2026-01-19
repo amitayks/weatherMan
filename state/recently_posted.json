@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "palau",
-      "posted_at": "2026-01-18T20:30:51.154094+00:00"
-    },
-    {
       "city_id": "macquarie_island",
       "posted_at": "2026-01-19T02:23:06.430459+00:00"
     },
@@ -23,6 +19,10 @@
     {
       "city_id": "lisbon",
       "posted_at": "2026-01-19T16:38:51.748957+00:00"
+    },
+    {
+      "city_id": "kefalonia",
+      "posted_at": "2026-01-19T20:32:35.690196+00:00"
     }
   ]
 }
