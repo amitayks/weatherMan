@@ -1,14 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "mexico_city",
-      "posted_at": "2026-01-19T13:04:42.667139+00:00"
-    },
-    {
-      "city_id": "lisbon",
-      "posted_at": "2026-01-19T16:38:51.748957+00:00"
-    },
-    {
       "city_id": "kefalonia",
       "posted_at": "2026-01-19T20:32:35.690196+00:00"
     },
@@ -27,6 +19,10 @@
     {
       "city_id": "palau",
       "posted_at": "2026-01-20T13:05:20.032861+00:00"
+    },
+    {
+      "city_id": "fuerteventura",
+      "posted_at": "2026-01-20T16:43:38.175813+00:00"
     }
   ]
 }
