@@ -1,14 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "palau",
-      "posted_at": "2026-01-20T13:05:20.032861+00:00"
-    },
-    {
-      "city_id": "fuerteventura",
-      "posted_at": "2026-01-20T16:43:38.175813+00:00"
-    },
-    {
       "city_id": "south_georgia",
       "posted_at": "2026-01-20T20:46:00.731050+00:00"
     },
@@ -27,6 +19,10 @@
     {
       "city_id": "langkawi",
       "posted_at": "2026-01-21T13:04:37.783876+00:00"
+    },
+    {
+      "city_id": "pitcairn",
+      "posted_at": "2026-01-21T17:05:20.429297+00:00"
     }
   ]
 }
