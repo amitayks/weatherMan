@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "fernando_de_noronha",
-      "posted_at": "2026-01-20T02:11:47.826289+00:00"
-    },
-    {
       "city_id": "seoul",
       "posted_at": "2026-01-20T04:52:27.179319+00:00"
     },
@@ -23,6 +19,10 @@
     {
       "city_id": "south_georgia",
       "posted_at": "2026-01-20T20:46:00.731050+00:00"
+    },
+    {
+      "city_id": "lisbon",
+      "posted_at": "2026-01-21T02:21:09.116538+00:00"
     }
   ]
 }
