@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "fernando_de_noronha",
-      "posted_at": "2026-01-21T20:39:50.146317+00:00"
-    },
-    {
       "city_id": "moscow",
       "posted_at": "2026-01-22T02:22:29.056488+00:00"
     },
@@ -27,6 +23,10 @@
     {
       "city_id": "tristan",
       "posted_at": "2026-01-22T20:36:24.055701+00:00"
+    },
+    {
+      "city_id": "cape_verde",
+      "posted_at": "2026-01-23T02:11:44.705041+00:00"
     }
   ]
 }
