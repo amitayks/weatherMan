@@ -1,14 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "faroe_islands",
-      "posted_at": "2026-01-23T20:34:25.478155+00:00"
-    },
-    {
-      "city_id": "istanbul",
-      "posted_at": "2026-01-24T02:08:23.940264+00:00"
-    },
-    {
       "city_id": "st_croix",
       "posted_at": "2026-01-24T04:40:39.608743+00:00"
     },
@@ -27,6 +19,10 @@
     {
       "city_id": "siargao",
       "posted_at": "2026-01-24T20:29:59.323754+00:00"
+    },
+    {
+      "city_id": "guadeloupe",
+      "posted_at": "2026-01-25T02:29:16.063970+00:00"
     }
   ]
 }
