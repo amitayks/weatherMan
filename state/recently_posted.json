@@ -1,14 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "guadeloupe",
-      "posted_at": "2026-01-25T02:29:16.063970+00:00"
-    },
-    {
-      "city_id": "st_lucia",
-      "posted_at": "2026-01-25T04:56:15.105573+00:00"
-    },
-    {
       "city_id": "mauritius",
       "posted_at": "2026-01-25T08:36:05.732788+00:00"
     },
@@ -27,6 +19,10 @@
     {
       "city_id": "buenos_aires",
       "posted_at": "2026-01-26T02:28:20.666484+00:00"
+    },
+    {
+      "city_id": "seoul",
+      "posted_at": "2026-01-26T04:59:49.749572+00:00"
     }
   ]
 }
