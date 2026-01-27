@@ -127,7 +127,17 @@ class InstagramPoster:
                     timeout=60,
                 )
                 response.raise_for_status()
-                return response.json()["data"]["url"]
+                data = response.json()["data"]
+                # Use display_url for direct access - Instagram can't follow redirects well
+                # Fallback chain: display_url -> image.url -> url
+                display_url = data.get("display_url")
+                image_direct_url = data.get("image", {}).get("url")
+                short_url = data.get("url")
+
+                image_url = display_url or image_direct_url or short_url
+                print(f"ImgBB URLs - display: {display_url}, image: {image_direct_url}, short: {short_url}")
+                print(f"Using URL: {image_url}")
+                return image_url
             except Exception as e:
                 print(f"Error uploading to imgbb: {e}")
                 return None

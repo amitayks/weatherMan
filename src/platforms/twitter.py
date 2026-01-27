@@ -104,6 +104,14 @@ class TwitterPoster:
             
         except tweepy.TweepyException as e:
             print(f"Error posting to Twitter for {self.city.name}: {e}")
+            # Print additional details for debugging 403 errors
+            if hasattr(e, 'response') and e.response is not None:
+                print(f"Twitter API Response Status: {e.response.status_code}")
+                print(f"Twitter API Response: {e.response.text}")
+            if hasattr(e, 'api_errors'):
+                print(f"Twitter API Errors: {e.api_errors}")
+            if hasattr(e, 'api_codes'):
+                print(f"Twitter API Codes: {e.api_codes}")
             return None
 
 
