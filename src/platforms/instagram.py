@@ -128,16 +128,11 @@ class InstagramPoster:
                 )
                 response.raise_for_status()
                 data = response.json()["data"]
-                # Use display_url for direct access - Instagram can't follow redirects well
-                # Fallback chain: display_url -> image.url -> url
-                display_url = data.get("display_url")
-                image_direct_url = data.get("image", {}).get("url")
-                short_url = data.get("url")
-
-                image_url = display_url or image_direct_url or short_url
-                print(f"ImgBB URLs - display: {display_url}, image: {image_direct_url}, short: {short_url}")
-                print(f"Using URL: {image_url}")
-                return image_url
+                # Use full quality URL (image.url or url) - NOT display_url which is compressed
+                # display_url = medium quality, url/image.url = full quality
+                full_quality_url = data.get("image", {}).get("url") or data.get("url")
+                print(f"ImgBB full quality URL: {full_quality_url}")
+                return full_quality_url
             except Exception as e:
                 print(f"Error uploading to imgbb: {e}")
                 return None
@@ -185,10 +180,9 @@ class InstagramPoster:
             background = enhancer.enhance(0.7)  # 70% brightness
 
             # Calculate size for the original image on the story
-            # Fit the original image to the story width with some padding
-            padding = 40  # pixels on each side
-            max_width = story_width - (padding * 2)
-            max_height = story_height - (padding * 2)
+            # Use full width for maximum quality (no padding)
+            max_width = story_width
+            max_height = story_height
 
             # Scale to fit width while maintaining aspect ratio
             fit_scale = min(max_width / original_width, max_height / original_height)
@@ -204,9 +198,11 @@ class InstagramPoster:
             # Paste the original image onto the blurred background
             background.paste(foreground, (x, y))
 
-            # Save to temporary file
-            temp_file = tempfile.NamedTemporaryFile(suffix='.png', delete=False)
-            background.save(temp_file.name, 'PNG')
+            # Save as JPEG with maximum quality (Instagram prefers JPEG, re-encodes PNG)
+            temp_file = tempfile.NamedTemporaryFile(suffix='.jpg', delete=False)
+            # Convert to RGB (JPEG doesn't support alpha)
+            background = background.convert('RGB')
+            background.save(temp_file.name, 'JPEG', quality=95, optimize=True)
 
             print(f"Story image created: {temp_file.name}")
             return Path(temp_file.name)
@@ -318,9 +314,9 @@ class InstagramPoster:
         print(f"Image hosted at: {image_url}")
 
         # Step 2: Wait for image to be fully accessible
-        # ImgBB needs a moment before the image is reliably downloadable
+        # ImgBB CDN needs time before Instagram can reliably download
         print("Waiting for image to be accessible...")
-        time.sleep(5)
+        time.sleep(10)
 
         # Step 3: Create media container for FEED (with retry logic)
         print(f"Creating Instagram media container for {self.city.name}...")
@@ -358,7 +354,7 @@ class InstagramPoster:
 
                 if story_image_url:
                     print(f"Story image hosted at: {story_image_url}")
-                    time.sleep(3)  # Wait for image to be accessible
+                    time.sleep(10)  # Wait for CDN propagation
 
                     story_creation_id = self.create_media_container(story_image_url, caption, media_type="STORIES")
 
