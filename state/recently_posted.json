@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "tristan",
-      "posted_at": "2026-01-28T08:41:35.250290+00:00"
-    },
-    {
       "city_id": "papua_new_guinea",
       "posted_at": "2026-01-28T13:05:40.228559+00:00"
     },
@@ -23,6 +19,10 @@
     {
       "city_id": "koh_rong",
       "posted_at": "2026-01-29T05:10:56.200301+00:00"
+    },
+    {
+      "city_id": "ascension_island",
+      "posted_at": "2026-01-29T08:52:01.634179+00:00"
     }
   ]
 }
