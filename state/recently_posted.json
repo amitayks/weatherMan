@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "papua_new_guinea",
-      "posted_at": "2026-01-29T13:13:09.077687+00:00"
-    },
-    {
       "city_id": "svalbard",
       "posted_at": "2026-01-29T16:53:28.815099+00:00"
     },
@@ -27,6 +23,10 @@
     {
       "city_id": "reunion",
       "posted_at": "2026-01-30T13:11:32.787448+00:00"
+    },
+    {
+      "city_id": "bouvet_island",
+      "posted_at": "2026-01-30T16:50:59.700633+00:00"
     }
   ]
 }
