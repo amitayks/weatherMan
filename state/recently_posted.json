@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "montego_bay",
-      "posted_at": "2026-01-31T20:34:43.717102+00:00"
-    },
-    {
       "city_id": "mumbai",
       "posted_at": "2026-02-01T02:58:33.691636+00:00"
     },
@@ -23,6 +19,10 @@
     {
       "city_id": "antipodes_islands",
       "posted_at": "2026-02-01T16:40:02.452230+00:00"
+    },
+    {
+      "city_id": "macquarie_island",
+      "posted_at": "2026-02-01T20:36:03.623484+00:00"
     }
   ]
 }
