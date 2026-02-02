@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "milos",
-      "posted_at": "2026-02-01T13:05:00.972645+00:00"
-    },
-    {
       "city_id": "antipodes_islands",
       "posted_at": "2026-02-01T16:40:02.452230+00:00"
     },
@@ -23,6 +19,10 @@
     {
       "city_id": "punta_cana",
       "posted_at": "2026-02-02T08:55:15.102560+00:00"
+    },
+    {
+      "city_id": "mallorca",
+      "posted_at": "2026-02-02T13:15:33.585164+00:00"
     }
   ]
 }
