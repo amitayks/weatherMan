@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "macquarie_island",
-      "posted_at": "2026-02-01T20:36:03.623484+00:00"
-    },
-    {
       "city_id": "siargao",
       "posted_at": "2026-02-02T02:47:39.720481+00:00"
     },
@@ -23,6 +19,10 @@
     {
       "city_id": "st_martin",
       "posted_at": "2026-02-02T16:52:25.460588+00:00"
+    },
+    {
+      "city_id": "antigua",
+      "posted_at": "2026-02-03T02:44:44.777984+00:00"
     }
   ]
 }
