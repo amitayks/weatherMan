@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "martinique",
-      "posted_at": "2026-02-09T05:42:06.284081+00:00"
-    },
-    {
       "city_id": "gran_canaria",
       "posted_at": "2026-02-09T09:04:14.163878+00:00"
     },
@@ -23,6 +19,10 @@
     {
       "city_id": "new_caledonia",
       "posted_at": "2026-02-10T05:41:19.872990+00:00"
+    },
+    {
+      "city_id": "papua_new_guinea",
+      "posted_at": "2026-02-10T09:04:36.107870+00:00"
     }
   ]
 }
