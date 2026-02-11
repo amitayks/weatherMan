@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "phuket",
-      "posted_at": "2026-02-10T02:57:01.685077+00:00"
-    },
-    {
       "city_id": "new_caledonia",
       "posted_at": "2026-02-10T05:41:19.872990+00:00"
     },
@@ -27,6 +23,10 @@
     {
       "city_id": "bouvet_island",
       "posted_at": "2026-02-11T02:54:33.820655+00:00"
+    },
+    {
+      "city_id": "campbell_island",
+      "posted_at": "2026-02-11T05:40:20.039079+00:00"
     }
   ]
 }
