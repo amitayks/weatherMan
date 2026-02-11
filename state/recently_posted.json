@@ -23,6 +23,10 @@
     {
       "city_id": "singapore",
       "posted_at": "2026-02-10T20:54:04.342456+00:00"
+    },
+    {
+      "city_id": "bouvet_island",
+      "posted_at": "2026-02-11T02:54:33.820655+00:00"
     }
   ]
 }
