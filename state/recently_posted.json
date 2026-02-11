@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "papua_new_guinea",
-      "posted_at": "2026-02-10T09:04:36.107870+00:00"
-    },
-    {
       "city_id": "san_francisco",
       "posted_at": "2026-02-10T13:40:57.941464+00:00"
     },
@@ -27,6 +23,10 @@
     {
       "city_id": "yap",
       "posted_at": "2026-02-11T08:59:41.097115+00:00"
+    },
+    {
+      "city_id": "tenerife",
+      "posted_at": "2026-02-11T13:26:15.264217+00:00"
     }
   ]
 }
