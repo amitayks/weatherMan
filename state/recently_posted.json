@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "bouvet_island",
-      "posted_at": "2026-02-11T02:54:33.820655+00:00"
-    },
-    {
       "city_id": "campbell_island",
       "posted_at": "2026-02-11T05:40:20.039079+00:00"
     },
@@ -27,6 +23,10 @@
     {
       "city_id": "papua_new_guinea",
       "posted_at": "2026-02-12T02:50:21.900089+00:00"
+    },
+    {
+      "city_id": "hydra",
+      "posted_at": "2026-02-12T05:28:10.773533+00:00"
     }
   ]
 }
