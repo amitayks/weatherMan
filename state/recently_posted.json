@@ -23,6 +23,10 @@
     {
       "city_id": "berlin",
       "posted_at": "2026-02-13T20:48:50.420320+00:00"
+    },
+    {
+      "city_id": "campbell_island",
+      "posted_at": "2026-02-14T02:37:27.949951+00:00"
     }
   ]
 }
