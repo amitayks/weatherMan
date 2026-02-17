@@ -1,14 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "lanzarote",
-      "posted_at": "2026-02-16T08:59:14.611280+00:00"
-    },
-    {
-      "city_id": "martinique",
-      "posted_at": "2026-02-16T13:18:30.919634+00:00"
-    },
-    {
       "city_id": "sao_tome",
       "posted_at": "2026-02-16T16:55:11.307656+00:00"
     },
@@ -27,6 +19,10 @@
     {
       "city_id": "tonga",
       "posted_at": "2026-02-17T08:56:52.945820+00:00"
+    },
+    {
+      "city_id": "new_caledonia",
+      "posted_at": "2026-02-17T13:19:59.979777+00:00"
     }
   ]
 }
