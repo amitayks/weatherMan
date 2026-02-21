@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "sao_tome",
-      "posted_at": "2026-02-20T05:19:47.010076+00:00"
-    },
-    {
       "city_id": "kiribati",
       "posted_at": "2026-02-20T08:52:15.676776+00:00"
     },
@@ -27,6 +23,10 @@
     {
       "city_id": "hydra",
       "posted_at": "2026-02-21T05:10:15.502920+00:00"
+    },
+    {
+      "city_id": "falkland_islands",
+      "posted_at": "2026-02-21T08:40:09.534270+00:00"
     }
   ]
 }
