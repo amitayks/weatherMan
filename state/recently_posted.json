@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "raja_ampat",
-      "posted_at": "2026-02-24T08:58:29.023080+00:00"
-    },
-    {
       "city_id": "campbell_island",
       "posted_at": "2026-02-24T13:22:24.109676+00:00"
     },
@@ -27,6 +23,10 @@
     {
       "city_id": "singapore",
       "posted_at": "2026-02-25T08:58:37.302358+00:00"
+    },
+    {
+      "city_id": "moscow",
+      "posted_at": "2026-02-25T13:21:06.731193+00:00"
     }
   ]
 }
