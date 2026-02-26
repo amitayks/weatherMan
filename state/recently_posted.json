@@ -1,14 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "singapore",
-      "posted_at": "2026-02-25T08:58:37.302358+00:00"
-    },
-    {
-      "city_id": "moscow",
-      "posted_at": "2026-02-25T13:21:06.731193+00:00"
-    },
-    {
       "city_id": "providenciales",
       "posted_at": "2026-02-25T17:14:07.187143+00:00"
     },
@@ -19,6 +11,10 @@
     {
       "city_id": "iceland",
       "posted_at": "2026-02-26T08:57:27.363676+00:00"
+    },
+    {
+      "city_id": "crete",
+      "posted_at": "2026-02-26T13:22:10.952030+00:00"
     }
   ]
 }
