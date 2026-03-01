@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "ascension_island",
-      "posted_at": "2026-02-28T16:35:46.802175+00:00"
-    },
-    {
       "city_id": "comoros",
       "posted_at": "2026-02-28T20:34:29.918010+00:00"
     },
@@ -23,6 +19,10 @@
     {
       "city_id": "amsterdam",
       "posted_at": "2026-03-01T13:03:18.592647+00:00"
+    },
+    {
+      "city_id": "sao_tome",
+      "posted_at": "2026-03-01T16:37:47.904433+00:00"
     }
   ]
 }
