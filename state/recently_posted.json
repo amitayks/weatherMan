@@ -1,14 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "langkawi",
-      "posted_at": "2026-02-28T08:38:52.646345+00:00"
-    },
-    {
-      "city_id": "san_francisco",
-      "posted_at": "2026-02-28T12:59:32.694660+00:00"
-    },
-    {
       "city_id": "ascension_island",
       "posted_at": "2026-02-28T16:35:46.802175+00:00"
     },
@@ -27,6 +19,10 @@
     {
       "city_id": "grand_cayman",
       "posted_at": "2026-03-01T08:39:37.102607+00:00"
+    },
+    {
+      "city_id": "amsterdam",
+      "posted_at": "2026-03-01T13:03:18.592647+00:00"
     }
   ]
 }
