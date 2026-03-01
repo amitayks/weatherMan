@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "barbados",
-      "posted_at": "2026-02-28T04:59:16.314605+00:00"
-    },
-    {
       "city_id": "langkawi",
       "posted_at": "2026-02-28T08:38:52.646345+00:00"
     },
@@ -23,6 +19,10 @@
     {
       "city_id": "faroe_islands",
       "posted_at": "2026-03-01T02:54:00.483566+00:00"
+    },
+    {
+      "city_id": "antigua",
+      "posted_at": "2026-03-01T05:20:50.735484+00:00"
     }
   ]
 }
