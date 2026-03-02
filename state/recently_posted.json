@@ -1,14 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "antigua",
-      "posted_at": "2026-03-01T05:20:50.735484+00:00"
-    },
-    {
-      "city_id": "grand_cayman",
-      "posted_at": "2026-03-01T08:39:37.102607+00:00"
-    },
-    {
       "city_id": "amsterdam",
       "posted_at": "2026-03-01T13:03:18.592647+00:00"
     },
@@ -23,6 +15,10 @@
     {
       "city_id": "athens",
       "posted_at": "2026-03-02T05:18:47.780242+00:00"
+    },
+    {
+      "city_id": "faroe_islands",
+      "posted_at": "2026-03-02T08:55:30.644689+00:00"
     }
   ]
 }
