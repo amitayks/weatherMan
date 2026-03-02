@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "sao_tome",
-      "posted_at": "2026-03-01T16:37:47.904433+00:00"
-    },
-    {
       "city_id": "mykonos",
       "posted_at": "2026-03-02T02:41:50.445660+00:00"
     },
@@ -19,6 +15,10 @@
     {
       "city_id": "papua_new_guinea",
       "posted_at": "2026-03-02T13:15:06.783186+00:00"
+    },
+    {
+      "city_id": "seychelles",
+      "posted_at": "2026-03-02T16:59:10.271117+00:00"
     }
   ]
 }
