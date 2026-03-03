@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "faroe_islands",
-      "posted_at": "2026-03-02T08:55:30.644689+00:00"
-    },
-    {
       "city_id": "papua_new_guinea",
       "posted_at": "2026-03-02T13:15:06.783186+00:00"
     },
@@ -27,6 +23,10 @@
     {
       "city_id": "seoul",
       "posted_at": "2026-03-03T08:52:57.989421+00:00"
+    },
+    {
+      "city_id": "palawan",
+      "posted_at": "2026-03-03T13:13:09.507614+00:00"
     }
   ]
 }
