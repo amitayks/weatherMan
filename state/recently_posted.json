@@ -1,14 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "dubrovnik",
-      "posted_at": "2026-03-11T13:16:17.013212+00:00"
-    },
-    {
-      "city_id": "gran_canaria",
-      "posted_at": "2026-03-11T17:01:26.675866+00:00"
-    },
-    {
       "city_id": "kiribati",
       "posted_at": "2026-03-11T20:40:51.563430+00:00"
     },
@@ -27,6 +19,10 @@
     {
       "city_id": "raja_ampat",
       "posted_at": "2026-03-12T13:17:17.732844+00:00"
+    },
+    {
+      "city_id": "hydra",
+      "posted_at": "2026-03-12T17:04:09.044040+00:00"
     }
   ]
 }
