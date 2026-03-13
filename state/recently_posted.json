@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "san_francisco",
-      "posted_at": "2026-03-12T05:19:32.622523+00:00"
-    },
-    {
       "city_id": "campbell_island",
       "posted_at": "2026-03-12T08:54:31.081190+00:00"
     },
@@ -27,6 +23,10 @@
     {
       "city_id": "ascension_island",
       "posted_at": "2026-03-13T05:15:59.611218+00:00"
+    },
+    {
+      "city_id": "antigua",
+      "posted_at": "2026-03-13T08:51:39.811415+00:00"
     }
   ]
 }
