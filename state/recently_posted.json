@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "bay_of_islands",
-      "posted_at": "2026-03-18T13:27:48.256430+00:00"
-    },
-    {
       "city_id": "palawan",
       "posted_at": "2026-03-18T17:10:46.636098+00:00"
     },
@@ -27,6 +23,10 @@
     {
       "city_id": "vanuatu",
       "posted_at": "2026-03-19T13:21:05.314919+00:00"
+    },
+    {
+      "city_id": "jerusalem",
+      "posted_at": "2026-03-19T17:04:09.874106+00:00"
     }
   ]
 }
