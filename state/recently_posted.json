@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "azores",
-      "posted_at": "2026-03-20T08:52:01.885697+00:00"
-    },
-    {
       "city_id": "fuerteventura",
       "posted_at": "2026-03-20T13:14:13.117564+00:00"
     },
@@ -27,6 +23,10 @@
     {
       "city_id": "st_helena",
       "posted_at": "2026-03-21T08:41:39.748251+00:00"
+    },
+    {
+      "city_id": "st_thomas",
+      "posted_at": "2026-03-21T13:03:41.564881+00:00"
     }
   ]
 }
