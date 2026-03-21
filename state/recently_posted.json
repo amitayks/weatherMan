@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "madeira",
-      "posted_at": "2026-03-20T02:39:30.551739+00:00"
-    },
-    {
       "city_id": "phuket",
       "posted_at": "2026-03-20T05:18:12.383273+00:00"
     },
@@ -27,6 +23,10 @@
     {
       "city_id": "big_island_hawaii",
       "posted_at": "2026-03-21T02:33:09.452851+00:00"
+    },
+    {
+      "city_id": "grand_cayman",
+      "posted_at": "2026-03-21T05:09:57.778816+00:00"
     }
   ]
 }
