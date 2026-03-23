@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "campbell_island",
-      "posted_at": "2026-03-22T08:42:40.646236+00:00"
-    },
-    {
       "city_id": "mallorca",
       "posted_at": "2026-03-22T13:05:53.797296+00:00"
     },
@@ -23,6 +19,10 @@
     {
       "city_id": "rhodes",
       "posted_at": "2026-03-23T05:43:11.364557+00:00"
+    },
+    {
+      "city_id": "st_lucia",
+      "posted_at": "2026-03-23T09:05:52.126158+00:00"
     }
   ]
 }
