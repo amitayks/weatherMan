@@ -1,14 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "st_lucia",
-      "posted_at": "2026-03-23T09:05:52.126158+00:00"
-    },
-    {
-      "city_id": "campbell_island",
-      "posted_at": "2026-03-23T13:22:54.491201+00:00"
-    },
-    {
       "city_id": "raja_ampat",
       "posted_at": "2026-03-23T17:01:03.528294+00:00"
     },
@@ -27,6 +19,10 @@
     {
       "city_id": "montego_bay",
       "posted_at": "2026-03-24T09:00:15.993416+00:00"
+    },
+    {
+      "city_id": "vienna",
+      "posted_at": "2026-03-24T13:26:39.533737+00:00"
     }
   ]
 }
