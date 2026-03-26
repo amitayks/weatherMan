@@ -1,14 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "antigua",
-      "posted_at": "2026-03-24T20:50:55.058713+00:00"
-    },
-    {
-      "city_id": "zanzibar",
-      "posted_at": "2026-03-25T02:46:28.094736+00:00"
-    },
-    {
       "city_id": "anguilla",
       "posted_at": "2026-03-25T05:26:13.061714+00:00"
     },
@@ -27,6 +19,10 @@
     {
       "city_id": "amsterdam",
       "posted_at": "2026-03-25T20:48:58.068276+00:00"
+    },
+    {
+      "city_id": "montserrat",
+      "posted_at": "2026-03-26T02:53:19.146430+00:00"
     }
   ]
 }
