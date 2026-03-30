@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "madagascar",
-      "posted_at": "2026-03-29T20:41:22.411704+00:00"
-    },
-    {
       "city_id": "amsterdam",
       "posted_at": "2026-03-30T03:21:15.325039+00:00"
     },
@@ -23,6 +19,10 @@
     {
       "city_id": "san_francisco",
       "posted_at": "2026-03-30T17:04:16.165270+00:00"
+    },
+    {
+      "city_id": "lanzarote",
+      "posted_at": "2026-03-30T20:54:25.820651+00:00"
     }
   ]
 }
