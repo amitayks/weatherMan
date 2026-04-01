@@ -1,14 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "lanzarote",
-      "posted_at": "2026-03-30T20:54:25.820651+00:00"
-    },
-    {
-      "city_id": "faroe_islands",
-      "posted_at": "2026-03-31T02:54:42.720177+00:00"
-    },
-    {
       "city_id": "buenos_aires",
       "posted_at": "2026-03-31T05:47:08.912353+00:00"
     },
@@ -23,6 +15,10 @@
     {
       "city_id": "lombok",
       "posted_at": "2026-03-31T17:06:34.419350+00:00"
+    },
+    {
+      "city_id": "fuerteventura",
+      "posted_at": "2026-04-01T03:25:16.476315+00:00"
     }
   ]
 }
