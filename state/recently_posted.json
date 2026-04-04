@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "buenos_aires",
-      "posted_at": "2026-04-03T02:53:47.249088+00:00"
-    },
-    {
       "city_id": "dubai",
       "posted_at": "2026-04-03T05:44:44.757492+00:00"
     },
@@ -27,6 +23,10 @@
     {
       "city_id": "temburong",
       "posted_at": "2026-04-04T02:43:54.828446+00:00"
+    },
+    {
+      "city_id": "macquarie_island",
+      "posted_at": "2026-04-04T05:23:55.006252+00:00"
     }
   ]
 }
