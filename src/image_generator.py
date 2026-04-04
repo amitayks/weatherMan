@@ -57,7 +57,7 @@ class ImageGenerator:
         window_lights = "Interior building lights visible glowing warmly" if is_dark else "Windows reflective, interior lights off for bright day"
 
         # Randomly select 5-8 landmarks for variety
-        num_landmarks = random.randint(5, min(8, len(city.landmarks)))
+        num_landmarks = random.randint(3, min(4, len(city.landmarks)))
         selected_landmarks = random.sample(city.landmarks, num_landmarks)
         landmarks_text = "\n".join(f"- {landmark}" for landmark in selected_landmarks)
 

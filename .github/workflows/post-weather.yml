@@ -6,7 +6,7 @@ name: Post Weather Updates
 on:
   # Run every 4 hours at minute 0
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: '0 */5 * * *'
 
   # Allow manual triggering
   workflow_dispatch:
