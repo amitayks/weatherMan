@@ -1,14 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "temburong",
-      "posted_at": "2026-04-04T02:43:54.828446+00:00"
-    },
-    {
-      "city_id": "macquarie_island",
-      "posted_at": "2026-04-04T05:23:55.006252+00:00"
-    },
-    {
       "city_id": "fernando_de_noronha",
       "posted_at": "2026-04-04T08:51:41.911401+00:00"
     },
@@ -27,6 +19,10 @@
     {
       "city_id": "papua_new_guinea",
       "posted_at": "2026-04-05T02:01:50.209294+00:00"
+    },
+    {
+      "city_id": "iceland",
+      "posted_at": "2026-04-05T06:14:39.173257+00:00"
     }
   ]
 }
