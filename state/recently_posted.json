@@ -1,14 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "st_lucia",
-      "posted_at": "2026-04-04T16:44:06.614425+00:00"
-    },
-    {
-      "city_id": "lanzarote",
-      "posted_at": "2026-04-04T20:26:24.874241+00:00"
-    },
-    {
       "city_id": "papua_new_guinea",
       "posted_at": "2026-04-05T02:01:50.209294+00:00"
     },
@@ -23,6 +15,10 @@
     {
       "city_id": "phu_quoc",
       "posted_at": "2026-04-05T15:28:36.756816+00:00"
+    },
+    {
+      "city_id": "south_georgia",
+      "posted_at": "2026-04-05T20:27:52.919404+00:00"
     }
   ]
 }
