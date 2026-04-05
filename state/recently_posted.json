@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "elba",
-      "posted_at": "2026-04-03T20:44:35.545116+00:00"
-    },
-    {
       "city_id": "temburong",
       "posted_at": "2026-04-04T02:43:54.828446+00:00"
     },
@@ -27,6 +23,10 @@
     {
       "city_id": "lanzarote",
       "posted_at": "2026-04-04T20:26:24.874241+00:00"
+    },
+    {
+      "city_id": "papua_new_guinea",
+      "posted_at": "2026-04-05T02:01:50.209294+00:00"
     }
   ]
 }
