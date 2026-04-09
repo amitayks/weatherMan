@@ -50,22 +50,13 @@ class TwitterPoster:
     def build_tweet_text(self, weather: WeatherData) -> str:
         """Build the tweet text with weather info and hashtags."""
         
-        # Main content
+        # Main content (no hashtags - Twitter algorithm penalizes them)
         lines = [
             f"{weather.emoji} {self.city.name} Weather",
             f"🌡️ {weather.format_temperature('C')} ({weather.format_temperature('F')})",
             f"📅 {weather.format_date('%B %d, %Y')}",
             f"☁️ {weather.description.title()}",
-            "",
         ]
-        
-        # Add hashtags
-        hashtags = self.city.hashtags or [f"#{self.city.name.replace(' ', '')}", "#Weather"]
-        hashtags.extend(["#AIArt", "#CityWeather"])
-        
-        # Deduplicate and limit hashtags
-        unique_hashtags = list(dict.fromkeys(hashtags))[:6]
-        lines.append(" ".join(unique_hashtags))
         
         return "\n".join(lines)
     
