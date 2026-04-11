@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "zakynthos",
-      "posted_at": "2026-04-09T20:44:44.576749+00:00"
-    },
-    {
       "city_id": "grenada",
       "posted_at": "2026-04-10T02:05:00.490141+00:00"
     },
@@ -23,6 +19,10 @@
     {
       "city_id": "timor_leste",
       "posted_at": "2026-04-10T20:31:46.700175+00:00"
+    },
+    {
+      "city_id": "big_island_hawaii",
+      "posted_at": "2026-04-11T01:53:39.492107+00:00"
     }
   ]
 }
