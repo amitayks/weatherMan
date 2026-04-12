@@ -2,70 +2,51 @@
 """
 State management for tracking recently posted cities.
 
-This module handles:
-1. Tracking cities posted within the last 24 hours
-2. Preventing duplicate posts by excluding recent cities
-3. Simple JSON persistence
+This module keeps a rolling window of the 100 most recent posts. A city in
+this window is excluded from random selection, so with ~5 posts per day the
+same city will not reappear for roughly 20 days.
 """
 
 import json
 import os
 from dataclasses import dataclass, field
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
+
+
+# Rolling window size. With ~5 posts/day this gives ~20 days between repeats.
+MAX_RECENT_CITIES = 100
 
 
 @dataclass
 class RecentlyPosted:
     """
-    Tracks cities posted within the last 24 hours.
+    Tracks the last N posted cities (rolling window) to prevent repeats.
 
     Attributes:
-        posts: List of dicts with city_id and posted_at timestamp
+        posts: List of dicts with city_id and posted_at timestamp, newest last.
     """
 
     posts: list[dict] = field(default_factory=list)
 
     def add_posted(self, city_id: str) -> None:
-        """
-        Add a city to the recently posted list.
-
-        Args:
-            city_id: City identifier that was just posted
-        """
+        """Append a city entry and trim to the rolling window."""
         self.posts.append({
             "city_id": city_id,
             "posted_at": datetime.now(timezone.utc).isoformat()
         })
+        self.trim_to_max()
 
-    def cleanup_old(self, hours: int = 24) -> int:
-        """
-        Remove entries older than specified hours.
-
-        Args:
-            hours: Number of hours to keep (default: 24)
-
-        Returns:
-            Number of entries removed
-        """
-        cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
-        original_count = len(self.posts)
-
-        self.posts = [
-            p for p in self.posts
-            if datetime.fromisoformat(p["posted_at"]) > cutoff
-        ]
-
-        return original_count - len(self.posts)
+    def trim_to_max(self, max_entries: int = MAX_RECENT_CITIES) -> int:
+        """Keep only the `max_entries` newest posts. Returns number removed."""
+        original = len(self.posts)
+        if original > max_entries:
+            self.posts = self.posts[-max_entries:]
+        return original - len(self.posts)
 
     def get_excluded_ids(self) -> list[str]:
-        """
-        Get list of city IDs that should be excluded from selection.
-
-        Returns:
-            List of city IDs posted within the retention period
-        """
+        """City IDs currently in the exclusion window."""
         return [p["city_id"] for p in self.posts]
 
     def clear(self) -> None:
@@ -81,8 +62,8 @@ class StateManager:
     """
     Manages recently posted state persistence to JSON file.
 
-    The state file tracks which cities have been posted recently
-    to prevent duplicate posts within a 24-hour window.
+    The state file holds the 100 most recent posts; a city in this window is
+    excluded from random selection on subsequent runs.
     """
 
     STATE_FILE = "state/recently_posted.json"
@@ -97,12 +78,7 @@ class StateManager:
         self.state_file = state_file or self.STATE_FILE
 
     def load_recent(self) -> RecentlyPosted:
-        """
-        Load recently posted data from JSON file.
-
-        Returns:
-            RecentlyPosted object (empty if file doesn't exist)
-        """
+        """Load the rolling recent-posts window from disk."""
         if not os.path.exists(self.state_file):
             return RecentlyPosted()
 
@@ -112,10 +88,11 @@ class StateManager:
 
             recent = RecentlyPosted(posts=data.get("posts", []))
 
-            # Auto-cleanup old entries on load
-            removed = recent.cleanup_old(hours=24)
+            # Trim on load in case the file was hand-edited or the window
+            # shrank since the last save.
+            removed = recent.trim_to_max()
             if removed > 0:
-                print(f"🧹 Cleaned up {removed} old entries from recently posted")
+                print(f"🧹 Trimmed {removed} old entries beyond the {MAX_RECENT_CITIES}-post window")
 
             return recent
 
