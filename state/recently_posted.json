@@ -1,14 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "timor_leste",
-      "posted_at": "2026-04-10T20:31:46.700175+00:00"
-    },
-    {
-      "city_id": "big_island_hawaii",
-      "posted_at": "2026-04-11T01:53:39.492107+00:00"
-    },
-    {
       "city_id": "hvar",
       "posted_at": "2026-04-11T05:58:57.507002+00:00"
     },
@@ -23,6 +15,10 @@
     {
       "city_id": "kiribati",
       "posted_at": "2026-04-11T20:28:36.421034+00:00"
+    },
+    {
+      "city_id": "sardinia",
+      "posted_at": "2026-04-12T02:06:41.992791+00:00"
     }
   ]
 }
