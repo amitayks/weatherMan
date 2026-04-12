@@ -1,8 +1,8 @@
 """OpenWeatherMap API integration for fetching current weather data."""
 
 import requests
-from dataclasses import dataclass
-from typing import Optional
+from dataclasses import dataclass, field
+from typing import Optional, Literal
 from datetime import datetime
 import pytz
 
@@ -48,6 +48,20 @@ WEATHER_ATMOSPHERE = {
 
 
 @dataclass
+class ForecastEntry:
+    """Single 3-hour forecast entry from OpenWeatherMap."""
+    timestamp: datetime
+    temperature_c: float
+    feels_like_c: float
+    humidity: int
+    main_condition: str
+    description: str
+    clouds_percent: int
+    wind_speed: float
+    precipitation_mm: float  # rain + snow over this 3h window
+
+
+@dataclass
 class WeatherData:
     """Weather data container."""
     city_name: str
@@ -65,6 +79,7 @@ class WeatherData:
     timestamp: datetime
     sunrise: datetime
     sunset: datetime
+    forecast_entries: list[ForecastEntry] = field(default_factory=list)
     
     @property
     def emoji(self) -> str:
@@ -119,6 +134,44 @@ class WeatherData:
         else:
             return "twilight, city transitioning to night"
     
+    @property
+    def precipitation_next_6h(self) -> float:
+        """Sum of precipitation_mm for the next 2 forecast entries (~6 hours)."""
+        return sum(e.precipitation_mm for e in self.forecast_entries[:2])
+
+    @property
+    def temp_trend_6h(self) -> Literal["rising", "falling", "steady"]:
+        """Direction of temperature change over the next ~6 hours."""
+        if len(self.forecast_entries) < 2:
+            return "steady"
+        future_temp = self.forecast_entries[1].temperature_c
+        delta = future_temp - self.temperature_c
+        if abs(delta) < 2:
+            return "steady"
+        return "rising" if delta > 0 else "falling"
+
+    @property
+    def next_condition_change(self) -> Optional[tuple]:
+        """First forecast entry whose main_condition differs from current, or None."""
+        for entry in self.forecast_entries:
+            if entry.main_condition != self.main_condition:
+                return (entry.timestamp, entry.main_condition)
+        return None
+
+    @property
+    def max_temp_24h(self) -> float:
+        """Max temperature across current + forecast entries."""
+        if not self.forecast_entries:
+            return self.temperature_c
+        return max(self.temperature_c, *(e.temperature_c for e in self.forecast_entries))
+
+    @property
+    def min_temp_24h(self) -> float:
+        """Min temperature across current + forecast entries."""
+        if not self.forecast_entries:
+            return self.temperature_c
+        return min(self.temperature_c, *(e.temperature_c for e in self.forecast_entries))
+
     def format_temperature(self, unit: str = "C") -> str:
         """Format temperature string."""
         if unit.upper() == "F":
@@ -132,13 +185,69 @@ class WeatherData:
 
 class WeatherAPI:
     """OpenWeatherMap API client."""
-    
+
     BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
-    
+    FORECAST_URL = "https://api.openweathermap.org/data/2.5/forecast"
+
     def __init__(self, api_key: str = None):
         self.api_key = api_key or get_config().openweather_api_key
         if not self.api_key:
             raise ValueError("OpenWeatherMap API key not configured")
+
+    def get_forecast(self, city: CityConfig) -> list[ForecastEntry]:
+        """Fetch 24-hour forecast (8 × 3-hour entries) for a city.
+
+        Returns empty list on failure so callers can degrade gracefully.
+        """
+        try:
+            params = {
+                "lat": city.coordinates.lat,
+                "lon": city.coordinates.lon,
+                "appid": self.api_key,
+                "units": "metric",
+                "cnt": 8,
+            }
+            response = requests.get(self.FORECAST_URL, params=params, timeout=10)
+            response.raise_for_status()
+            data = response.json()
+
+            tz = city.tz
+            entries: list[ForecastEntry] = []
+            for item in data.get("list", []):
+                try:
+                    ts = datetime.fromtimestamp(item["dt"], tz)
+                    main = item.get("main", {})
+                    weather = (item.get("weather") or [{}])[0]
+                    clouds = item.get("clouds", {}) or {}
+                    wind = item.get("wind", {}) or {}
+                    rain = item.get("rain", {}) or {}
+                    snow = item.get("snow", {}) or {}
+
+                    precip = float(rain.get("3h", 0) or 0) + float(snow.get("3h", 0) or 0)
+
+                    entries.append(ForecastEntry(
+                        timestamp=ts,
+                        temperature_c=float(main.get("temp", 0)),
+                        feels_like_c=float(main.get("feels_like", main.get("temp", 0))),
+                        humidity=int(main.get("humidity", 0)),
+                        main_condition=weather.get("main", ""),
+                        description=weather.get("description", ""),
+                        clouds_percent=int(clouds.get("all", 0)),
+                        wind_speed=float(wind.get("speed", 0)),
+                        precipitation_mm=precip,
+                    ))
+                except (KeyError, ValueError, TypeError) as e:
+                    print(f"Skipping malformed forecast entry for {city.name}: {e}")
+                    continue
+
+            return entries
+
+        except requests.RequestException as e:
+            print(f"Error fetching forecast for {city.name}: {e}")
+            return []
+        except (KeyError, ValueError) as e:
+            print(f"Error parsing forecast for {city.name}: {e}")
+            return []
     
     def get_weather(self, city: CityConfig) -> Optional[WeatherData]:
         """Fetch current weather for a city."""
@@ -191,6 +300,10 @@ class WeatherAPI:
 
 
 def get_weather_for_city(city: CityConfig) -> Optional[WeatherData]:
-    """Convenience function to get weather for a city."""
+    """Convenience function to get weather (current + forecast) for a city."""
     api = WeatherAPI()
-    return api.get_weather(city)
+    weather = api.get_weather(city)
+    if weather is None:
+        return None
+    weather.forecast_entries = api.get_forecast(city)
+    return weather

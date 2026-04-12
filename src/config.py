@@ -36,6 +36,7 @@ class CityConfig:
     name_local: Optional[str] = None
     posting_times: list = field(default_factory=lambda: ["08:00", "18:00"])
     hashtags: list = field(default_factory=list)
+    character: str = ""  # Optional neutral hint for caption voice (e.g. "small Caribbean island")
     
     @property
     def tz(self):
@@ -110,6 +111,7 @@ class Config:
                     self.global_config.default_posting_times
                 ),
                 hashtags=city_data.get("hashtags", []),
+                character=city_data.get("character", ""),
             )
     
     def get_enabled_cities(self) -> list[CityConfig]:

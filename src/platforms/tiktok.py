@@ -34,16 +34,11 @@ class TikTokPoster:
     def access_token(self) -> str:
         return self.credentials["access_token"]
     
-    def build_description(self, weather: WeatherData) -> str:
-        """Build TikTok description with weather info and hashtags."""
-        
-        # TikTok descriptions should be shorter and more engaging
-        lines = [
-            f"{weather.emoji} {self.city.name} Weather Today!",
-            f"🌡️ {weather.format_temperature('C')} | {weather.description.title()}",
-            "",
-        ]
-        
+    def build_description(self, weather: WeatherData, caption_body: str) -> str:
+        """Compose the AI-generated body plus the platform-standard hashtag block."""
+
+        lines = [caption_body, ""]
+
         # Add hashtags - TikTok uses hashtags heavily
         hashtags = self.city.hashtags.copy() if self.city.hashtags else []
         
@@ -197,11 +192,12 @@ class TikTokPoster:
         self,
         image_path: Path,
         weather: WeatherData,
+        caption_body: str,
         dry_run: bool = False,
     ) -> Optional[str]:
         """Post image to TikTok."""
-        
-        description = self.build_description(weather)
+
+        description = self.build_description(weather, caption_body)
         
         if dry_run:
             print(f"[DRY RUN] Would post to TikTok for {self.city.name}:")
@@ -235,6 +231,7 @@ def post_to_tiktok(
     image_path: Path,
     weather: WeatherData,
     credentials: dict,
+    caption_body: str,
     dry_run: bool = False,
 ) -> Optional[str]:
     """Convenience function to post to TikTok."""
@@ -244,7 +241,7 @@ def post_to_tiktok(
 
     try:
         poster = TikTokPoster(city, credentials)
-        return poster.post(image_path, weather, dry_run)
+        return poster.post(image_path, weather, caption_body, dry_run)
     except ValueError as e:
         print(f"TikTok configuration error: {e}")
         return None

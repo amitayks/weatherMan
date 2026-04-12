@@ -47,28 +47,20 @@ class TwitterPoster:
         )
         self.api_v1 = tweepy.API(auth)
     
-    def build_tweet_text(self, weather: WeatherData) -> str:
-        """Build the tweet text with weather info and hashtags."""
-        
-        # Main content (no hashtags - Twitter algorithm penalizes them)
-        lines = [
-            f"{weather.emoji} {self.city.name} Weather",
-            f"🌡️ {weather.format_temperature('C')} ({weather.format_temperature('F')})",
-            f"📅 {weather.format_date('%B %d, %Y')}",
-            f"☁️ {weather.description.title()}",
-        ]
-        
-        return "\n".join(lines)
-    
+    def build_tweet_text(self, caption_body: str) -> str:
+        """Return the tweet text. Twitter has no hashtags appended — the body IS the tweet."""
+        return caption_body
+
     def post(
-        self, 
-        image_path: Path, 
+        self,
+        image_path: Path,
         weather: WeatherData,
+        caption_body: str,
         dry_run: bool = False,
     ) -> Optional[str]:
         """Post image to Twitter/X."""
-        
-        tweet_text = self.build_tweet_text(weather)
+
+        tweet_text = self.build_tweet_text(caption_body)
         
         if dry_run:
             print(f"[DRY RUN] Would post to Twitter for {self.city.name}:")
@@ -111,6 +103,7 @@ def post_to_twitter(
     image_path: Path,
     weather: WeatherData,
     credentials: dict,
+    caption_body: str,
     dry_run: bool = False,
 ) -> Optional[str]:
     """Convenience function to post to Twitter."""
@@ -120,7 +113,7 @@ def post_to_twitter(
 
     try:
         poster = TwitterPoster(city, credentials)
-        return poster.post(image_path, weather, dry_run)
+        return poster.post(image_path, weather, caption_body, dry_run)
     except ValueError as e:
         print(f"Twitter configuration error: {e}")
         return None

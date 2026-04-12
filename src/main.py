@@ -33,11 +33,17 @@ from .platforms.instagram import post_to_instagram
 from .platforms.tiktok import post_to_tiktok
 from .state_manager import StateManager, RecentlyPosted
 from .scheduler import select_random_city
+from .caption_generator import CaptionGenerator
+from .caption_memory import CaptionMemory
+from .glitch_log import GlitchLog
 
 
 def process_city(
     city: CityConfig,
     config: Config,
+    caption_generator: CaptionGenerator,
+    caption_memory: CaptionMemory,
+    glitch_log: GlitchLog,
     dry_run: bool = False,
     output_dir: str = None,
 ) -> dict:
@@ -99,26 +105,55 @@ def process_city(
     results["image_path"] = str(image_path)
     print(f"✅ Image generated: {image_path}")
 
-    # Step 3: Post to platforms
+    # Step 3: Generate literary captions (one per enabled platform)
+    print("\n✍️  Generating captions...")
+    captions: dict[str, str] = {}
+    for platform in ("twitter", "instagram", "tiktok"):
+        if getattr(city.platforms, platform):
+            captions[platform] = caption_generator.generate(
+                city, weather, platform, caption_memory, glitch_log
+            )
+            preview = captions[platform][:80].replace("\n", " ⏎ ")
+            print(f"  {platform}: {preview}{'…' if len(captions[platform]) > 80 else ''}")
+
+    # Persist memory once per city (not once per platform)
+    try:
+        caption_memory.save()
+    except Exception as e:
+        print(f"⚠️  Could not save caption memory: {e}")
+
+    # Step 4: Post to platforms
     print("\n📱 Posting to social media...")
 
     # Twitter/X
     if city.platforms.twitter:
         print("\n🐦 Posting to Twitter/X...")
         twitter_creds = config.get_platform_credentials("twitter")
-        results["twitter"] = post_to_twitter(city, image_path, weather, twitter_creds, dry_run)
+        results["twitter"] = post_to_twitter(
+            city, image_path, weather, twitter_creds,
+            caption_body=captions["twitter"],
+            dry_run=dry_run,
+        )
 
     # Instagram
     if city.platforms.instagram:
         print("\n📸 Posting to Instagram...")
         instagram_creds = config.get_platform_credentials("instagram")
-        results["instagram"] = post_to_instagram(city, image_path, weather, instagram_creds, dry_run)
+        results["instagram"] = post_to_instagram(
+            city, image_path, weather, instagram_creds,
+            caption_body=captions["instagram"],
+            dry_run=dry_run,
+        )
 
     # TikTok
     if city.platforms.tiktok:
         print("\n🎵 Posting to TikTok...")
         tiktok_creds = config.get_platform_credentials("tiktok")
-        results["tiktok"] = post_to_tiktok(city, image_path, weather, tiktok_creds, dry_run)
+        results["tiktok"] = post_to_tiktok(
+            city, image_path, weather, tiktok_creds,
+            caption_body=captions["tiktok"],
+            dry_run=dry_run,
+        )
 
     # Check if any platform succeeded
     platforms_attempted = []
@@ -273,11 +308,19 @@ def main():
     if args.force:
         print("🔸 FORCE MODE - Ignoring recently-posted exclusions")
 
+    # Shared caption-generation instances (one per run, reused across platforms)
+    caption_generator = CaptionGenerator()
+    caption_memory = CaptionMemory()
+    glitch_log = GlitchLog()
+
     # Process the city
     try:
         result = process_city(
             city,
             config,
+            caption_generator=caption_generator,
+            caption_memory=caption_memory,
+            glitch_log=glitch_log,
             dry_run=args.dry_run,
             output_dir=args.output_dir,
         )

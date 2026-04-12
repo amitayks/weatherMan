@@ -38,23 +38,10 @@ class InstagramPoster:
     def account_id(self) -> str:
         return self.credentials["account_id"]
 
-    def build_caption(self, weather: WeatherData) -> str:
-        """Build Instagram caption with weather info and hashtags."""
+    def build_caption(self, weather: WeatherData, caption_body: str) -> str:
+        """Compose the AI-generated body plus the standard hashtag block."""
 
-        # Main content - Instagram allows longer captions
-        lines = [
-            f"{weather.emoji} {self.city.name} Weather Update",
-            "",
-            f"🌡️ Temperature: {weather.format_temperature('C')} ({weather.format_temperature('F')})",
-            f"💨 Feels like: {weather.feels_like_c:.0f}°C",
-            f"💧 Humidity: {weather.humidity}%",
-            f"☁️ Conditions: {weather.description.title()}",
-            "",
-            f"📅 {weather.format_date('%B %d, %Y')}",
-            "",
-            "—" * 10,
-            "",
-        ]
+        lines = [caption_body, "", ""]
 
         # Add hashtags - Instagram allows up to 30
         hashtags = self.city.hashtags.copy() if self.city.hashtags else []
@@ -289,12 +276,13 @@ class InstagramPoster:
         self,
         image_path: Path,
         weather: WeatherData,
+        caption_body: str,
         dry_run: bool = False,
         post_to_story: bool = True,
     ) -> Optional[str]:
         """Post image to Instagram feed and optionally to Story."""
 
-        caption = self.build_caption(weather)
+        caption = self.build_caption(weather, caption_body)
 
         if dry_run:
             print(f"[DRY RUN] Would post to Instagram for {self.city.name}:")
@@ -388,6 +376,7 @@ def post_to_instagram(
     image_path: Path,
     weather: WeatherData,
     credentials: dict,
+    caption_body: str,
     dry_run: bool = False,
 ) -> Optional[str]:
     """Convenience function to post to Instagram."""
@@ -397,7 +386,7 @@ def post_to_instagram(
 
     try:
         poster = InstagramPoster(city, credentials)
-        return poster.post(image_path, weather, dry_run)
+        return poster.post(image_path, weather, caption_body, dry_run)
     except ValueError as e:
         print(f"Instagram configuration error: {e}")
         return None
