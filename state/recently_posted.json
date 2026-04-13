@@ -39,6 +39,10 @@
     {
       "city_id": "formentera",
       "posted_at": "2026-04-13T16:13:17.504247+00:00"
+    },
+    {
+      "city_id": "buenos_aires",
+      "posted_at": "2026-04-13T20:50:16.834596+00:00"
     }
   ]
 }
