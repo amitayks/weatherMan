@@ -219,6 +219,10 @@
     {
       "city_id": "santorini",
       "posted_at": "2026-04-22T16:08:06.465919+00:00"
+    },
+    {
+      "city_id": "macquarie_island",
+      "posted_at": "2026-04-22T20:50:57.452397+00:00"
     }
   ]
 }
