@@ -227,6 +227,10 @@
     {
       "city_id": "campbell_island",
       "posted_at": "2026-04-23T02:09:47.088594+00:00"
+    },
+    {
+      "city_id": "madagascar",
+      "posted_at": "2026-04-23T07:00:54.145447+00:00"
     }
   ]
 }
