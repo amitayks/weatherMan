@@ -223,6 +223,10 @@
     {
       "city_id": "macquarie_island",
       "posted_at": "2026-04-22T20:50:57.452397+00:00"
+    },
+    {
+      "city_id": "campbell_island",
+      "posted_at": "2026-04-23T02:09:47.088594+00:00"
     }
   ]
 }
