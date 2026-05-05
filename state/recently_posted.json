@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "cape_verde",
-      "posted_at": "2026-04-15T02:02:37.169676+00:00"
-    },
-    {
       "city_id": "fernando_de_noronha",
       "posted_at": "2026-04-15T06:53:05.968728+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "sri_lanka",
       "posted_at": "2026-05-05T02:23:57.674049+00:00"
+    },
+    {
+      "city_id": "fuerteventura",
+      "posted_at": "2026-05-05T07:14:55.186628+00:00"
     }
   ]
 }
