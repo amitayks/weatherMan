@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "mauritius",
-      "posted_at": "2026-04-16T20:43:56.895169+00:00"
-    },
-    {
       "city_id": "seychelles",
       "posted_at": "2026-04-17T02:06:15.862943+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "falkland_islands",
       "posted_at": "2026-05-06T21:08:28.497447+00:00"
+    },
+    {
+      "city_id": "bangkok",
+      "posted_at": "2026-05-07T02:29:33.110269+00:00"
     }
   ]
 }
