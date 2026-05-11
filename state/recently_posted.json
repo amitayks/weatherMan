@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "timor_leste",
-      "posted_at": "2026-04-21T11:02:57.664347+00:00"
-    },
-    {
       "city_id": "south_georgia",
       "posted_at": "2026-04-21T16:08:06.160796+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "mexico_city",
       "posted_at": "2026-05-11T12:38:00.116535+00:00"
+    },
+    {
+      "city_id": "gran_canaria",
+      "posted_at": "2026-05-11T17:23:15.360127+00:00"
     }
   ]
 }
