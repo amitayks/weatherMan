@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "istanbul",
-      "posted_at": "2026-04-21T06:58:11.462801+00:00"
-    },
-    {
       "city_id": "timor_leste",
       "posted_at": "2026-04-21T11:02:57.664347+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "big_island_hawaii",
       "posted_at": "2026-05-11T08:23:18.760932+00:00"
+    },
+    {
+      "city_id": "mexico_city",
+      "posted_at": "2026-05-11T12:38:00.116535+00:00"
     }
   ]
 }
