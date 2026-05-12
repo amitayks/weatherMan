@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "langkawi",
-      "posted_at": "2026-04-21T20:45:25.845732+00:00"
-    },
-    {
       "city_id": "komodo",
       "posted_at": "2026-04-22T02:04:59.174604+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "siargao",
       "posted_at": "2026-05-11T21:14:26.770378+00:00"
+    },
+    {
+      "city_id": "fernando_de_noronha",
+      "posted_at": "2026-05-12T02:35:06.832766+00:00"
     }
   ]
 }
