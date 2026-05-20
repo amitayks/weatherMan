@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "ascension_island",
-      "posted_at": "2026-04-30T20:56:35.012345+00:00"
-    },
-    {
       "city_id": "crete",
       "posted_at": "2026-05-01T02:38:17.674161+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "st_lucia",
       "posted_at": "2026-05-20T17:52:54.452993+00:00"
+    },
+    {
+      "city_id": "nusa_penida",
+      "posted_at": "2026-05-20T21:49:17.496143+00:00"
     }
   ]
 }
