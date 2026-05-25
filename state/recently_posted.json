@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "fuerteventura",
-      "posted_at": "2026-05-05T07:14:55.186628+00:00"
-    },
-    {
       "city_id": "martinique",
       "posted_at": "2026-05-05T11:15:02.063216+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "san_juan",
       "posted_at": "2026-05-25T08:54:05.750320+00:00"
+    },
+    {
+      "city_id": "st_martin",
+      "posted_at": "2026-05-25T12:59:25.371504+00:00"
     }
   ]
 }
