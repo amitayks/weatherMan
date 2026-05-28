@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "grand_cayman",
-      "posted_at": "2026-05-08T02:36:40.812120+00:00"
-    },
-    {
       "city_id": "curacao",
       "posted_at": "2026-05-08T06:30:41.001391+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "south_georgia",
       "posted_at": "2026-05-28T08:40:45.566369+00:00"
+    },
+    {
+      "city_id": "providenciales",
+      "posted_at": "2026-05-28T13:45:30.354396+00:00"
     }
   ]
 }
