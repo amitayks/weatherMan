@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "guadeloupe",
-      "posted_at": "2026-05-09T07:05:39.340007+00:00"
-    },
-    {
       "city_id": "st_eustatius",
       "posted_at": "2026-05-09T10:54:24.563877+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "bequia",
       "posted_at": "2026-05-29T12:46:52.007604+00:00"
+    },
+    {
+      "city_id": "franz_josef_land",
+      "posted_at": "2026-05-29T18:10:49.956348+00:00"
     }
   ]
 }
