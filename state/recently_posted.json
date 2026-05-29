@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "st_eustatius",
-      "posted_at": "2026-05-09T10:54:24.563877+00:00"
-    },
-    {
       "city_id": "cape_verde",
       "posted_at": "2026-05-09T15:46:25.782914+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "franz_josef_land",
       "posted_at": "2026-05-29T18:10:49.956348+00:00"
+    },
+    {
+      "city_id": "cairo",
+      "posted_at": "2026-05-29T21:50:59.214223+00:00"
     }
   ]
 }
