@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "bora_bora",
-      "posted_at": "2026-05-09T20:40:48.989569+00:00"
-    },
-    {
       "city_id": "rarotonga",
       "posted_at": "2026-05-10T02:32:56.622760+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "oahu",
       "posted_at": "2026-05-30T02:39:44.893266+00:00"
+    },
+    {
+      "city_id": "ascension_island",
+      "posted_at": "2026-05-30T07:38:13.685177+00:00"
     }
   ]
 }
