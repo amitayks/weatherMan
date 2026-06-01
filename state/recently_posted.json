@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "gran_canaria",
-      "posted_at": "2026-05-11T17:23:15.360127+00:00"
-    },
-    {
       "city_id": "siargao",
       "posted_at": "2026-05-11T21:14:26.770378+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "vienna",
       "posted_at": "2026-06-01T03:33:04.309739+00:00"
+    },
+    {
+      "city_id": "macquarie_island",
+      "posted_at": "2026-06-01T10:16:11.159212+00:00"
     }
   ]
 }
