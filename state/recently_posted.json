@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "naxos",
-      "posted_at": "2026-05-12T17:07:21.360372+00:00"
-    },
-    {
       "city_id": "montego_bay",
       "posted_at": "2026-05-12T21:15:59.314520+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "big_island_hawaii",
       "posted_at": "2026-06-02T09:04:19.889587+00:00"
+    },
+    {
+      "city_id": "seychelles",
+      "posted_at": "2026-06-02T13:58:28.509201+00:00"
     }
   ]
 }
