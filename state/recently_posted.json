@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "raja_ampat",
-      "posted_at": "2026-05-13T02:41:48.695627+00:00"
-    },
-    {
       "city_id": "tortola",
       "posted_at": "2026-05-13T07:47:26.766546+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "falkland_islands",
       "posted_at": "2026-06-02T18:37:41.572032+00:00"
+    },
+    {
+      "city_id": "dubai",
+      "posted_at": "2026-06-02T22:21:16.948334+00:00"
     }
   ]
 }
