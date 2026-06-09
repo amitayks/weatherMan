@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "andaman_islands",
-      "posted_at": "2026-05-19T17:37:12.166146+00:00"
-    },
-    {
       "city_id": "rome",
       "posted_at": "2026-05-19T21:16:18.120493+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "gili_islands",
       "posted_at": "2026-06-09T08:29:05.896343+00:00"
+    },
+    {
+      "city_id": "heard_island",
+      "posted_at": "2026-06-09T12:32:40.427151+00:00"
     }
   ]
 }
