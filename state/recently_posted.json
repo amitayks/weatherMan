@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "mykonos",
-      "posted_at": "2026-05-19T12:37:37.739374+00:00"
-    },
-    {
       "city_id": "andaman_islands",
       "posted_at": "2026-05-19T17:37:12.166146+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "greenland",
       "posted_at": "2026-06-09T02:40:02.738964+00:00"
+    },
+    {
+      "city_id": "gili_islands",
+      "posted_at": "2026-06-09T08:29:05.896343+00:00"
     }
   ]
 }
