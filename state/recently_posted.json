@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "solomon_islands",
-      "posted_at": "2026-05-24T07:48:23.108908+00:00"
-    },
-    {
       "city_id": "st_thomas",
       "posted_at": "2026-05-24T11:12:55.779277+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "lisbon",
       "posted_at": "2026-06-13T21:09:55.032472+00:00"
+    },
+    {
+      "city_id": "jerusalem",
+      "posted_at": "2026-06-14T03:30:25.603785+00:00"
     }
   ]
 }
