@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "south_georgia",
-      "posted_at": "2026-05-28T08:40:45.566369+00:00"
-    },
-    {
       "city_id": "providenciales",
       "posted_at": "2026-05-28T13:45:30.354396+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "menorca",
       "posted_at": "2026-06-18T03:25:22.269242+00:00"
+    },
+    {
+      "city_id": "pitcairn",
+      "posted_at": "2026-06-18T09:11:18.693432+00:00"
     }
   ]
 }
