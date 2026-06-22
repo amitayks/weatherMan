@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "mergui",
-      "posted_at": "2026-06-02T03:30:29.620230+00:00"
-    },
-    {
       "city_id": "big_island_hawaii",
       "posted_at": "2026-06-02T09:04:19.889587+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "franz_josef_land",
       "posted_at": "2026-06-22T18:43:26.274976+00:00"
+    },
+    {
+      "city_id": "bermuda",
+      "posted_at": "2026-06-22T21:59:36.005986+00:00"
     }
   ]
 }
