@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "big_island_hawaii",
-      "posted_at": "2026-06-02T09:04:19.889587+00:00"
-    },
-    {
       "city_id": "seychelles",
       "posted_at": "2026-06-02T13:58:28.509201+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "bermuda",
       "posted_at": "2026-06-22T21:59:36.005986+00:00"
+    },
+    {
+      "city_id": "iceland",
+      "posted_at": "2026-06-23T02:45:37.111182+00:00"
     }
   ]
 }
