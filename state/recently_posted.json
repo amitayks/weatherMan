@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "fernando_de_noronha",
-      "posted_at": "2026-06-03T18:42:42.198915+00:00"
-    },
-    {
       "city_id": "crete",
       "posted_at": "2026-06-03T22:26:36.590459+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "raja_ampat",
       "posted_at": "2026-06-24T08:19:40.799261+00:00"
+    },
+    {
+      "city_id": "vanuatu",
+      "posted_at": "2026-06-24T12:16:25.824160+00:00"
     }
   ]
 }
