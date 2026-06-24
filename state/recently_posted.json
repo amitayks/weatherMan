@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "crete",
-      "posted_at": "2026-06-03T22:26:36.590459+00:00"
-    },
-    {
       "city_id": "madagascar",
       "posted_at": "2026-06-04T03:32:22.921898+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "vanuatu",
       "posted_at": "2026-06-24T12:16:25.824160+00:00"
+    },
+    {
+      "city_id": "ascension_island",
+      "posted_at": "2026-06-24T17:02:25.362493+00:00"
     }
   ]
 }
