@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "sao_tome",
-      "posted_at": "2026-06-11T18:10:00.364540+00:00"
-    },
-    {
       "city_id": "buenos_aires",
       "posted_at": "2026-06-11T21:58:33.777705+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "antipodes_islands",
       "posted_at": "2026-07-02T02:46:42.325867+00:00"
+    },
+    {
+      "city_id": "antigua",
+      "posted_at": "2026-07-02T08:09:52.645282+00:00"
     }
   ]
 }
