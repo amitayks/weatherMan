@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "hong_kong",
-      "posted_at": "2026-06-20T11:53:24.376174+00:00"
-    },
-    {
       "city_id": "comoros",
       "posted_at": "2026-06-20T16:14:33.292561+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "solomon_islands",
       "posted_at": "2026-07-11T07:08:59.621143+00:00"
+    },
+    {
+      "city_id": "singapore",
+      "posted_at": "2026-07-11T10:59:34.914459+00:00"
     }
   ]
 }
