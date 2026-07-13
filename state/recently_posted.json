@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "new_caledonia",
-      "posted_at": "2026-06-22T10:34:52.692629+00:00"
-    },
-    {
       "city_id": "franz_josef_land",
       "posted_at": "2026-06-22T18:43:26.274976+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "st_kitts",
       "posted_at": "2026-07-13T02:13:34.149021+00:00"
+    },
+    {
+      "city_id": "nauru",
+      "posted_at": "2026-07-13T08:13:23.974591+00:00"
     }
   ]
 }
