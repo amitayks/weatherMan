@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "bouvet_island",
-      "posted_at": "2026-06-23T08:26:51.193785+00:00"
-    },
-    {
       "city_id": "fuerteventura",
       "posted_at": "2026-06-23T12:30:14.877042+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "komodo",
       "posted_at": "2026-07-13T20:53:15.910843+00:00"
+    },
+    {
+      "city_id": "la_palma",
+      "posted_at": "2026-07-14T01:59:24.015379+00:00"
     }
   ]
 }
