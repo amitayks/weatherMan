@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "punta_cana",
-      "posted_at": "2026-06-23T17:13:43.417308+00:00"
-    },
-    {
       "city_id": "seychelles",
       "posted_at": "2026-06-23T21:28:51.047388+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "greenland",
       "posted_at": "2026-07-14T07:08:44.333025+00:00"
+    },
+    {
+      "city_id": "maldives",
+      "posted_at": "2026-07-14T11:22:39.501385+00:00"
     }
   ]
 }
