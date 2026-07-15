@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "vanuatu",
-      "posted_at": "2026-06-24T12:16:25.824160+00:00"
-    },
-    {
       "city_id": "ascension_island",
       "posted_at": "2026-06-24T17:02:25.362493+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "st_barts",
       "posted_at": "2026-07-15T01:55:40.581433+00:00"
+    },
+    {
+      "city_id": "mallorca",
+      "posted_at": "2026-07-15T07:12:02.283944+00:00"
     }
   ]
 }
