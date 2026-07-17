@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "providenciales",
-      "posted_at": "2026-06-27T02:41:56.106070+00:00"
-    },
-    {
       "city_id": "boracay",
       "posted_at": "2026-06-27T07:45:44.368236+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "kauai",
       "posted_at": "2026-07-17T16:10:43.071600+00:00"
+    },
+    {
+      "city_id": "amsterdam",
+      "posted_at": "2026-07-17T20:48:44.982326+00:00"
     }
   ]
 }
