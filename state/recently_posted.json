@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "mexico_city",
-      "posted_at": "2026-06-26T21:15:20.593321+00:00"
-    },
-    {
       "city_id": "providenciales",
       "posted_at": "2026-06-27T02:41:56.106070+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "faroe_islands",
       "posted_at": "2026-07-17T11:18:49.674149+00:00"
+    },
+    {
+      "city_id": "kauai",
+      "posted_at": "2026-07-17T16:10:43.071600+00:00"
     }
   ]
 }
