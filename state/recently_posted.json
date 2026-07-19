@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "st_eustatius",
-      "posted_at": "2026-06-28T16:06:49.966444+00:00"
-    },
-    {
       "city_id": "korcula",
       "posted_at": "2026-06-28T20:56:41.252357+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "mexico_city",
       "posted_at": "2026-07-19T07:24:45.140641+00:00"
+    },
+    {
+      "city_id": "kiribati",
+      "posted_at": "2026-07-19T11:07:01.783512+00:00"
     }
   ]
 }
