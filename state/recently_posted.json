@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "dubai",
-      "posted_at": "2026-06-28T11:44:46.073931+00:00"
-    },
-    {
       "city_id": "st_eustatius",
       "posted_at": "2026-06-28T16:06:49.966444+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "seychelles",
       "posted_at": "2026-07-19T02:09:47.756459+00:00"
+    },
+    {
+      "city_id": "mexico_city",
+      "posted_at": "2026-07-19T07:24:45.140641+00:00"
     }
   ]
 }
