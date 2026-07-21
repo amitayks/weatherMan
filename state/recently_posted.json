@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "bali",
-      "posted_at": "2026-06-30T17:02:11.857054+00:00"
-    },
-    {
       "city_id": "papua_new_guinea",
       "posted_at": "2026-06-30T21:24:19.063557+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "jan_mayen",
       "posted_at": "2026-07-21T07:30:08.161455+00:00"
+    },
+    {
+      "city_id": "macquarie_island",
+      "posted_at": "2026-07-21T11:44:12.650450+00:00"
     }
   ]
 }
