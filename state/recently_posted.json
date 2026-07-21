@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "papua_new_guinea",
-      "posted_at": "2026-06-30T21:24:19.063557+00:00"
-    },
-    {
       "city_id": "lanzarote",
       "posted_at": "2026-07-01T02:56:27.898213+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "macquarie_island",
       "posted_at": "2026-07-21T11:44:12.650450+00:00"
+    },
+    {
+      "city_id": "iceland",
+      "posted_at": "2026-07-21T16:19:40.219985+00:00"
     }
   ]
 }
