@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "fernando_de_noronha",
-      "posted_at": "2026-07-06T08:57:39.076580+00:00"
-    },
-    {
       "city_id": "la_gomera",
       "posted_at": "2026-07-06T13:41:07.601395+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "tobago",
       "posted_at": "2026-07-26T07:32:48.306014+00:00"
+    },
+    {
+      "city_id": "santorini",
+      "posted_at": "2026-07-26T11:16:23.282366+00:00"
     }
   ]
 }
