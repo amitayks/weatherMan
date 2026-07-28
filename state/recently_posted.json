@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "falkland_islands",
-      "posted_at": "2026-07-08T02:10:21.918744+00:00"
-    },
-    {
       "city_id": "phuket",
       "posted_at": "2026-07-08T07:25:24.524479+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "fernando_de_noronha",
       "posted_at": "2026-07-28T02:02:45.256728+00:00"
+    },
+    {
+      "city_id": "elba",
+      "posted_at": "2026-07-28T07:35:18.052864+00:00"
     }
   ]
 }
