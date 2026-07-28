@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "tristan",
-      "posted_at": "2026-07-08T16:27:27.731680+00:00"
-    },
-    {
       "city_id": "paphos",
       "posted_at": "2026-07-08T21:01:47.748231+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "koh_phi_phi",
       "posted_at": "2026-07-28T16:30:10.718533+00:00"
+    },
+    {
+      "city_id": "ascension_island",
+      "posted_at": "2026-07-28T21:03:25.827654+00:00"
     }
   ]
 }
