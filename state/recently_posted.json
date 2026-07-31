@@ -1,10 +1,6 @@
 {
   "posts": [
     {
-      "city_id": "barbados",
-      "posted_at": "2026-07-10T08:17:44.213103+00:00"
-    },
-    {
       "city_id": "rarotonga",
       "posted_at": "2026-07-10T12:22:37.856451+00:00"
     },
@@ -399,6 +395,10 @@
     {
       "city_id": "big_island_hawaii",
       "posted_at": "2026-07-30T21:02:29.726342+00:00"
+    },
+    {
+      "city_id": "sardinia",
+      "posted_at": "2026-07-31T16:42:06.629827+00:00"
     }
   ]
 }
